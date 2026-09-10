@@ -1,0 +1,55 @@
+[
+  {
+    "id": "drop-001",
+    "dropNumber": "001",
+    "dropLabel": "One",
+    "dropName": "The Mud Kitchen",
+    "veggie": "veggies/turnip.png",
+    "price": 65,
+    "sold": true,
+    "soldDate": "August 2026",
+    "items": [
+      { "name": "Chunky Knit Jumper", "brand": "Seed Heritage", "size": "3–4Y", "price": 22, "image": "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?fm=jpg&q=80&w=400&h=500&fit=crop" },
+      { "name": "Cord Trousers", "brand": "Oobi", "size": "3–4Y", "price": 18, "image": "https://images.unsplash.com/photo-1566454544259-f4b94c3d758c?fm=jpg&q=80&w=400&h=500&fit=crop" },
+      { "name": "Fleece Vest", "brand": "Patagonia", "size": "4Y", "price": 28, "image": "https://plus.unsplash.com/premium_photo-1675183690442-b5de4b8a3571?fm=jpg&q=80&w=400&h=500&fit=crop" },
+      { "name": "Long Sleeve Tee", "brand": "Cotton On Kids", "size": "3–4Y", "price": 12, "image": "https://images.unsplash.com/photo-1684244160171-97f5dac39204?fm=jpg&q=80&w=400&h=500&fit=crop" }
+    ]
+  },
+  {
+    "id": "drop-002",
+    "dropNumber": "002",
+    "dropLabel": "Two",
+    "dropName": "The Nature Kid",
+    "veggie": "veggies/carrot.png",
+    "price": 75,
+    "sold": true,
+    "soldDate": "August 2026",
+    "items": [
+      { "name": "Linen Shorts", "brand": "Oobi", "size": "5–6Y", "price": 16, "image": "https://images.unsplash.com/photo-1560859259-fcf2b952aed8?fm=jpg&q=80&w=400&h=500&fit=crop" },
+      { "name": "Floral Dress", "brand": "Milky", "size": "5Y", "price": 22, "image": "https://images.unsplash.com/photo-1684244160171-97f5dac39204?fm=jpg&q=80&w=400&h=500&fit=crop" },
+      { "name": "Knit Cardigan", "brand": "Bobo Choses", "size": "6Y", "price": 28, "image": "https://plus.unsplash.com/premium_photo-1691367782367-2bd37f646abc?fm=jpg&q=80&w=400&h=500&fit=crop" },
+      { "name": "Canvas Pants", "brand": "Country Road Kids", "size": "5–6Y", "price": 16, "image": "https://images.unsplash.com/photo-1566454544259-f4b94c3d758c?fm=jpg&q=80&w=400&h=500&fit=crop" },
+      { "name": "Striped Tee", "brand": "Seed Heritage", "size": "5Y", "price": 18, "image": "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?fm=jpg&q=80&w=400&h=500&fit=crop" }
+    ]
+  },
+  {
+    "id": "drop-003",
+    "dropNumber": "003",
+    "dropLabel": "Three",
+    "dropName": "The Mud Kitchen",
+    "dropSubtitle": "Worn in, dark tones, cool-kid energy.",
+    "veggie": "veggies/eggplant.png",
+    "price": 85,
+    "sold": false,
+    "soldDate": null,
+    "items": [
+      { "name": "Yellow Sweatshirt", "brand": "", "size": "", "price": 15, "image": "images/drop003-dress.jpg" },
+      { "name": "Yellow Trousers", "brand": "", "size": "", "price": 22, "image": "images/drop003-shorts.png" },
+      { "name": "Yellow Shorts", "brand": "", "size": "", "price": 16, "image": "images/drop003-trousers.png" },
+      { "name": "Striped Dress", "brand": "", "size": "", "price": 20, "image": "images/drop003-striped-dress.png" },
+      { "name": "Zip-Up Hoodie", "brand": "Cotton On Kids", "size": "7–8Y", "price": 18, "image": "https://plus.unsplash.com/premium_photo-1675183690442-b5de4b8a3571?fm=jpg&q=80&w=400&h=500&fit=crop" },
+      { "name": "Denim Overalls", "brand": "Patagonia", "size": "4–5Y", "price": 28, "image": "https://images.unsplash.com/photo-1560859259-fcf2b952aed8?fm=jpg&q=80&w=400&h=500&fit=crop" },
+      { "name": "Knit Cardigan", "brand": "Bobo Choses", "size": "6–7Y", "price": 28, "image": "https://plus.unsplash.com/premium_photo-1691367782367-2bd37f646abc?fm=jpg&q=80&w=400&h=500&fit=crop" }
+    ]
+  }
+]

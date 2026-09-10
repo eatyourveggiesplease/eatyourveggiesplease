@@ -1,0 +1,8 @@
+{
+  "name": "eat-your-veggies",
+  "version": "1.0.0",
+  "description": "Eat Your Veggies (please) — pre-loved kids clothing",
+  "dependencies": {
+    "stripe": "^14.0.0"
+  }
+}
