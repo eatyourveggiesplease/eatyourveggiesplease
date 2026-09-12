@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eat Your Veggies (please)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green:       #007a3f;
+      --green-dark:  #005a2e;
+      --green-light: #e8f5ee;
+      --orange:      #ff6b35;
+      --cream:       #f9fafb;
+      --warm-white:  #ffffff;
+      --text:        #111827;
+      --text-muted:  #4b5563;
+      --border:      #e5e7eb;
+      --radius:      12px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Quicksand', sans-serif; background: var(--cream); color: var(--text); line-height: 1.6; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; font-family: inherit; }
+
+    /* NAV */
+    nav {
+      background: var(--warm-white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo img { height: 48px; width: auto; }
+    .back-link {
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--green); }
+    .ig-nav-btn {
+      display: inline-block;
+      background: var(--orange);
+      color: white;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 8px 18px;
+      border-radius: 50px;
+      letter-spacing: 0.03em;
+      transition: opacity 0.15s;
+    }
+    .ig-nav-btn:hover { opacity: 0.88; }
+
+    /* DROP HERO */
+    .drop-hero {
+      background: var(--green);
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    .drop-hero-inner { max-width: 640px; margin: 0 auto; }
+    .drop-hero-veggie { height: 110px; width: auto; margin: 0 auto 16px; }
+    .drop-hero-label {
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .drop-hero-name {
+      font-family: 'Shrikhand', cursive;
+      font-size: 2.6rem;
+      color: #fff;
+      line-height: 1.1;
+    }
+    .drop-hero-subtitle {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    /* ITEMS */
+    .drop-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    .age-filter {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .age-pill {
+      padding: 6px 16px;
+      border-radius: 999px;
+      border: 1.5px solid var(--green);
+      background: transparent;
+      color: var(--green);
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+    .age-pill:hover { background: var(--green-light); }
+    .age-pill.active { background: var(--green); color: white; }
+    .drop-item.hidden { display: none; }
+    .drop-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .drop-item {
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+    }
+    .drop-item-img {
+      aspect-ratio: 4/5;
+      overflow: hidden;
+      cursor: zoom-in;
+      position: relative;
+    }
+    .drop-item-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .drop-item:hover .drop-item-img img { transform: scale(1.04); }
+    .drop-item-info { padding: 10px 12px; }
+    .drop-item-brand { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    .drop-item-name { font-size: 0.9rem; font-weight: 600; margin: 2px 0; }
+    .drop-item-size { font-size: 0.8rem; color: var(--text-muted); }
+    .item-buy-btn {
+      display: block;
+      width: calc(100% - 24px);
+      margin: 8px 12px 12px;
+      padding: 8px;
+      background: transparent;
+      color: var(--green);
+      border: 1.5px solid var(--green);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+    .item-buy-btn:hover { background: var(--green); color: white; }
+    .item-buy-btn:disabled { border-color: #9ca3af; color: #9ca3af; cursor: not-allowed; }
+
+    /* LIGHTBOX */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.92);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox-img { max-width: 88vw; max-height: 88vh; object-fit: contain; border-radius: 8px; display: block; }
+    .lightbox-close { position: fixed; top: 20px; right: 24px; background: none; border: none; color: white; font-size: 2rem; cursor: pointer; }
+    .lightbox-nav {
+      position: fixed; top: 50%; transform: translateY(-50%);
+      background: rgba(255,255,255,0.15); border: none; color: white;
+      font-size: 1.8rem; cursor: pointer; padding: 12px 18px; border-radius: 8px; transition: background 0.2s;
+    }
+    .lightbox-nav:hover { background: rgba(255,255,255,0.3); }
+    .lightbox-prev { left: 16px; }
+    .lightbox-next { right: 16px; }
+    .lightbox-counter { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.6); font-size: 0.85rem; }
+
+    /* NOT FOUND */
+    .not-found { text-align: center; padding: 80px 24px; color: var(--text-muted); }
+    .not-found h2 { font-family: 'Shrikhand', cursive; font-size: 2rem; color: var(--green); margin-bottom: 12px; }
+
+    /* INSTAGRAM STRIP */
+    .ig-strip {
+      background: var(--green);
+      padding: 48px 24px;
+      text-align: center;
+      margin-top: 48px;
+    }
+    .ig-strip h2 { font-family: 'Shrikhand', cursive; font-size: 1.8rem; color: #fff; margin-bottom: 10px; }
+    .ig-strip p { color: rgba(255,255,255,0.8); margin-bottom: 20px; }
+    .ig-btn {
+      display: inline-block;
+      background: white;
+      color: var(--green);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 12px 28px;
+      border-radius: 50px;
+      transition: opacity 0.15s;
+    }
+    .ig-btn:hover { opacity: 0.9; }
+
+    /* FOOTER */
+    footer {
+      background: var(--text);
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.82rem;
+    }
+    footer strong { color: white; }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .drop-hero-name { font-size: 2rem; }
+      .nav-inner { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <img src="/veggies-nav.png" alt="Eat Your Veggies (please)" />
+      </a>
+      <a class="back-link" href="/">← All drops</a>
+      <a class="ig-nav-btn" href="https://www.instagram.com/eatyourveggies_please" target="_blank" rel="noopener">Follow us</a>
+    </div>
+  </nav>
+
+  <!-- DROP HERO — rendered by JS -->
+  <div id="dropHero"></div>
+
+  <!-- ITEMS -->
+  <main class="drop-section" id="shop">
+    <div class="age-filter" id="ageFilter" style="display:none;">
+      <button class="age-pill active" data-range="all">All ages</button>
+      <button class="age-pill" data-range="0-2">0–2</button>
+      <button class="age-pill" data-range="3-5">3–5</button>
+      <button class="age-pill" data-range="6-8">6–8</button>
+      <button class="age-pill" data-range="9-11">9–11</button>
+      <button class="age-pill" data-range="12-14">12–14</button>
+      <button class="age-pill" data-range="14-16">14–16</button>
+    </div>
+    <div class="drop-grid" id="dropGrid"></div>
+  </main>
+
+  <!-- INSTAGRAM STRIP -->
+  <div class="ig-strip">
+    <h2>Find us on Instagram</h2>
+    <p>Drops land on Instagram first. Follow along so you're first to shop.</p>
+    <a class="ig-btn" href="https://www.instagram.com/eatyourveggies_please" target="_blank" rel="noopener">@eatyourveggies_please</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Eat Your Veggies (please)</strong> · Melbourne, Australia</p>
+    <p style="margin-top:6px">© 2026 Eat Your Veggies (please) · All items sold as described</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lbClose">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lbPrev">‹</button>
+    <img class="lightbox-img" id="lbImg" src="" alt="" />
+    <button class="lightbox-nav lightbox-next" id="lbNext">›</button>
+    <div class="lightbox-counter" id="lbCounter"></div>
+  </div>
+
+  <script>
+    // Get drop ID from URL path: /drop/002 → "002"
+    const pathParts = window.location.pathname.split('/').filter(Boolean);
+    const dropId = pathParts[pathParts.length - 1];
+
+    function getItemImages(item) {
+      if (item.images && item.images.length) return item.images.map(src => ({ src, alt: item.name }));
+      if (item.image) return [{ src: item.image, alt: item.name }];
+      return [];
+    }
+
+    function parseAgeRange(sizeStr) {
+      const nums = (sizeStr || '').match(/\d+/g);
+      if (!nums) return [0, 20];
+      const ages = nums.map(Number);
+      return [Math.min(...ages), Math.max(...ages)];
+    }
+
+    async function init() {
+      const res = await fetch('/drops.json');
+      const drops = await res.json();
+
+      const drop = drops.find(d => d.dropNumber === dropId || d.id === `drop-${dropId}`);
+
+      if (!drop) {
+        document.getElementById('dropHero').innerHTML = `
+          <div class="not-found">
+            <h2>Drop not found</h2>
+            <p>That drop doesn't exist yet — check back soon, or <a href="/" style="color:var(--green);font-weight:600;">see all current drops</a>.</p>
+          </div>`;
+        return;
+      }
+
+      // Update page title
+      document.title = `Drop ${drop.dropLabel} — ${drop.dropName} · Eat Your Veggies (please)`;
+
+      // Render hero
+      document.getElementById('dropHero').innerHTML = `
+        <div class="drop-hero">
+          <div class="drop-hero-inner">
+            <img class="drop-hero-veggie" src="/${drop.veggie}" alt="" aria-hidden="true" />
+            <p class="drop-hero-label">Drop ${drop.dropLabel}</p>
+            <h1 class="drop-hero-name">${drop.dropName}</h1>
+            ${drop.dropSubtitle ? `<p class="drop-hero-subtitle">${drop.dropSubtitle}</p>` : ''}
+          </div>
+        </div>`;
+
+      // Show age filter
+      document.getElementById('ageFilter').style.display = '';
+
+      // Render grid
+      const grid = document.getElementById('dropGrid');
+      grid.innerHTML = drop.items.map((item, i) => {
+        const imgs = getItemImages(item);
+        const firstImg = imgs[0] || { src: '', alt: item.name };
+        const hasMultiple = imgs.length > 1;
+        return `
+        <div class="drop-item" data-index="${i}" data-size="${item.size || ''}">
+          <div class="drop-item-img" data-index="${i}">
+            <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" />
+            ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px">${imgs.length} photos</span>` : ''}
+          </div>
+          <div class="drop-item-info">
+            <div class="drop-item-brand">${item.brand || ''}</div>
+            <div class="drop-item-name">${item.name}</div>
+            <div class="drop-item-size">${item.size ? 'Size ' + item.size : ''}</div>
+          </div>
+          ${!drop.sold && item.price ? `<button class="item-buy-btn" data-item-index="${i}">Buy this · $${item.price}</button>` : ''}
+        </div>`;
+      }).join('');
+
+      // Lightbox events
+      grid.querySelectorAll('.drop-item-img').forEach(el => {
+        el.addEventListener('click', () => {
+          const item = drop.items[parseInt(el.dataset.index)];
+          openLightbox(getItemImages(item), 0);
+        });
+      });
+
+      // Buy button events
+      grid.querySelectorAll('.item-buy-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          const item = drop.items[parseInt(btn.dataset.itemIndex)];
+          buyItem(btn, drop, item);
+        });
+      });
+    }
+
+    // ─── LIGHTBOX ─────────────────────────────────────────────────────────────
+    let lbImages = [], lbIndex = 0;
+
+    function openLightbox(images, index) {
+      lbImages = images; lbIndex = index;
+      showLbImage();
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    function showLbImage() {
+      document.getElementById('lbImg').src = lbImages[lbIndex].src;
+      document.getElementById('lbImg').alt = lbImages[lbIndex].alt;
+      document.getElementById('lbCounter').textContent = `${lbIndex + 1} / ${lbImages.length}`;
+      document.getElementById('lbPrev').style.display = lbImages.length > 1 ? '' : 'none';
+      document.getElementById('lbNext').style.display = lbImages.length > 1 ? '' : 'none';
+    }
+    document.getElementById('lbClose').addEventListener('click', closeLightbox);
+    document.getElementById('lightbox').addEventListener('click', e => { if (e.target === e.currentTarget) closeLightbox(); });
+    document.getElementById('lbPrev').addEventListener('click', () => { lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length; showLbImage(); });
+    document.getElementById('lbNext').addEventListener('click', () => { lbIndex = (lbIndex + 1) % lbImages.length; showLbImage(); });
+    document.addEventListener('keydown', e => {
+      if (!document.getElementById('lightbox').classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') { lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length; showLbImage(); }
+      if (e.key === 'ArrowRight') { lbIndex = (lbIndex + 1) % lbImages.length; showLbImage(); }
+    });
+
+    // ─── AGE FILTER ───────────────────────────────────────────────────────────
+    document.getElementById('ageFilter').addEventListener('click', e => {
+      const pill = e.target.closest('.age-pill');
+      if (!pill) return;
+      document.querySelectorAll('.age-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      const range = pill.dataset.range;
+      document.querySelectorAll('.drop-item').forEach(item => {
+        if (range === 'all') { item.classList.remove('hidden'); return; }
+        const [low, high] = range.split('-').map(Number);
+        const [itemLow, itemHigh] = parseAgeRange(item.dataset.size || '');
+        item.classList.toggle('hidden', !(itemLow <= high && itemHigh >= low));
+      });
+    });
+
+    // ─── BUY ──────────────────────────────────────────────────────────────────
+    async function buyItem(btn, drop, item) {
+      const original = btn.textContent;
+      btn.textContent = 'Redirecting…';
+      btn.disabled = true;
+      try {
+        const res = await fetch('/api/create-checkout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            items: [{
+              id: `${drop.id}-${item.name.toLowerCase().replace(/\s+/g, '-')}`,
+              name: `${item.name} (${item.brand}, Size ${item.size}) — Drop ${drop.dropLabel}`,
+              price: item.price,
+              quantity: 1
+            }]
+          }),
+        });
+        const data = await res.json();
+        if (data.url) { window.location.href = data.url; }
+        else throw new Error(data.error || 'Could not create checkout session');
+      } catch (err) {
+        console.error(err);
+        alert('Something went wrong. Please try again.');
+        btn.textContent = original;
+        btn.disabled = false;
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>

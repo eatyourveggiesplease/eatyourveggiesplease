@@ -1,3 +1,6 @@
 {
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "rewrites": [
+    { "source": "/drop/:id", "destination": "/drop.html" }
+  ]
 }
