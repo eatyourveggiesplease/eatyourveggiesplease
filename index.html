@@ -455,11 +455,11 @@
     /* ─── PICK OF THE HARVEST ─── */
     .pick-overlay { position: absolute; inset: 0; pointer-events: none; z-index: 2; overflow: hidden; }
     .pick-harvest-banner {
-      position: absolute; top: 8px; left: -20px; width: 200px;
-      background: var(--orange); color: #fff;
+      position: absolute; top: -8px; left: -43px; width: 140px;
+      background: #ff6b35; color: #fff;
       font-family: 'Quicksand', sans-serif; font-size: 0.58rem; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase; text-align: center;
-      padding: 5px 0; transform: rotate(-35deg);
+      letter-spacing: 0.08em; text-transform: uppercase; text-align: center;
+      padding: 20px 0 8px; transform: rotate(-35deg);
       box-shadow: -400px 0 0 0 #ff6b35, 400px 0 0 0 #ff6b35;
     }
     .pick-rosette { position: absolute; top: 4px; right: 4px; width: 64px; height: 82px; filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3)); }
@@ -1112,7 +1112,7 @@
 
     function pickOfHarvestOverlay() {
       return '<div class="pick-overlay">' +
-        '<div class="pick-harvest-banner">Pick of the Harvest</div>' +
+        '<div class="pick-harvest-banner">Harvest Pick</div>' +
         '<svg class="pick-rosette" viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg">' +
         '<polygon points="27,60 33,60 30,88 28,84 26,88" fill="#005a2e"/>' +
         '<polygon points="37,60 43,60 44,88 42,84 40,88" fill="#005a2e"/>' +
@@ -1168,6 +1168,7 @@
                   <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" />
                   ${item.featured ? pickOfHarvestOverlay() : ''}
                   ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${imgs.length} photos</span>` : ''}
+                  ${item.condition ? `<span style="position:absolute;bottom:8px;left:8px;background:rgba(0,100,50,0.82);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${item.condition}</span>` : ''}
                 </div>
                 <div class="drop-item-info">
                   <div class="drop-item-brand">${item.brand}</div>
@@ -1193,6 +1194,7 @@
                     <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" />
                     ${item.featured ? pickOfHarvestOverlay() : ''}
                     ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${imgs.length} photos</span>` : ''}
+                    ${item.condition ? `<span style="position:absolute;bottom:8px;left:8px;background:rgba(0,100,50,0.82);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${item.condition}</span>` : ''}
                   </div>
                   <div class="drop-item-info">
                     <div class="drop-item-brand">${item.brand}</div>
