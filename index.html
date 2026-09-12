@@ -1025,8 +1025,8 @@
         const res = await fetch('drops.json');
         const drops = await res.json();
 
-        // Sort by drop number descending — latest first
-        drops.sort((a, b) => b.dropNumber.localeCompare(a.dropNumber));
+        // Sort by drop number ascending — oldest first
+        drops.sort((a, b) => a.dropNumber.localeCompare(b.dropNumber));
 
         const live = drops.filter(d => !d.draft);
         const activeDrops = live.filter(d => !d.sold);
