@@ -290,7 +290,36 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 16px;
+      margin-bottom: 24px;
+    }
+    .drop-more-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .drop-more-section {
       margin-bottom: 48px;
+      text-align: center;
+    }
+    .drop-more-btn {
+      background: none;
+      border: 2px solid var(--green);
+      color: var(--green);
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 10px 24px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .drop-more-btn:hover {
+      background: var(--green);
+      color: #fff;
+    }
+    @media (max-width: 600px) {
+      .drop-item-mid { display: none; }
     }
     .drop-item {
       border-radius: 12px;
@@ -1077,12 +1106,13 @@
             </div>
           </div>
           <div class="drop-grid">
-            ${drop.items.map((item, i) => {
+            ${drop.items.slice(0, 8).map((item, i) => {
               const imgs = getItemImages(item);
               const firstImg = imgs[0] || { src: '', alt: item.name };
               const hasMultiple = imgs.length > 1;
+              const midClass = i >= 4 ? ' drop-item-mid' : '';
               return `
-              <div class="drop-item" data-drop="${drop.id}" data-index="${i}" data-size="${item.size || ''}">
+              <div class="drop-item${midClass}" data-drop="${drop.id}" data-index="${i}" data-size="${item.size || ''}">
                 <div class="drop-item-img" data-drop="${drop.id}" data-index="${i}" style="position:relative">
                   <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" />
                   ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px">${imgs.length} photos</span>` : ''}
@@ -1096,6 +1126,31 @@
               </div>`;
             }).join('')}
           </div>
+          ${drop.items.length > 8 ? `
+          <div class="drop-more-section">
+            <button class="drop-more-btn" data-drop-id="${drop.id}">Shop more of this drop ↓</button>
+            <div class="drop-more-grid" id="more-${drop.id}" style="display:none">
+              ${drop.items.slice(8).map((item, i) => {
+                const idx = i + 8;
+                const imgs = getItemImages(item);
+                const firstImg = imgs[0] || { src: '', alt: item.name };
+                const hasMultiple = imgs.length > 1;
+                return `
+                <div class="drop-item" data-drop="${drop.id}" data-index="${idx}" data-size="${item.size || ''}">
+                  <div class="drop-item-img" data-drop="${drop.id}" data-index="${idx}" style="position:relative">
+                    <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" />
+                    ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px">${imgs.length} photos</span>` : ''}
+                  </div>
+                  <div class="drop-item-info">
+                    <div class="drop-item-brand">${item.brand}</div>
+                    <div class="drop-item-name">${item.name}</div>
+                    <div class="drop-item-size">Size ${item.size}</div>
+                  </div>
+                  ${!drop.sold && item.price ? `<button class="item-buy-btn" data-item-index="${idx}">Buy this · $${item.price}</button>` : ''}
+                </div>`;
+              }).join('')}
+            </div>
+          </div>` : ''}
           <div class="drop-buy" style="display:none"></div>
         `;
 
@@ -1117,6 +1172,19 @@
             buyItem(btn, drop, item);
           });
         });
+
+        // "Shop more" expand button
+        const moreBtn = block.querySelector('.drop-more-btn');
+        if (moreBtn) {
+          moreBtn.addEventListener('click', () => {
+            const moreGrid = document.getElementById(`more-${drop.id}`);
+            const midItems = block.querySelectorAll('.drop-item-mid');
+            const isOpen = moreGrid.style.display !== 'none';
+            moreGrid.style.display = isOpen ? 'none' : 'grid';
+            midItems.forEach(el => el.style.display = isOpen ? '' : 'block');
+            moreBtn.textContent = isOpen ? 'Shop more of this drop ↓' : 'Show less ↑';
+          });
+        }
 
         // Full drop buy button — currently hidden
       });
