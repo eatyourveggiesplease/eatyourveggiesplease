@@ -437,6 +437,18 @@
     }
     .drop-item { cursor: default; }
     .drop-item-img { cursor: zoom-in; }
+
+    /* ─── PICK OF THE HARVEST ─── */
+    .pick-overlay { position: absolute; inset: 0; pointer-events: none; z-index: 2; overflow: hidden; }
+    .pick-harvest-banner {
+      position: absolute; top: 22px; left: -46px; width: 172px;
+      background: var(--orange); color: #fff;
+      font-family: 'Quicksand', sans-serif; font-size: 0.58rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; text-align: center;
+      padding: 5px 0; transform: rotate(-35deg);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .pick-rosette { position: absolute; top: 4px; right: 4px; width: 64px; height: 82px; filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3)); }
     .drop-sold-badge {
       display: inline-block;
       background: #fee2e2;
@@ -971,9 +983,9 @@
           <button class="style-pill" data-style="The Skate Park — concrete cool, relaxed fits, graphic tees"><img src="veggies/turnip.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">The Skate Park</button>
           <button class="style-pill" data-style="The Lemonade Stand — bright, bold, full of colour"><img src="veggies/carrot.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">The Lemonade Stand</button>
           <button class="style-pill" data-style="The Mud Kitchen — crisp checks, classic denim, easy layers"><img src="veggies/eggplant.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">The Mud Kitchen</button>
-          <button class="style-pill" data-style="🌊 Beach Shack — relaxed, coastal, easy layers">🌊 Beach Shack</button>
-          <button class="style-pill" data-style="🌸 Garden Party — soft prints, sweet and playful">🌸 Garden Party</button>
-          <button class="style-pill" data-style="🍽️ Sunday Lunch — smart casuals, occasion ready">🍽️ Sunday Lunch</button>
+          <button class="style-pill" data-style="🌊 Beach Shack — relaxed, coastal, easy layers"><img src="veggies/cucumber.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">Beach Shack</button>
+          <button class="style-pill" data-style="🌸 Garden Party — soft prints, sweet and playful"><img src="veggies/tomato.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">Garden Party</button>
+          <button class="style-pill" data-style="🍽️ Sunday Lunch — smart casuals, occasion ready"><img src="veggies/onion.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">Sunday Lunch</button>
         </div>
       </div>
       <div class="shopper-steps">
@@ -1078,6 +1090,20 @@
       }
     }
 
+    function pickOfHarvestOverlay() {
+      return '<div class="pick-overlay">' +
+        '<div class="pick-harvest-banner">Pick of the Harvest</div>' +
+        '<svg class="pick-rosette" viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg">' +
+        '<polygon points="27,60 33,60 30,88 28,84 26,88" fill="#005a2e"/>' +
+        '<polygon points="37,60 43,60 44,88 42,84 40,88" fill="#005a2e"/>' +
+        '<polygon points="35,5 40.7,13.8 50,9 50.6,19.4 61,20 56.2,29.3 65,35 56.2,40.7 61,50 50.6,50.6 50,61 40.7,56.2 35,65 29.3,56.2 20,61 19.4,50.6 9,50 13.8,40.7 5,35 13.8,29.3 9,20 19.4,19.4 20,9 29.3,13.8" fill="#007a3f"/>' +
+        '<circle cx="35" cy="35" r="22" fill="#ff6b35"/>' +
+        '<circle cx="35" cy="35" r="15" fill="#fff3ee"/>' +
+        '<text x="35" y="32" text-anchor="middle" font-family="Shrikhand, cursive" font-size="13" fill="#007a3f" font-weight="bold">1st</text>' +
+        '<text x="35" y="42" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="6" fill="#007a3f" font-weight="700" letter-spacing="1">PRIZE</text>' +
+        '</svg></div>';
+    }
+
     function getItemImages(item) {
       if (item.images && item.images.length) return item.images.map(src => ({ src, alt: item.name }));
       if (item.image) return [{ src: item.image, alt: item.name }];
@@ -1118,7 +1144,8 @@
               <div class="drop-item${midClass}" data-drop="${drop.id}" data-index="${i}" data-size="${item.size || ''}">
                 <div class="drop-item-img" data-drop="${drop.id}" data-index="${i}" style="position:relative">
                   <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" />
-                  ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px">${imgs.length} photos</span>` : ''}
+                  ${item.featured ? pickOfHarvestOverlay() : ''}
+                  ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${imgs.length} photos</span>` : ''}
                 </div>
                 <div class="drop-item-info">
                   <div class="drop-item-brand">${item.brand}</div>
@@ -1142,7 +1169,8 @@
                 <div class="drop-item" data-drop="${drop.id}" data-index="${idx}" data-size="${item.size || ''}">
                   <div class="drop-item-img" data-drop="${drop.id}" data-index="${idx}" style="position:relative">
                     <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" />
-                    ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px">${imgs.length} photos</span>` : ''}
+                    ${item.featured ? pickOfHarvestOverlay() : ''}
+                    ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${imgs.length} photos</span>` : ''}
                   </div>
                   <div class="drop-item-info">
                     <div class="drop-item-brand">${item.brand}</div>
