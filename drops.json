@@ -41,18 +41,18 @@
     "sold": false,
     "soldDate": null,
     "items": [
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d2-1-1.jpg", "images/d2-1-2.jpg"] },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d2-2.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d2-3-1.jpg", "images/d2-3-2.jpg"] },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d2-4.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d2-5.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d2-6.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d2-7.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d2-8.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d2-9.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d2-10-1.jpg", "images/d2-10-2.jpg"] },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d2-11.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d2-12.jpg" }
+      { "name": "Butterfly Print Skinny Pants", "brand": "Okaidi", "size": "7Y", "price": 21, "images": ["images/d2-1-1.jpg", "images/d2-1-2.jpg"] },
+      { "name": "Purebaby Grosuit", "brand": "Purebaby", "size": "0000", "price": 15, "image": "images/d2-2.jpg" },
+      { "name": "Yellow Cardigan", "brand": "Bonpoint", "size": "8Y", "price": 50, "images": ["images/d2-3-1.jpg", "images/d2-3-2.jpg"] },
+      { "name": "Cotton Blazer", "brand": "Young Hearts / Collette Dinnigan", "size": "5Y", "price": 18, "image": "images/d2-4.jpg" },
+      { "name": "Mustard Pants", "brand": "Petit Bateau", "size": "4Y", "price": 29, "image": "images/d2-5.jpg" },
+      { "name": "Summer Striped Shirt", "brand": "Collette Dinnigan x Cotton On", "size": "4Y", "price": 15, "image": "images/d2-6.jpg" },
+      { "name": "Striped Singlet Top", "brand": "Max Studio Kids", "size": "2Y", "price": 18, "image": "images/d2-7.jpg" },
+      { "name": "Elephant Play Suit", "brand": "Baby Berry", "size": "0000", "price": 15, "image": "images/d2-8.jpg" },
+      { "name": "Mustard Shorts", "brand": "Target", "size": "8Y", "price": 10, "image": "images/d2-9.jpg" },
+      { "name": "Yellow Bomber Jacket", "brand": "Hua Ban Hu", "size": "6-12m", "price": 15, "images": ["images/d2-10-1.jpg", "images/d2-10-2.jpg"] },
+      { "name": "Denim Skirt", "brand": "Esprit", "size": "2Y", "price": 10, "image": "images/d2-11.jpg" },
+      { "name": "Navy Tee", "brand": "No Brand", "size": "4Y", "price": 10, "image": "images/d2-12.jpg" }
     ]
   },
   {
@@ -66,21 +66,21 @@
     "sold": false,
     "soldDate": null,
     "items": [
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d3-1-1.jpg", "images/d3-1-2.jpg"] },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-2.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-3.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d3-4-1.jpg", "images/d3-4-2.jpg"] },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d3-5-1.jpg", "images/d3-5-2.jpg"] },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d3-6-1.jpg", "images/d3-6-2.jpg"] },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-7.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d3-8-1.jpg", "images/d3-8-2.jpg"] },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-9.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-10.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-11.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d3-12-1.jpg", "images/d3-12-2.jpg"] },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d3-13-1.jpg", "images/d3-13-2.jpg"] },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-14.jpg" },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-15.jpg" }
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/D3 1.1", "images/D3 1.2"] },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/D3 2.JPG" },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/D3 3.JPG" },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/D3 4.1", "images/D3 4.2"] },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/D3 5.1", "images/D3 5.2"] },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/D3 6.1", "images/D3 6.2"] },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/D3 7.JPG" },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/D3 8.1", "images/D3 8.2"] },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/D3 9.JPG" },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/D3 10.JPG" },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/D3 11.JPG" },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/D3 12.1", "images/D3 12.2"] },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/D3 13.1", "images/D3 13.2"] },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/D3 14.JPG" },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/D3 15.JPG" }
     ]
   }
 ]
