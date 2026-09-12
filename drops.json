@@ -225,14 +225,18 @@
         "images": [
           "images/d2-1-1.jpg",
           "images/d2-1-2.jpg"
-        ]
+        ],
+        "description": "Spring has sprung with these smart yet whimsical butterfly pants. Skinny cotton pants. Belt loops. Button and zip opening. Adjustable waistband. 4 pockets. Fancy piped pocket detail and ankle slits.",
+        "condition": "As good as new"
       },
       {
         "name": "Purebaby Grosuit",
         "brand": "Purebaby",
         "size": "0000",
         "price": 15,
-        "image": "images/d2-3-2.jpg"
+        "image": "images/d2-3-2.jpg",
+        "description": "100% cotton. White footed zip growsuit with two way zip for easy dressing.",
+        "condition": "As good as new"
       },
       {
         "name": "Yellow Cardigan",
@@ -242,14 +246,18 @@
         "images": [
           "images/d2-2.jpg",
           "images/d2-3-1.jpg"
-        ]
+        ],
+        "description": "Delicate and oh so soft! Organic Cotton. The crew neck design is decorated with allover cherry motifs. Front button fastening. Ribbed finishes. Former owner's names appear on item tag.",
+        "condition": "Played in gently"
       },
       {
         "name": "Cotton Blazer",
         "brand": "Young Hearts / Collette Dinnigan",
         "size": "5Y",
         "price": 18,
-        "image": "images/d2-8.jpg"
+        "image": "images/d2-8.jpg",
+        "description": "Ahoy! Cotton Blazer with lighthouse/nautical print cotton lining. Two buttons. Two pockets.",
+        "condition": "As good as new"
       },
       {
         "name": "Mustard Pants",
@@ -257,35 +265,45 @@
         "size": "4Y",
         "price": 29,
         "featured": true,
-        "image": "images/d2-4.jpg"
+        "image": "images/d2-4.jpg",
+        "description": "Soft and comfortable cotton trousers. Straight leg. Adjustable waist with an elastic inside. Zip and popper fastening.",
+        "condition": "As good as new"
       },
       {
         "name": "Summer Striped Shirt",
         "brand": "Collette Dinnigan x Cotton On",
         "size": "4Y",
         "price": 15,
-        "image": "images/d2-9.jpg"
+        "image": "images/d2-9.jpg",
+        "description": "Linen/Cotton Blend for cosy, but fancy. Short sleeved. Collar. Front buttons. Wear open over a t-shirt or closed for important business.",
+        "condition": "As good as new"
       },
       {
         "name": "Striped Singlet Top",
         "brand": "Max Studio Kids",
         "size": "2Y",
         "price": 18,
-        "image": "images/d2-6.jpg"
+        "image": "images/d2-6.jpg",
+        "description": "Breezy summer top. Buttons down the front. Tiered and gathered. Cotton lace trim. Sweet bow detail on the shoulder. Lined in soft cotton for extra comfort.",
+        "condition": "As good as new"
       },
       {
         "name": "Elephant Play Suit",
         "brand": "Baby Berry",
         "size": "0000",
         "price": 15,
-        "image": "images/d2-5.jpg"
+        "image": "images/d2-5.jpg",
+        "description": "Organic cotton sleeveless romper. Nappy press studs and shoulder stud for ease of dressing.",
+        "condition": "As good as new"
       },
       {
         "name": "Mustard Shorts",
         "brand": "Target",
         "size": "8Y",
         "price": 10,
-        "image": "images/d2-7.jpg"
+        "image": "images/d2-7.jpg",
+        "description": "Cotton/Nylon. Regular Fit. Elastic waistband with soft bias band lining for ultimate comfort. Angled hip pockets. Back welt pockets. Drawstring. Mock fly front. Above the knee length.",
+        "condition": "Played in happily"
       },
       {
         "name": "Yellow Bomber Jacket",
@@ -295,21 +313,27 @@
         "images": [
           "images/d2-10-1.jpg",
           "images/d2-10-2.jpg"
-        ]
+        ],
+        "description": "Cotton jacket. Central zip with very cute crab embroidery on the front and fun crab print across the back. Round neck, with tiny angled pockets at the front. Cotton elastic waist, neck and wrist cuffs.",
+        "condition": "Played in gently"
       },
       {
         "name": "Denim Skirt",
         "brand": "Esprit",
         "size": "2Y",
         "price": 10,
-        "image": "images/d2-11.jpg"
+        "image": "images/d2-11.jpg",
+        "description": "Denim Skirt. Adjustable elastic at waist. Zip fly and button. Front pockets. Back pockets with cute 'e' embroidery in fawn-coloured stitch.",
+        "condition": "Played in gently"
       },
       {
         "name": "Navy Tee",
         "brand": "No Brand",
         "size": "4Y",
         "price": 10,
-        "image": "images/d2-12.jpg"
+        "image": "images/d2-12.jpg",
+        "description": "Soft cotton tee. Hand sewn ikat pocket detail, with cute star tag.",
+        "condition": "As good as new"
       }
     ]
   },

@@ -1147,12 +1147,14 @@
         block.innerHTML = `
           ${dropIdx > 0 ? '<hr class="drop-divider">' : ''}
           <div class="drop-header">
-            <img class="drop-veggie" src="${drop.veggie}" alt="" aria-hidden="true" />
-            <div>
-              <p class="drop-label">Drop ${drop.dropLabel}</p>
-              <h2>${drop.dropName || ''}</h2>
-              ${drop.dropSubtitle ? `<p class="drop-subtitle-text">${drop.dropSubtitle}</p>` : ''}
-            </div>
+            <a href="/drop/${drop.id}" style="display:flex;align-items:center;gap:20px;text-decoration:none;color:inherit;">
+              <img class="drop-veggie" src="${drop.veggie}" alt="" aria-hidden="true" />
+              <div>
+                <p class="drop-label">Drop ${drop.dropLabel}</p>
+                <h2 style="text-decoration:underline;text-underline-offset:4px;">${drop.dropName || ''}</h2>
+                ${drop.dropSubtitle ? `<p class="drop-subtitle-text">${drop.dropSubtitle}</p>` : ''}
+              </div>
+            </a>
           </div>
           <div class="drop-grid">
             ${drop.items.slice(0, 8).map((item, i) => {
