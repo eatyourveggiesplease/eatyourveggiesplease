@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQs — Eat Your Veggies (please)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green:       #007a3f;
+      --green-dark:  #005a2e;
+      --green-light: #e8f5ee;
+      --orange:      #ff6b35;
+      --cream:       #f9fafb;
+      --warm-white:  #ffffff;
+      --text:        #111827;
+      --text-muted:  #4b5563;
+      --border:      #e5e7eb;
+      --radius:      12px;
+      --shadow:      0 2px 16px rgba(0,0,0,0.07);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; font-family: inherit; }
+
+    /* NAV */
+    nav {
+      background: var(--warm-white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo img { height: 40px; width: auto; }
+    .nav-right { display: flex; gap: 24px; }
+    .nav-link { font-weight: 600; font-size: 0.95rem; color: var(--text); transition: color 0.2s; }
+    .nav-link:hover { color: var(--green); }
+
+    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: 0.3s; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background: var(--warm-white);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 32px;
+      gap: 16px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-weight: 600; font-size: 1rem; }
+
+    /* PAGE */
+    .page-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 32px 96px;
+    }
+
+    .page-title {
+      font-family: 'Shrikhand', cursive;
+      font-size: 2.8rem;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+    .page-subtitle {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 48px;
+    }
+
+    /* FAQ items */
+    .faq-list { display: flex; flex-direction: column; gap: 0; }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .faq-question:hover { color: var(--green); }
+    .faq-question .chevron {
+      flex-shrink: 0;
+      font-size: 1.1rem;
+      color: var(--green);
+      transition: transform 0.25s;
+    }
+    .faq-item.open .faq-question .chevron { transform: rotate(180deg); }
+
+    .faq-answer {
+      display: none;
+      padding: 0 0 20px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .faq-answer a { color: var(--green); text-decoration: underline; }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* Footer */
+    footer {
+      background: var(--green);
+      color: #fff;
+      text-align: center;
+      padding: 32px;
+      font-size: 0.85rem;
+    }
+    footer a { color: #fff; text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .nav-right { display: none; }
+      .hamburger { display: flex; }
+      .page-title { font-size: 2rem; }
+      .page-inner { padding: 40px 20px 72px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="logo">
+        <a href="/"><img src="veggies-nav.png" alt="Eat Your Veggies (please)" /></a>
+      </div>
+      <div class="nav-right">
+        <a class="nav-link" href="/#shop">Drops</a>
+        <a class="nav-link" href="/#about">About</a>
+        <a class="nav-link" href="/faqs">FAQs</a>
+        <a class="nav-link" href="https://www.instagram.com/eatyourveggies_please" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/#shop">Drops</a>
+    <a href="/#about">About</a>
+    <a href="/faqs">FAQs</a>
+    <a href="https://www.instagram.com/eatyourveggies_please" target="_blank" rel="noopener">Instagram</a>
+  </div>
+
+  <div class="page-inner">
+    <h1 class="page-title">FAQs</h1>
+    <p class="page-subtitle">Everything you need to know about shopping with us.</p>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How do drops work?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          We release small curated collections of preloved kids clothing called drops. Each drop has a theme and a limited number of items — once they're gone, they're gone. New drops are announced on Instagram first, so follow us at <a href="https://www.instagram.com/eatyourveggies_please" target="_blank">@eatyourveggies_please</a> to be the first to know.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How do I buy an item?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          Browse the current drop on our site and click "Buy this" on the item you'd like. You'll be taken to a secure Stripe checkout where you can pay by card. Each item is sold individually — first in, first served.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          What condition are the items in?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          Every item is graded before it goes into a drop. You'll see one of three condition notes on each listing: <strong>As good as new</strong> (minimal or no signs of wear), <strong>Played in gently</strong> (light wear, no damage), or <strong>Played in happily</strong> (well loved, any notable marks or wear are described). We never list anything we wouldn't be happy to put on our own kids.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Do you offer shipping, and how much does it cost?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          Yes — we ship Australia-wide. Shipping costs are calculated at checkout. We're based in Melbourne and aim to post within 2–3 business days of your order. Local pickup in Melbourne may also be available — get in touch via Instagram if you'd like to arrange it.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          What sizes do you stock?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          It varies by drop — we stock everything from newborn up to about 14–16Y depending on what we've curated. Each item has its size listed, and you can filter by age range on the shop page to find what fits your little one.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Can I return or exchange an item?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          Because all items are preloved, we're unable to offer returns or exchanges unless an item is significantly not as described. We do our best to accurately describe and photograph every piece — if something arrives and you have a concern, please reach out to us on Instagram and we'll do our best to sort it out.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How do I pay?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          We accept all major credit and debit cards via Stripe, a secure payment platform. We don't store your card details. You'll receive an order confirmation by email after checkout.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Why buy preloved?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          Kids grow fast — often faster than they can wear things out. Buying preloved keeps great clothes in circulation, reduces waste, and means you can dress your kids in quality brands at a fraction of the original price. It's better for the planet and easier on the wallet. Win win.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How often do you release new drops?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          There's no set schedule — we drop when we have a collection worth dropping. Follow us on Instagram to get notified as soon as a new drop goes live.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          I missed a drop — will the items come back?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          Sold drops are archived on the site so you can browse past collections, but once an item is sold it's gone for good. Keep an eye on our Instagram for when new drops land.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Can I sell my kids' clothes through Eat Your Veggies?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          We love hearing from people who want to pass on great clothes! Slide into our DMs on Instagram at <a href="https://www.instagram.com/eatyourveggies_please" target="_blank">@eatyourveggies_please</a> and we'll have a chat.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Eat Your Veggies (please) · Melbourne, Australia · All items sold as described</p>
+  </footer>
+
+  <script>
+    // Accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
