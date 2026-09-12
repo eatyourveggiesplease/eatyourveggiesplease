@@ -22,8 +22,8 @@
     "dropName": "The Nature Kid",
     "veggie": "veggies/carrot.png",
     "price": 75,
-    "sold": true,
-    "soldDate": "August 2026",
+    "sold": false,
+    "soldDate": null,
     "items": [
       { "name": "Patterned Trousers", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d002-trousers-1.jpg", "images/d002-trousers-2.jpg"] },
       { "name": "Knit Cardigan", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d002-cardigan-1.jpg", "images/d002-cardigan-2.jpg"] },

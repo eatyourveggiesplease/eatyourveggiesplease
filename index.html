@@ -224,7 +224,18 @@
       color: white;
     }
 
-    /* ─── CURRENT DROP ─── */
+    /* ─── CURRENT DROPS ─── */
+    .drop-divider {
+      border: none;
+      border-top: 2px solid var(--border);
+      margin: 56px 0;
+    }
+    .drop-subtitle-text {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin: 4px 0 0;
+      font-style: italic;
+    }
     .drop-section {
       max-width: 1100px;
       margin: 0 auto;
@@ -891,16 +902,8 @@
   </section>
 
 
-  <!-- CURRENT DROP -->
+  <!-- CURRENT DROPS -->
   <main class="drop-section" id="shop">
-    <div class="drop-header">
-      <img id="dropVeggie" src="" alt="" aria-hidden="true" />
-      <div>
-        <p class="drop-label">Current drop</p>
-        <h2 id="dropTitle">Loading…</h2>
-        <p id="dropSubtitle" style="font-size:0.95rem; color:var(--text-muted); margin:4px 0 0; font-style:italic;"></p>
-      </div>
-    </div>
     <div class="age-filter" id="ageFilter" style="display:none;">
       <button class="age-pill active" data-range="all">All ages</button>
       <button class="age-pill" data-range="0-2">0–2</button>
@@ -910,13 +913,7 @@
       <button class="age-pill" data-range="12-14">12–14</button>
       <button class="age-pill" data-range="14-16">14–16</button>
     </div>
-    <div class="drop-grid" id="dropGrid"></div>
-    <div class="drop-buy" id="dropBuy">
-      <div class="drop-price-amount" id="dropPrice"></div>
-      <p class="drop-price-note">Buy the full drop · all items · Australia-wide shipping</p>
-      <button class="buy-btn" id="buyBtn">Buy the full drop</button>
-      <p class="stripe-note">🔒 Secure checkout via Stripe</p>
-    </div>
+    <div id="dropsContainer"></div>
   </main>
 
   <!-- PREVIOUS DROPS -->
@@ -1031,82 +1028,127 @@
         // Sort by drop number descending — latest first
         drops.sort((a, b) => b.dropNumber.localeCompare(a.dropNumber));
 
-        // Current = first unsold; archive = all sold
         const live = drops.filter(d => !d.draft);
-        currentDrop = live.find(d => !d.sold);
+        const activeDrops = live.filter(d => !d.sold);
         const archived = live.filter(d => d.sold);
 
-        if (currentDrop) renderCurrentDrop(currentDrop);
-        if (archived.length) renderArchive(archived);
+        currentDrop = activeDrops[0] || null;
+
+        if (activeDrops.length) renderCurrentDrops(activeDrops);
+        // Archive hidden for launch — uncomment when drops sell: if (archived.length) renderArchive(archived);
 
       } catch (e) {
         console.error('Could not load drops.json', e);
       }
     }
 
-    function renderCurrentDrop(drop) {
-      document.getElementById('dropVeggie').src = drop.veggie;
-      document.getElementById('dropTitle').textContent =
-        `Drop ${drop.dropLabel}${drop.dropName ? ': ' + drop.dropName : ''}`;
-      const subtitle = document.getElementById('dropSubtitle');
-      if (subtitle) subtitle.textContent = drop.dropSubtitle || '';
-      document.getElementById('dropPrice').textContent = `$${drop.price}`;
+    function getItemImages(item) {
+      if (item.images && item.images.length) return item.images.map(src => ({ src, alt: item.name }));
+      if (item.image) return [{ src: item.image, alt: item.name }];
+      return [];
+    }
 
-      if (drop.sold) {
-        const buySection = document.getElementById('dropBuy');
-        buySection.innerHTML = `
-          <span class="drop-sold-badge">Sold out</span>
-          <p class="drop-price-note">Follow us on Instagram for the next drop.</p>`;
-      }
-
-      function getItemImages(item) {
-        if (item.images && item.images.length) return item.images.map(src => ({ src, alt: item.name }));
-        if (item.image) return [{ src: item.image, alt: item.name }];
-        return [];
-      }
-
-      document.getElementById('dropGrid').innerHTML = drop.items.map((item, i) => {
-        const imgs = getItemImages(item);
-        const firstImg = imgs[0] || { src: '', alt: item.name };
-        const hasMultiple = imgs.length > 1;
-        return `
-        <div class="drop-item" data-index="${i}" data-size="${item.size || ''}">
-          <div class="drop-item-img" data-index="${i}" style="position:relative">
-            <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" />
-            ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px">${imgs.length} photos</span>` : ''}
-          </div>
-          <div class="drop-item-info">
-            <div class="drop-item-brand">${item.brand}</div>
-            <div class="drop-item-name">${item.name}</div>
-            <div class="drop-item-size">Size ${item.size}</div>
-          </div>
-          ${!drop.sold && item.price ? `<button class="item-buy-btn" data-item-index="${i}">Buy this · $${item.price}</button>` : ''}
-        </div>`;
-      }).join('');
-
-      // Lightbox on image click only — shows that item's photos
-      document.querySelectorAll('.drop-item-img').forEach(el => {
-        el.addEventListener('click', () => {
-          const item = drop.items[parseInt(el.dataset.index)];
-          openLightbox(getItemImages(item), 0);
-        });
-      });
+    function renderCurrentDrops(activeDrops) {
+      const container = document.getElementById('dropsContainer');
+      container.innerHTML = '';
 
       // Show age filter
-      if (!drop.sold) {
-        const filterBar = document.getElementById('ageFilter');
-        filterBar.style.display = '';
-        // Reset to All
-        filterBar.querySelectorAll('.age-pill').forEach(p => p.classList.remove('active'));
-        filterBar.querySelector('[data-range="all"]').classList.add('active');
-      }
+      const filterBar = document.getElementById('ageFilter');
+      filterBar.style.display = '';
+      filterBar.querySelectorAll('.age-pill').forEach(p => p.classList.remove('active'));
+      filterBar.querySelector('[data-range="all"]').classList.add('active');
 
-      // Individual item buy buttons
-      document.querySelectorAll('.item-buy-btn').forEach(btn => {
-        btn.addEventListener('click', e => {
-          e.stopPropagation();
-          const item = drop.items[parseInt(btn.dataset.itemIndex)];
-          buyItem(btn, drop, item);
+      activeDrops.forEach((drop, dropIdx) => {
+        const block = document.createElement('div');
+        block.className = 'drop-block';
+
+        block.innerHTML = `
+          ${dropIdx > 0 ? '<hr class="drop-divider">' : ''}
+          <div class="drop-header">
+            <img class="drop-veggie" src="${drop.veggie}" alt="" aria-hidden="true" />
+            <div>
+              <p class="drop-label">Drop ${drop.dropLabel}</p>
+              <h2>${drop.dropName || ''}</h2>
+              ${drop.dropSubtitle ? `<p class="drop-subtitle-text">${drop.dropSubtitle}</p>` : ''}
+            </div>
+          </div>
+          <div class="drop-grid">
+            ${drop.items.map((item, i) => {
+              const imgs = getItemImages(item);
+              const firstImg = imgs[0] || { src: '', alt: item.name };
+              const hasMultiple = imgs.length > 1;
+              return `
+              <div class="drop-item" data-drop="${drop.id}" data-index="${i}" data-size="${item.size || ''}">
+                <div class="drop-item-img" data-drop="${drop.id}" data-index="${i}" style="position:relative">
+                  <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" />
+                  ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px">${imgs.length} photos</span>` : ''}
+                </div>
+                <div class="drop-item-info">
+                  <div class="drop-item-brand">${item.brand}</div>
+                  <div class="drop-item-name">${item.name}</div>
+                  <div class="drop-item-size">Size ${item.size}</div>
+                </div>
+                ${!drop.sold && item.price ? `<button class="item-buy-btn" data-item-index="${i}">Buy this · $${item.price}</button>` : ''}
+              </div>`;
+            }).join('')}
+          </div>
+          <div class="drop-buy">
+            <div class="drop-price-amount">$${drop.price}</div>
+            <p class="drop-price-note">Buy the full drop · all items · Australia-wide shipping</p>
+            <button class="buy-btn drop-buy-btn">Buy the full drop</button>
+            <p class="stripe-note">🔒 Secure checkout via Stripe</p>
+          </div>
+        `;
+
+        container.appendChild(block);
+
+        // Lightbox
+        block.querySelectorAll('.drop-item-img').forEach(el => {
+          el.addEventListener('click', () => {
+            const item = drop.items[parseInt(el.dataset.index)];
+            openLightbox(getItemImages(item), 0);
+          });
+        });
+
+        // Individual buy buttons
+        block.querySelectorAll('.item-buy-btn').forEach(btn => {
+          btn.addEventListener('click', e => {
+            e.stopPropagation();
+            const item = drop.items[parseInt(btn.dataset.itemIndex)];
+            buyItem(btn, drop, item);
+          });
+        });
+
+        // Full drop buy button
+        block.querySelector('.drop-buy-btn').addEventListener('click', async function() {
+          const btn = this;
+          btn.textContent = 'Redirecting…';
+          btn.disabled = true;
+          try {
+            const res = await fetch('/api/create-checkout', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                items: [{
+                  id: drop.id,
+                  name: `Drop ${drop.dropLabel}${drop.dropName ? ' — ' + drop.dropName : ''}`,
+                  price: drop.price,
+                  quantity: 1
+                }]
+              }),
+            });
+            const data = await res.json();
+            if (data.url) {
+              window.location.href = data.url;
+            } else {
+              throw new Error(data.error || 'Could not create checkout session');
+            }
+          } catch (err) {
+            console.error(err);
+            alert('Something went wrong. Please try again.');
+            btn.textContent = 'Buy the full drop';
+            btn.disabled = false;
+          }
         });
       });
     }
@@ -1170,38 +1212,7 @@
       if (e.key === 'ArrowRight') { lbIndex = (lbIndex + 1) % lbImages.length; showLbImage(); }
     });
 
-    // ─── BUY BUTTON ──────────────────────────────────────────────────────────
-    document.getElementById('buyBtn').addEventListener('click', async () => {
-      if (!currentDrop) return;
-      const btn = document.getElementById('buyBtn');
-      btn.textContent = 'Redirecting…';
-      btn.disabled = true;
-      try {
-        const res = await fetch('/api/create-checkout', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            items: [{
-              id: currentDrop.id,
-              name: `Drop ${currentDrop.dropLabel}${currentDrop.dropName ? ' — ' + currentDrop.dropName : ''}`,
-              price: currentDrop.price,
-              quantity: 1
-            }]
-          }),
-        });
-        const data = await res.json();
-        if (data.url) {
-          window.location.href = data.url;
-        } else {
-          throw new Error(data.error || 'Could not create checkout session');
-        }
-      } catch (err) {
-        console.error(err);
-        alert('Something went wrong. Please try again.');
-        btn.textContent = 'Buy the full drop';
-        btn.disabled = false;
-      }
-    });
+    // ─── BUY BUTTON — now handled per-drop in renderCurrentDrops ────────────
 
     // ─── AGE FILTER ──────────────────────────────────────────────────────────
     function parseAgeRange(sizeStr) {
