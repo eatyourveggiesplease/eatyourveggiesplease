@@ -435,13 +435,27 @@
       bottom: 24px; left: 50%; transform: translateX(-50%);
       color: rgba(255,255,255,0.6); font-size: 0.85rem;
     }
+    .lightbox-info {
+      position: fixed;
+      bottom: 52px; left: 50%; transform: translateX(-50%);
+      max-width: 460px; width: 90%;
+      background: rgba(0,0,0,0.72);
+      border-radius: 12px;
+      padding: 14px 18px;
+      backdrop-filter: blur(6px);
+      text-align: left;
+    }
+    .lb-item-name { font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 0.95rem; color: #fff; margin-bottom: 3px; }
+    .lb-item-meta { font-size: 0.75rem; color: rgba(255,255,255,0.55); margin-bottom: 8px; letter-spacing: 0.04em; }
+    .lb-item-desc { font-size: 0.82rem; color: rgba(255,255,255,0.82); line-height: 1.6; margin-bottom: 6px; }
+    .lb-item-condition { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.7); padding: 3px 10px; border-radius: 50px; }
     .drop-item { cursor: default; }
     .drop-item-img { cursor: zoom-in; }
 
     /* ─── PICK OF THE HARVEST ─── */
     .pick-overlay { position: absolute; inset: 0; pointer-events: none; z-index: 2; overflow: hidden; }
     .pick-harvest-banner {
-      position: absolute; top: 28px; left: -20px; width: 155px;
+      position: absolute; top: 8px; left: -20px; width: 155px;
       background: var(--orange); color: #fff;
       font-family: 'Quicksand', sans-serif; font-size: 0.58rem; font-weight: 700;
       letter-spacing: 0.1em; text-transform: uppercase; text-align: center;
@@ -1062,6 +1076,12 @@
     <img class="lightbox-img" id="lbImg" src="" alt="" />
     <button class="lightbox-nav lightbox-next" id="lbNext">›</button>
     <div class="lightbox-counter" id="lbCounter"></div>
+    <div class="lightbox-info" id="lbInfo" style="display:none">
+      <div class="lb-item-name" id="lbName"></div>
+      <div class="lb-item-meta" id="lbMeta"></div>
+      <div class="lb-item-desc" id="lbDesc"></div>
+      <div class="lb-item-condition" id="lbCondition"></div>
+    </div>
   </div>
 
   <script>
@@ -1191,7 +1211,7 @@
         block.querySelectorAll('.drop-item-img').forEach(el => {
           el.addEventListener('click', () => {
             const item = drop.items[parseInt(el.dataset.index)];
-            openLightbox(getItemImages(item), 0);
+            openLightbox(getItemImages(item), 0, item);
           });
         });
 
@@ -1247,10 +1267,12 @@
     // ─── LIGHTBOX ────────────────────────────────────────────────────────────
     let lbImages = [];
     let lbIndex = 0;
+    let lbItem = null;
 
-    function openLightbox(images, index) {
+    function openLightbox(images, index, item) {
       lbImages = images;
       lbIndex = index;
+      lbItem = item || null;
       showLbImage();
       document.getElementById('lightbox').classList.add('open');
       document.body.style.overflow = 'hidden';
@@ -1267,6 +1289,17 @@
       document.getElementById('lbCounter').textContent = `${lbIndex + 1} / ${lbImages.length}`;
       document.getElementById('lbPrev').style.display = lbImages.length > 1 ? '' : 'none';
       document.getElementById('lbNext').style.display = lbImages.length > 1 ? '' : 'none';
+      const infoEl = document.getElementById('lbInfo');
+      if (lbItem && lbItem.description) {
+        document.getElementById('lbName').textContent = lbItem.name;
+        document.getElementById('lbMeta').textContent = `${lbItem.brand} · Size ${lbItem.size} · $${lbItem.price}`;
+        document.getElementById('lbDesc').textContent = lbItem.description;
+        document.getElementById('lbCondition').textContent = lbItem.condition || '';
+        document.getElementById('lbCondition').style.display = lbItem.condition ? '' : 'none';
+        infoEl.style.display = '';
+      } else {
+        infoEl.style.display = 'none';
+      }
     }
 
     document.getElementById('lbClose').addEventListener('click', closeLightbox);

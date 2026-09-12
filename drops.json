@@ -10,26 +10,200 @@
     "sold": false,
     "soldDate": null,
     "items": [
-      { "name": "White Colour-Block Top, Striped Sleeves", "brand": "Mini Bala", "size": "3Y", "price": 20, "featured": true, "images": ["images/D1 1.1", "images/D1 1.2"] },
-      { "name": "Black Cotton Overalls w/ Side Pocket", "brand": "Zara", "size": "3-4Y", "price": 12, "image": "images/D1 2.JPG" },
-      { "name": "Forest Green Converse", "brand": "Converse", "size": "US 12", "price": 15, "images": ["images/D1 3.1", "images/D1 3.2", "images/D1 3.3"] },
-      { "name": "White Long Sleeve Tee, 'New York' Graphic", "brand": "Zara", "size": "9-10Y", "price": 12, "images": ["images/D1 4.1", "images/D1 4.2"] },
-      { "name": "Black/Grey Distressed Skinny Jeans", "brand": "Bardot Junior", "size": "14Y", "price": 25, "image": "images/D1 5.JPG" },
-      { "name": "Green Shorts", "brand": "Santa Cruz", "size": "12Y", "price": 18, "image": "images/D1 6.JPG" },
-      { "name": "Zebra Print Shorts", "brand": "Bonds", "size": "10Y", "price": 10, "image": "images/D1 7.JPG" },
-      { "name": "Mint Green Knit Jumper", "brand": "H&M", "size": "5-6Y", "price": 12, "image": "images/D1 8.JPG" },
-      { "name": "Black Elastic-Waist Trousers", "brand": "Zara", "size": "11-12Y", "price": 12, "image": "images/D1 9.JPG" },
-      { "name": "Olive Green Utility Shirt, Twin Chest Pockets", "brand": "Cotton On", "size": "9-10Y", "price": 10, "image": "images/D1 10.JPG" },
-      { "name": "Grey Swim Shorts, Masked Lion Print", "brand": "Minti", "size": "2Y", "price": 10, "image": "images/D1 11.JPG" },
-      { "name": "White Ringer Tee, 'Relay Classic' Print", "brand": "Uniqlo", "size": "13Y", "price": 10, "image": "images/D1 12.JPG" },
-      { "name": "Black Long Sleeve Tee w/ Chest Pocket", "brand": "Pumpkin Patch", "size": "2Y", "price": 8, "image": "images/D1 13.JPG" },
-      { "name": "Green Tank, 'Find Your Balance' Print", "brand": "Target", "size": "12Y", "price": 8, "image": "images/D1 14.JPG" },
-      { "name": "Black Corduroy Button-Up Shirt", "brand": "Anko", "size": "14Y", "price": 12, "image": "images/D1 15.JPG" },
-      { "name": "Grey Marle Hoodie, 'Miami' Print", "brand": "Miss Mango", "size": "12Y", "price": 12, "images": ["images/D1 16.1", "images/D1 16.2"] },
-      { "name": "Lime Green Pocket Tee", "brand": "Country Road", "size": "8Y", "price": 10, "image": "images/D1 17.JPG" },
-      { "name": "Teal Corduroy Shorts", "brand": "Target", "size": "9Y", "price": 10, "image": "images/D1 18.JPG" },
-      { "name": "Cargo Pants", "brand": "Zara", "size": "6Y", "price": 18, "image": "images/D1 19.JPG" },
-      { "name": "Merino Wool Vest Hoodie", "brand": "Little Flock of Horrors", "size": "2Y", "price": 28, "image": "images/D1 20.JPG" }
+      {
+        "name": "White Colour-Block Top, Striped Sleeves",
+        "brand": "Mini Bala",
+        "size": "3Y",
+        "price": 20,
+        "featured": true,
+        "images": [
+          "images/D1 1.1",
+          "images/D1 1.2"
+        ],
+        "description": "Thick cotton tee. White colour-block top with striped sleeves.",
+        "condition": "Played in happily"
+      },
+      {
+        "name": "Black Cotton Overalls w/ Side Pocket",
+        "brand": "Zara",
+        "size": "3-4Y",
+        "price": 12,
+        "image": "images/D1 2.JPG",
+        "description": "Comfy soft cotton overalls. Easy lift over the shoulder, but button access as well. Drop crotch harem pant style for an urban relaxed style. Textured side pocket for treasures.",
+        "condition": "Played in gently"
+      },
+      {
+        "name": "Forest Green Converse",
+        "brand": "Converse",
+        "size": "US 12",
+        "price": 15,
+        "images": [
+          "images/D1 3.1",
+          "images/D1 3.2",
+          "images/D1 3.3"
+        ],
+        "description": "Such a fun colour! Visible wear/scuffing on toe caps, laces show general wear and one lace ring missing on the side.",
+        "condition": "Played in happily"
+      },
+      {
+        "name": "White Long Sleeve Tee, 'New York' Graphic",
+        "brand": "Zara",
+        "size": "9-10Y",
+        "price": 12,
+        "images": [
+          "images/D1 4.1",
+          "images/D1 4.2"
+        ],
+        "description": "Thick cotton long-sleeve tee. Fun neon graphic. Round neck. Loose fit.",
+        "condition": "Like new"
+      },
+      {
+        "name": "Black/Grey Distressed Skinny Jeans",
+        "brand": "Bardot Junior",
+        "size": "14Y",
+        "price": 25,
+        "image": "images/D1 5.JPG",
+        "description": "99% Cotton, 1% Elastine. Skinny jean with intentional distressed detailing. Adjustable elastic in waistband. 5 pockets. Button and zip fly at the front.",
+        "condition": "Played in gently"
+      },
+      {
+        "name": "Green Shorts",
+        "brand": "Santa Cruz",
+        "size": "12Y",
+        "price": 18,
+        "image": "images/D1 6.JPG",
+        "description": "100% Cotton with mesh pockets. Back pocket with velcro for safely storing treasures. Could be worn as boardshorts or casual shorts. Such a dreamy forest green colour.",
+        "condition": "Like new"
+      },
+      {
+        "name": "Zebra Print Shorts",
+        "brand": "Bonds",
+        "size": "10Y",
+        "price": 10,
+        "image": "images/D1 7.JPG",
+        "description": "Cotton elastic shorts. Elastic waist. Back pocket. Name appears on tag.",
+        "condition": "Played in happily"
+      },
+      {
+        "name": "Mint Green Knit Jumper",
+        "brand": "H&M",
+        "size": "5-6Y",
+        "price": 12,
+        "image": "images/D1 8.JPG",
+        "description": "Polyester jumper. Cropped style with balloon shaped sleeves.",
+        "condition": "Played in gently"
+      },
+      {
+        "name": "Black Elastic-Waist Trousers",
+        "brand": "Zara",
+        "size": "11-12Y",
+        "price": 12,
+        "image": "images/D1 9.JPG",
+        "description": "Cotton polyester blend. Elastic waist. Mock fly detail at the front. Cuffed bottom for extra style points. Two hidden side pockets and one sewn back pocket. Some slight pilling around the waistband \u2014 very subtle, particularly as the fabric is black!",
+        "condition": "Played in happily"
+      },
+      {
+        "name": "Olive Green Utility Shirt, Twin Chest Pockets",
+        "brand": "Cotton On",
+        "size": "9-10Y",
+        "price": 10,
+        "image": "images/D1 10.JPG",
+        "description": "Cotton utility shirt. Great on its own or styled unbuttoned over a t-shirt. Press studs down the front. Press studs on the wrists. Two pockets at the front.",
+        "condition": "Played in gently"
+      },
+      {
+        "name": "Grey Swim Shorts, Masked Lion Print",
+        "brand": "Minti",
+        "size": "2Y",
+        "price": 10,
+        "image": "images/D1 11.JPG",
+        "description": "Very cute board shorts. Nice light fabric for hot days. Elastic waist. Drawstring. One rear pocket.",
+        "condition": "Played in gently"
+      },
+      {
+        "name": "White Ringer Tee, 'Relay Classic' Print",
+        "brand": "Uniqlo",
+        "size": "13Y",
+        "price": 10,
+        "image": "images/D1 12.JPG",
+        "description": "Cotton polyester blend. It's giving bowling alley, 70s chic.",
+        "condition": "Like new"
+      },
+      {
+        "name": "Black Long Sleeve Tee w/ Chest Pocket",
+        "brand": "Pumpkin Patch",
+        "size": "2Y",
+        "price": 8,
+        "image": "images/D1 13.JPG",
+        "description": "Such a cool little long-sleeve top. Press stud at the back for ease (when chasing a toddler around the house). Cotton elastic shoulder detail. Small front pocket for a special little rock to live in.",
+        "condition": "Played in happily"
+      },
+      {
+        "name": "Green Tank, 'Find Your Balance' Print",
+        "brand": "Target",
+        "size": "12Y",
+        "price": 8,
+        "image": "images/D1 14.JPG",
+        "description": "Stand-out sage green colour. Loose fitted tank. Soft comfy cotton.",
+        "condition": "Like new"
+      },
+      {
+        "name": "Black Corduroy Button-Up Shirt",
+        "brand": "Anko",
+        "size": "14Y",
+        "price": 12,
+        "image": "images/D1 15.JPG",
+        "description": "Corduroy button-up shirt. Button up the cuffs for dinners out, roll them up for hitting the skate park. Single front pocket. Such a great piece for your teen. Style it open over a t-shirt.",
+        "condition": "Played in gently"
+      },
+      {
+        "name": "Grey Marle Hoodie, 'Miami' Print",
+        "brand": "Miss Mango",
+        "size": "12Y",
+        "price": 12,
+        "images": [
+          "images/D1 16.1",
+          "images/D1 16.2"
+        ],
+        "description": "Soft cotton and polyester blend. Pocket at front to keep hands warm in winter. Cute tennis icon on front and back.",
+        "condition": "Played in gently"
+      },
+      {
+        "name": "Lime Green Pocket Tee",
+        "brand": "Country Road",
+        "size": "8Y",
+        "price": 10,
+        "image": "images/D1 17.JPG",
+        "description": "Lime green cotton tee with a small front pocket. Soft and light fabric for kids who don't like scratchy clothes.",
+        "condition": "Played in happily"
+      },
+      {
+        "name": "Teal Corduroy Shorts",
+        "brand": "Target",
+        "size": "9Y",
+        "price": 10,
+        "image": "images/D1 18.JPG",
+        "description": "Corduroy shorts with flat side pockets. Elastic waist. Drawstring. Single pocket at the back.",
+        "condition": "Played in gently"
+      },
+      {
+        "name": "Cargo Pants",
+        "brand": "Zara",
+        "size": "6Y",
+        "price": 18,
+        "image": "images/D1 19.JPG",
+        "description": "Cotton cargo pants. Did someone say pockets? Side leg pockets. Diagonal hip pockets. Back pockets with buttons. Elastic adjustment in waistband. Black cord drawstring. Button and zip fly. Loose elastic ankle cuff.",
+        "condition": "Played in gently"
+      },
+      {
+        "name": "Merino Wool Vest Hoodie",
+        "brand": "Little Flock of Horrors",
+        "size": "2Y",
+        "price": 28,
+        "image": "images/D1 20.JPG",
+        "description": "Pure merino wool that can go in the washing machine? Yes please! Gorgeous tree and star print. Turned-up detail at shoulder and hoodie \u2014 because warm! Side pockets with soft wool inside for cosy hands.",
+        "condition": "Unworn \u2014 tags on"
+      }
     ]
   },
   {
@@ -43,18 +217,100 @@
     "sold": false,
     "soldDate": null,
     "items": [
-      { "name": "Butterfly Print Skinny Pants", "brand": "Okaidi", "size": "7Y", "price": 21, "images": ["images/d2-1-1.jpg", "images/d2-1-2.jpg"] },
-      { "name": "Purebaby Grosuit", "brand": "Purebaby", "size": "0000", "price": 15, "image": "images/d2-3-2.jpg" },
-      { "name": "Yellow Cardigan", "brand": "Bonpoint", "size": "8Y", "price": 50, "images": ["images/d2-2.jpg", "images/d2-3-1.jpg"] },
-      { "name": "Cotton Blazer", "brand": "Young Hearts / Collette Dinnigan", "size": "5Y", "price": 18, "image": "images/d2-8.jpg" },
-      { "name": "Mustard Pants", "brand": "Petit Bateau", "size": "4Y", "price": 29, "featured": true, "image": "images/d2-4.jpg" },
-      { "name": "Summer Striped Shirt", "brand": "Collette Dinnigan x Cotton On", "size": "4Y", "price": 15, "image": "images/d2-9.jpg" },
-      { "name": "Striped Singlet Top", "brand": "Max Studio Kids", "size": "2Y", "price": 18, "image": "images/d2-6.jpg" },
-      { "name": "Elephant Play Suit", "brand": "Baby Berry", "size": "0000", "price": 15, "image": "images/d2-5.jpg" },
-      { "name": "Mustard Shorts", "brand": "Target", "size": "8Y", "price": 10, "image": "images/d2-7.jpg" },
-      { "name": "Yellow Bomber Jacket", "brand": "Hua Ban Hu", "size": "6-12m", "price": 15, "images": ["images/d2-10-1.jpg", "images/d2-10-2.jpg"] },
-      { "name": "Denim Skirt", "brand": "Esprit", "size": "2Y", "price": 10, "image": "images/d2-11.jpg" },
-      { "name": "Navy Tee", "brand": "No Brand", "size": "4Y", "price": 10, "image": "images/d2-12.jpg" }
+      {
+        "name": "Butterfly Print Skinny Pants",
+        "brand": "Okaidi",
+        "size": "7Y",
+        "price": 21,
+        "images": [
+          "images/d2-1-1.jpg",
+          "images/d2-1-2.jpg"
+        ]
+      },
+      {
+        "name": "Purebaby Grosuit",
+        "brand": "Purebaby",
+        "size": "0000",
+        "price": 15,
+        "image": "images/d2-3-2.jpg"
+      },
+      {
+        "name": "Yellow Cardigan",
+        "brand": "Bonpoint",
+        "size": "8Y",
+        "price": 50,
+        "images": [
+          "images/d2-2.jpg",
+          "images/d2-3-1.jpg"
+        ]
+      },
+      {
+        "name": "Cotton Blazer",
+        "brand": "Young Hearts / Collette Dinnigan",
+        "size": "5Y",
+        "price": 18,
+        "image": "images/d2-8.jpg"
+      },
+      {
+        "name": "Mustard Pants",
+        "brand": "Petit Bateau",
+        "size": "4Y",
+        "price": 29,
+        "featured": true,
+        "image": "images/d2-4.jpg"
+      },
+      {
+        "name": "Summer Striped Shirt",
+        "brand": "Collette Dinnigan x Cotton On",
+        "size": "4Y",
+        "price": 15,
+        "image": "images/d2-9.jpg"
+      },
+      {
+        "name": "Striped Singlet Top",
+        "brand": "Max Studio Kids",
+        "size": "2Y",
+        "price": 18,
+        "image": "images/d2-6.jpg"
+      },
+      {
+        "name": "Elephant Play Suit",
+        "brand": "Baby Berry",
+        "size": "0000",
+        "price": 15,
+        "image": "images/d2-5.jpg"
+      },
+      {
+        "name": "Mustard Shorts",
+        "brand": "Target",
+        "size": "8Y",
+        "price": 10,
+        "image": "images/d2-7.jpg"
+      },
+      {
+        "name": "Yellow Bomber Jacket",
+        "brand": "Hua Ban Hu",
+        "size": "6-12m",
+        "price": 15,
+        "images": [
+          "images/d2-10-1.jpg",
+          "images/d2-10-2.jpg"
+        ]
+      },
+      {
+        "name": "Denim Skirt",
+        "brand": "Esprit",
+        "size": "2Y",
+        "price": 10,
+        "image": "images/d2-11.jpg"
+      },
+      {
+        "name": "Navy Tee",
+        "brand": "No Brand",
+        "size": "4Y",
+        "price": 10,
+        "image": "images/d2-12.jpg"
+      }
     ]
   },
   {
@@ -68,21 +324,133 @@
     "sold": false,
     "soldDate": null,
     "items": [
-      { "name": "Striped Henley Tee", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d3-1-1.jpg", "images/d3-1-2.jpg"] },
-      { "name": "Short Dungarees", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-2.jpg" },
-      { "name": "Polo Shirt", "brand": "Ralph Lauren", "size": "TBC", "price": 0, "image": "images/d3-3.jpg" },
-      { "name": "Puffer Vest", "brand": "Joules", "size": "TBC", "price": 0, "images": ["images/d3-4-1.jpg", "images/d3-4-2.jpg"] },
-      { "name": "Dark Wash Jeans", "brand": "TBC", "size": "TBC", "price": 0, "featured": true, "images": ["images/d3-5-1.jpg", "images/d3-5-2.jpg"] },
-      { "name": "Cable Knit Cardigan", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d3-6-1.jpg", "images/d3-6-2.jpg"] },
-      { "name": "Breton Stripe Tee", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-7.jpg" },
-      { "name": "Corduroy Pinafore Dress", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d3-8-1.jpg", "images/d3-8-2.jpg"] },
-      { "name": "Navy Slim Pants", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-9.jpg" },
-      { "name": "Denim Overalls", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-10.jpg" },
-      { "name": "Cherry Print Flared Leggings", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-11.jpg" },
-      { "name": "Tartan Shirt", "brand": "Ralph Lauren", "size": "TBC", "price": 0, "images": ["images/d3-12-1.jpg", "images/d3-12-2.jpg"] },
-      { "name": "Tie-Dye Leggings", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d3-13-1.jpg", "images/d3-13-2.jpg"] },
-      { "name": "Denim Shorts", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-14.jpg" },
-      { "name": "Striped Grosuit", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-15.jpg" }
+      {
+        "name": "Striped Henley Tee",
+        "brand": "TBC",
+        "size": "TBC",
+        "price": 0,
+        "images": [
+          "images/d3-1-1.jpg",
+          "images/d3-1-2.jpg"
+        ]
+      },
+      {
+        "name": "Short Dungarees",
+        "brand": "TBC",
+        "size": "TBC",
+        "price": 0,
+        "image": "images/d3-2.jpg"
+      },
+      {
+        "name": "Polo Shirt",
+        "brand": "Ralph Lauren",
+        "size": "TBC",
+        "price": 0,
+        "image": "images/d3-3.jpg"
+      },
+      {
+        "name": "Puffer Vest",
+        "brand": "Joules",
+        "size": "TBC",
+        "price": 0,
+        "images": [
+          "images/d3-4-1.jpg",
+          "images/d3-4-2.jpg"
+        ]
+      },
+      {
+        "name": "Dark Wash Jeans",
+        "brand": "TBC",
+        "size": "TBC",
+        "price": 0,
+        "featured": true,
+        "images": [
+          "images/d3-5-1.jpg",
+          "images/d3-5-2.jpg"
+        ]
+      },
+      {
+        "name": "Cable Knit Cardigan",
+        "brand": "TBC",
+        "size": "TBC",
+        "price": 0,
+        "images": [
+          "images/d3-6-1.jpg",
+          "images/d3-6-2.jpg"
+        ]
+      },
+      {
+        "name": "Breton Stripe Tee",
+        "brand": "TBC",
+        "size": "TBC",
+        "price": 0,
+        "image": "images/d3-7.jpg"
+      },
+      {
+        "name": "Corduroy Pinafore Dress",
+        "brand": "TBC",
+        "size": "TBC",
+        "price": 0,
+        "images": [
+          "images/d3-8-1.jpg",
+          "images/d3-8-2.jpg"
+        ]
+      },
+      {
+        "name": "Navy Slim Pants",
+        "brand": "TBC",
+        "size": "TBC",
+        "price": 0,
+        "image": "images/d3-9.jpg"
+      },
+      {
+        "name": "Denim Overalls",
+        "brand": "TBC",
+        "size": "TBC",
+        "price": 0,
+        "image": "images/d3-10.jpg"
+      },
+      {
+        "name": "Cherry Print Flared Leggings",
+        "brand": "TBC",
+        "size": "TBC",
+        "price": 0,
+        "image": "images/d3-11.jpg"
+      },
+      {
+        "name": "Tartan Shirt",
+        "brand": "Ralph Lauren",
+        "size": "TBC",
+        "price": 0,
+        "images": [
+          "images/d3-12-1.jpg",
+          "images/d3-12-2.jpg"
+        ]
+      },
+      {
+        "name": "Tie-Dye Leggings",
+        "brand": "TBC",
+        "size": "TBC",
+        "price": 0,
+        "images": [
+          "images/d3-13-1.jpg",
+          "images/d3-13-2.jpg"
+        ]
+      },
+      {
+        "name": "Denim Shorts",
+        "brand": "TBC",
+        "size": "TBC",
+        "price": 0,
+        "image": "images/d3-14.jpg"
+      },
+      {
+        "name": "Striped Grosuit",
+        "brand": "TBC",
+        "size": "TBC",
+        "price": 0,
+        "image": "images/d3-15.jpg"
+      }
     ]
   }
 ]
