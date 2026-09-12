@@ -293,8 +293,9 @@
     const dropId = pathParts[pathParts.length - 1];
 
     function getItemImages(item) {
-      if (item.images && item.images.length) return item.images.map(src => ({ src, alt: item.name }));
-      if (item.image) return [{ src: item.image, alt: item.name }];
+      const fix = src => src.startsWith('/') ? src : '/' + src;
+      if (item.images && item.images.length) return item.images.map(src => ({ src: fix(src), alt: item.name }));
+      if (item.image) return [{ src: fix(item.image), alt: item.name }];
       return [];
     }
 
