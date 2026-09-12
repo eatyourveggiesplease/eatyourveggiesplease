@@ -892,7 +892,7 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-inner">
-      <img src="logo.jpg" alt="Eat Your Veggies (please)" class="hero-logo" onerror="this.style.display='none'" />
+      <img src="logo.png" alt="Eat Your Veggies (please)" class="hero-logo" onerror="this.style.display='none'" />
     </div>
   </section>
 
@@ -1092,12 +1092,7 @@
               </div>`;
             }).join('')}
           </div>
-          <div class="drop-buy">
-            <div class="drop-price-amount">$${drop.price}</div>
-            <p class="drop-price-note">Buy the full drop · all items · Australia-wide shipping</p>
-            <button class="buy-btn drop-buy-btn">Buy the full drop</button>
-            <p class="stripe-note">🔒 Secure checkout via Stripe</p>
-          </div>
+          <div class="drop-buy" style="display:none"></div>
         `;
 
         container.appendChild(block);
@@ -1119,37 +1114,7 @@
           });
         });
 
-        // Full drop buy button
-        block.querySelector('.drop-buy-btn').addEventListener('click', async function() {
-          const btn = this;
-          btn.textContent = 'Redirecting…';
-          btn.disabled = true;
-          try {
-            const res = await fetch('/api/create-checkout', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                items: [{
-                  id: drop.id,
-                  name: `Drop ${drop.dropLabel}${drop.dropName ? ' — ' + drop.dropName : ''}`,
-                  price: drop.price,
-                  quantity: 1
-                }]
-              }),
-            });
-            const data = await res.json();
-            if (data.url) {
-              window.location.href = data.url;
-            } else {
-              throw new Error(data.error || 'Could not create checkout session');
-            }
-          } catch (err) {
-            console.error(err);
-            alert('Something went wrong. Please try again.');
-            btn.textContent = 'Buy the full drop';
-            btn.disabled = false;
-          }
-        });
+        // Full drop buy button — currently hidden
       });
     }
 
