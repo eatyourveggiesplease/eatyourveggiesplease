@@ -78,7 +78,7 @@
       { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-10.jpg" },
       { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-11.jpg" },
       { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d3-12-1.jpg", "images/d3-12-2.jpg"] },
-      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d3-13-1.jpg", "images/d3-13-2.png"] },
+      { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "images": ["images/d3-13-1.jpg", "images/d3-13-2.jpg"] },
       { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-14.jpg" },
       { "name": "TBC", "brand": "TBC", "size": "TBC", "price": 0, "image": "images/d3-15.jpg" }
     ]
