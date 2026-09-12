@@ -350,130 +350,157 @@
     "items": [
       {
         "name": "Striped Henley Tee",
-        "brand": "TBC",
-        "size": "TBC",
-        "price": 0,
+        "brand": "Jack & Milly",
+        "size": "3Y",
+        "price": 12,
         "images": [
           "images/d3-1-1.jpg",
           "images/d3-1-2.jpg"
-        ]
+        ],
+        "description": "Such a cute tee! Beautiful quality. Red & white stripe (raised), button neck.",
+        "condition": "Played in happily"
       },
       {
         "name": "Short Dungarees",
-        "brand": "TBC",
-        "size": "TBC",
-        "price": 0,
-        "image": "images/d3-2.jpg"
+        "brand": "Zara",
+        "size": "3-4Y",
+        "price": 20,
+        "image": "images/d3-2.jpg",
+        "description": "Navy blue overalls with soft cotton lining. Side pockets and buttons. With a clever pocket for storing treasures at the front.",
+        "condition": "Played in lightly"
       },
       {
         "name": "Polo Shirt",
         "brand": "Ralph Lauren",
-        "size": "TBC",
-        "price": 0,
-        "image": "images/d3-3.jpg"
+        "size": "4Y",
+        "price": 30,
+        "image": "images/d3-3.jpg",
+        "description": "Red polo with lime green horse. Tiny barely perceptible mark on the front near the bottom of the polo.",
+        "condition": "Played in lightly"
       },
       {
         "name": "Puffer Vest",
         "brand": "Joules",
-        "size": "TBC",
-        "price": 0,
+        "size": "9Y",
+        "price": 35,
         "images": [
           "images/d3-4-1.jpg",
           "images/d3-4-2.jpg"
-        ]
+        ],
+        "description": "Navy puffa vest with red lining. Perfect for the in-between months. Red zip and lining. Two external pockets with zips. One internal pocket for secrets!",
+        "condition": "Like new"
       },
       {
-        "name": "Dark Wash Jeans",
-        "brand": "TBC",
-        "size": "TBC",
-        "price": 0,
+        "name": "1987 Vintage Jeans",
+        "brand": "Vintage (no label)",
+        "size": "6-8Y",
+        "price": 40,
         "featured": true,
         "images": [
           "images/d3-5-1.jpg",
           "images/d3-5-2.jpg"
-        ]
+        ],
+        "description": "High waisted jeans with gorgeous detail at the front. Cute star button and fancy zipper pull. Beautiful quality with detailed side pockets and belt loops. Hard to part with these — they are one in a million.",
+        "condition": "Played in lightly"
       },
       {
-        "name": "Cable Knit Cardigan",
-        "brand": "TBC",
-        "size": "TBC",
-        "price": 0,
+        "name": "Red Cable Knit Cardigan",
+        "brand": "Oobi",
+        "size": "5Y",
+        "price": 25,
         "images": [
           "images/d3-6-1.jpg",
           "images/d3-6-2.jpg"
-        ]
+        ],
+        "description": "Red cable knit cardigan with liberty fabric buttons. 100% Cotton. Such a delight this piece.",
+        "condition": "Played in lightly"
       },
       {
         "name": "Breton Stripe Tee",
-        "brand": "TBC",
-        "size": "TBC",
-        "price": 0,
-        "image": "images/d3-7.jpg"
+        "brand": "Uniqlo",
+        "size": "10Y",
+        "price": 10,
+        "image": "images/d3-7.jpg",
+        "description": "White & navy stripe tee with a slight crop cut. Cotton and Polyester — Uniqlo's popular Airism fabric.",
+        "condition": "Played in lightly"
       },
       {
         "name": "Corduroy Pinafore Dress",
-        "brand": "TBC",
-        "size": "TBC",
-        "price": 0,
+        "brand": "Rock Your Kid",
+        "size": "5Y",
+        "price": 20,
         "images": [
           "images/d3-8-1.jpg",
           "images/d3-8-2.jpg"
-        ]
+        ],
+        "description": "Red cord with front pocket. Pleated skirt with diagonal pockets.",
+        "condition": "Like new"
       },
       {
-        "name": "Navy Slim Pants",
-        "brand": "TBC",
-        "size": "TBC",
-        "price": 0,
-        "image": "images/d3-9.jpg"
+        "name": "Dark Denim Skinny Jeans",
+        "brand": "Target",
+        "size": "12Y",
+        "price": 15,
+        "image": "images/d3-9.jpg",
+        "description": "Dark navy, slim fit. Four pockets.",
+        "condition": "Like new"
       },
       {
         "name": "Denim Overalls",
-        "brand": "TBC",
-        "size": "TBC",
-        "price": 0,
-        "image": "images/d3-10.jpg"
+        "brand": "Zara",
+        "size": "7Y",
+        "price": 20,
+        "image": "images/d3-10.jpg",
+        "description": "Cute as a button denim overalls. Straight leg with subtle flare at the bottom. Side zipper and buttons on R-side. Bib and brace access with front pocket. Comes with a cute bell safety-pinned to the front — a unique treasure from a former owner!",
+        "condition": "Played in lightly"
       },
       {
         "name": "Cherry Print Flared Leggings",
-        "brand": "TBC",
-        "size": "TBC",
-        "price": 0,
-        "image": "images/d3-11.jpg"
+        "brand": "Cotton On",
+        "size": "4Y",
+        "price": 10,
+        "image": "images/d3-11.jpg",
+        "description": "Navy with cherry print, ruffle hem with overlocked edging.",
+        "condition": "Played in happily"
       },
       {
         "name": "Tartan Shirt",
         "brand": "Ralph Lauren",
-        "size": "TBC",
-        "price": 0,
-        "images": [
-          "images/d3-12-1.jpg",
-          "images/d3-12-2.jpg"
-        ]
+        "size": "M (10-12Y)",
+        "price": 50,
+        "image": "images/d3-3.jpg",
+        "description": "Cotton button-up shirt. Red, navy, blue and green check with blue pony logo.",
+        "condition": "Like new"
       },
       {
-        "name": "Tie-Dye Leggings",
-        "brand": "TBC",
-        "size": "TBC",
-        "price": 0,
+        "name": "Oishi-M Leggings",
+        "brand": "Oishi-M",
+        "size": "4-5Y",
+        "price": 15,
         "images": [
           "images/d3-13-1.jpg",
           "images/d3-13-2.jpg"
-        ]
+        ],
+        "description": "IYKYK! Oishi-M — everyone's favourite label that is no more. Rare find. They grow with your kiddos. Foldable waistband and cuffs to adjust for height. Knee pads to make them last the distance!",
+        "condition": "Well played in — but lots of adventures left"
       },
       {
         "name": "Denim Shorts",
-        "brand": "TBC",
-        "size": "TBC",
-        "price": 0,
-        "image": "images/d3-14.jpg"
+        "brand": "Target",
+        "size": "10Y",
+        "price": 10,
+        "image": "images/d3-14.jpg",
+        "description": "Light denim wash, elastic high waisted shorts. Mock button and fly feature at front. Diagonal pockets at the front. Two pockets at the back.",
+        "condition": "Like new"
       },
       {
         "name": "Striped Grosuit",
-        "brand": "TBC",
-        "size": "TBC",
-        "price": 0,
-        "image": "images/d3-15.jpg"
+        "brand": "Marquise",
+        "size": "Newborn",
+        "price": 12,
+        "image": "images/d3-15.jpg",
+        "description": "Red & white stripe, footed romper. Beautiful stitching detail on bias edging. Small cute pocket on the front. Press studs for ease. The sweetest addition to any newborn's wardrobe!",
+        "condition": "Played in lightly"
       }
     ]
   }
