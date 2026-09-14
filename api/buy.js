@@ -31,6 +31,12 @@ module.exports = async function handler(req, res) {
     return res.status(400).send('This item has no price set.');
   }
 
+  // Build a valid image URL (encode each path segment to handle spaces)
+  const rawImgPath = (item.images && item.images[0]) || item.image || null;
+  const imageUrl = rawImgPath
+    ? 'https://www.eatyourveggiesplease.com/' + rawImgPath.split('/').map(encodeURIComponent).join('/')
+    : null;
+
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
@@ -41,6 +47,7 @@ module.exports = async function handler(req, res) {
             name: item.name,
             description: [item.brand, item.size ? `Size ${item.size}` : null, item.condition]
               .filter(Boolean).join(' · '),
+            ...(imageUrl ? { images: [imageUrl] } : {}),
           },
           unit_amount: Math.round(item.price * 100),
         },
