@@ -17,8 +17,8 @@
         "price": 20,
         "featured": true,
         "images": [
-          "images/D1 1.1",
-          "images/D1 1.2"
+          "images/d1-1-1.jpg",
+          "images/d1-1-2.jpg"
         ],
         "description": "Thick cotton tee. White colour-block top with striped sleeves.",
         "condition": "Played in happily"
@@ -28,7 +28,7 @@
         "brand": "Zara",
         "size": "3-4Y",
         "price": 12,
-        "image": "images/D1 2.JPG",
+        "image": "images/d1-2.jpg",
         "description": "Comfy soft cotton overalls. Easy lift over the shoulder, but button access as well. Drop crotch harem pant style for an urban relaxed style. Textured side pocket for treasures.",
         "condition": "Played in gently"
       },
@@ -38,9 +38,9 @@
         "size": "US 12",
         "price": 15,
         "images": [
-          "images/D1 3.1",
-          "images/D1 3.2",
-          "images/D1 3.3"
+          "images/d1-3-1.jpg",
+          "images/d1-3-2.jpg",
+          "images/d1-3-3.jpg"
         ],
         "description": "Such a fun colour! Visible wear/scuffing on toe caps, laces show general wear and one lace ring missing on the side.",
         "condition": "Played in happily"
@@ -51,8 +51,8 @@
         "size": "9-10Y",
         "price": 12,
         "images": [
-          "images/D1 4.1",
-          "images/D1 4.2"
+          "images/d1-4-1.jpg",
+          "images/d1-4-2.jpg"
         ],
         "description": "Thick cotton long-sleeve tee. Fun neon graphic. Round neck. Loose fit.",
         "condition": "As good as new"
@@ -62,7 +62,7 @@
         "brand": "Bardot Junior",
         "size": "14Y",
         "price": 25,
-        "image": "images/D1 5.JPG",
+        "image": "images/d1-5.jpg",
         "description": "99% Cotton, 1% Elastine. Skinny jean with intentional distressed detailing. Adjustable elastic in waistband. 5 pockets. Button and zip fly at the front.",
         "condition": "Played in gently"
       },
@@ -71,7 +71,7 @@
         "brand": "Santa Cruz",
         "size": "12Y",
         "price": 18,
-        "image": "images/D1 6.JPG",
+        "image": "images/d1-6.jpg",
         "description": "100% Cotton with mesh pockets. Back pocket with velcro for safely storing treasures. Could be worn as boardshorts or casual shorts. Such a dreamy forest green colour.",
         "condition": "As good as new"
       },
@@ -80,7 +80,7 @@
         "brand": "Bonds",
         "size": "10Y",
         "price": 10,
-        "image": "images/D1 7.JPG",
+        "image": "images/d1-7.jpg",
         "description": "Cotton elastic shorts. Elastic waist. Back pocket. Name appears on tag.",
         "condition": "Played in happily"
       },
@@ -89,7 +89,7 @@
         "brand": "H&M",
         "size": "5-6Y",
         "price": 12,
-        "image": "images/D1 8.JPG",
+        "image": "images/d1-8.jpg",
         "description": "Polyester jumper. Cropped style with balloon shaped sleeves.",
         "condition": "Played in gently"
       },
@@ -98,7 +98,7 @@
         "brand": "Zara",
         "size": "11-12Y",
         "price": 12,
-        "image": "images/D1 9.JPG",
+        "image": "images/d1-9.jpg",
         "description": "Cotton polyester blend. Elastic waist. Mock fly detail at the front. Cuffed bottom for extra style points. Two hidden side pockets and one sewn back pocket. Some slight pilling around the waistband \u2014 very subtle, particularly as the fabric is black!",
         "condition": "Played in happily"
       },
@@ -107,7 +107,7 @@
         "brand": "Cotton On",
         "size": "9-10Y",
         "price": 10,
-        "image": "images/D1 10.JPG",
+        "image": "images/d1-10.jpg",
         "description": "Cotton utility shirt. Great on its own or styled unbuttoned over a t-shirt. Press studs down the front. Press studs on the wrists. Two pockets at the front.",
         "condition": "Played in gently"
       },
@@ -116,7 +116,7 @@
         "brand": "Minti",
         "size": "2Y",
         "price": 10,
-        "image": "images/D1 11.JPG",
+        "image": "images/d1-11.jpg",
         "description": "Very cute board shorts. Nice light fabric for hot days. Elastic waist. Drawstring. One rear pocket.",
         "condition": "Played in gently"
       },
@@ -125,7 +125,7 @@
         "brand": "Uniqlo",
         "size": "13Y",
         "price": 10,
-        "image": "images/D1 12.JPG",
+        "image": "images/d1-12.jpg",
         "description": "Cotton polyester blend. It's giving bowling alley, 70s chic.",
         "condition": "As good as new"
       },
@@ -134,7 +134,7 @@
         "brand": "Pumpkin Patch",
         "size": "2Y",
         "price": 8,
-        "image": "images/D1 13.JPG",
+        "image": "images/d1-13.jpg",
         "description": "Such a cool little long-sleeve top. Press stud at the back for ease (when chasing a toddler around the house). Cotton elastic shoulder detail. Small front pocket for a special little rock to live in.",
         "condition": "Played in happily"
       },
@@ -143,7 +143,7 @@
         "brand": "Target",
         "size": "12Y",
         "price": 8,
-        "image": "images/D1 14.JPG",
+        "image": "images/d1-14.jpg",
         "description": "Stand-out sage green colour. Loose fitted tank. Soft comfy cotton.",
         "condition": "As good as new"
       },
@@ -152,7 +152,7 @@
         "brand": "Anko",
         "size": "14Y",
         "price": 12,
-        "image": "images/D1 15.JPG",
+        "image": "images/d1-15.jpg",
         "description": "Corduroy button-up shirt. Button up the cuffs for dinners out, roll them up for hitting the skate park. Single front pocket. Such a great piece for your teen. Style it open over a t-shirt.",
         "condition": "Played in gently"
       },
@@ -162,8 +162,8 @@
         "size": "12Y",
         "price": 12,
         "images": [
-          "images/D1 16.1",
-          "images/D1 16.2"
+          "images/d1-16-1.jpg",
+          "images/d1-16-2.jpg"
         ],
         "description": "Soft cotton and polyester blend. Pocket at front to keep hands warm in winter. Cute tennis icon on front and back.",
         "condition": "Played in gently"
@@ -173,7 +173,7 @@
         "brand": "Country Road",
         "size": "8Y",
         "price": 10,
-        "image": "images/D1 17.JPG",
+        "image": "images/d1-17.jpg",
         "description": "Lime green cotton tee with a small front pocket. Soft and light fabric for kids who don't like scratchy clothes.",
         "condition": "Played in happily"
       },
@@ -182,7 +182,7 @@
         "brand": "Target",
         "size": "9Y",
         "price": 10,
-        "image": "images/D1 18.JPG",
+        "image": "images/d1-18.jpg",
         "description": "Corduroy shorts with flat side pockets. Elastic waist. Drawstring. Single pocket at the back.",
         "condition": "Played in gently"
       },
