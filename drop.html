@@ -355,7 +355,7 @@
             <div class="drop-item-name">${item.name}</div>
             <div class="drop-item-size">${item.size ? 'Size ' + item.size : ''}</div>
           </div>
-          ${!drop.sold && item.price ? `<button class="item-buy-btn" data-item-index="${i}">Buy this · $${item.price}</button>` : ''}
+          ${!drop.sold && !item.sold && item.price ? `<button class="item-buy-btn" data-item-index="${i}">Buy this · $${item.price}</button>` : (item.sold ? `<button class="item-buy-btn" disabled>Sold</button>` : '')}
         </div>`;
       }).join('');
 
