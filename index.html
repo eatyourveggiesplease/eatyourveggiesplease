@@ -452,6 +452,11 @@
     .drop-item { cursor: default; }
     .drop-item-img { cursor: zoom-in; }
 
+    /* ─── SOLD OVERLAY ─── */
+    .sold-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.45); z-index: 4; display: flex; align-items: center; justify-content: center; pointer-events: none; }
+    .sold-badge { background: #fff; color: #111; font-family: 'Quicksand', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 20px; border-radius: 4px; }
+    .drop-item-img img.is-sold { filter: grayscale(0.4); }
+
     /* ─── PICK OF THE HARVEST ─── */
     .pick-overlay { position: absolute; inset: 0; pointer-events: none; z-index: 2; overflow: hidden; }
     .pick-harvest-stripe {
@@ -1169,10 +1174,11 @@
               return `
               <div class="drop-item${midClass}" data-drop="${drop.id}" data-index="${i}" data-size="${item.size || ''}">
                 <div class="drop-item-img" data-drop="${drop.id}" data-index="${i}" style="position:relative">
-                  <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" />
-                  ${item.featured ? pickOfHarvestOverlay() : ''}
-                  ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${imgs.length} photos</span>` : ''}
-                  ${item.condition ? `<span style="position:absolute;bottom:8px;left:8px;background:rgba(0,100,50,0.82);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${item.condition}</span>` : ''}
+                  <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" ${item.sold ? 'class="is-sold"' : ''} />
+                  ${item.featured && !item.sold ? pickOfHarvestOverlay() : ''}
+                  ${item.sold ? '<div class="sold-overlay"><span class="sold-badge">Sold</span></div>' : ''}
+                  ${!item.sold && hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${imgs.length} photos</span>` : ''}
+                  ${!item.sold && item.condition ? `<span style="position:absolute;bottom:8px;left:8px;background:rgba(0,100,50,0.82);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${item.condition}</span>` : ''}
                 </div>
                 <div class="drop-item-info">
                   <div class="drop-item-brand">${item.brand}</div>
@@ -1195,10 +1201,11 @@
                 return `
                 <div class="drop-item" data-drop="${drop.id}" data-index="${idx}" data-size="${item.size || ''}">
                   <div class="drop-item-img" data-drop="${drop.id}" data-index="${idx}" style="position:relative">
-                    <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" />
-                    ${item.featured ? pickOfHarvestOverlay() : ''}
-                    ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${imgs.length} photos</span>` : ''}
-                    ${item.condition ? `<span style="position:absolute;bottom:8px;left:8px;background:rgba(0,100,50,0.82);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${item.condition}</span>` : ''}
+                    <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" ${item.sold ? 'class="is-sold"' : ''} />
+                    ${item.featured && !item.sold ? pickOfHarvestOverlay() : ''}
+                    ${item.sold ? '<div class="sold-overlay"><span class="sold-badge">Sold</span></div>' : ''}
+                    ${!item.sold && hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${imgs.length} photos</span>` : ''}
+                    ${!item.sold && item.condition ? `<span style="position:absolute;bottom:8px;left:8px;background:rgba(0,100,50,0.82);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${item.condition}</span>` : ''}
                   </div>
                   <div class="drop-item-info">
                     <div class="drop-item-brand">${item.brand}</div>
