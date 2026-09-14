@@ -41,19 +41,14 @@ module.exports = async function handler(req, res) {
             name: item.name,
             description: [item.brand, item.size ? `Size ${item.size}` : null, item.condition]
               .filter(Boolean).join(' · '),
-            images: item.images
-              ? [`${req.headers['x-forwarded-proto'] || 'https'}://${req.headers.host}/${item.images[0]}`]
-              : item.image
-              ? [`${req.headers['x-forwarded-proto'] || 'https'}://${req.headers.host}/${item.image}`]
-              : [],
           },
           unit_amount: Math.round(item.price * 100),
         },
         quantity: 1,
       }],
       mode: 'payment',
-      success_url: `${req.headers['x-forwarded-proto'] || 'https'}://${req.headers.host}/success.html?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${req.headers['x-forwarded-proto'] || 'https'}://${req.headers.host}/`,
+      success_url: `https://www.eatyourveggiesplease.com/success.html?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `https://www.eatyourveggiesplease.com/`,
       shipping_address_collection: { allowed_countries: ['AU'] },
       shipping_options: [{
         shipping_rate_data: {
