@@ -6,7 +6,7 @@ module.exports = async function handler(req, res) {
   const { dropId, itemIndex } = req.query;
 
   // Load drops.json
-  const dropsPath = path.join(process.cwd(), 'drops.json');
+  const dropsPath = path.join(__dirname, '../drops.json');
   let drops;
   try {
     drops = JSON.parse(fs.readFileSync(dropsPath, 'utf8'));
