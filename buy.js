@@ -41,11 +41,6 @@ module.exports = async function handler(req, res) {
             name: item.name,
             description: [item.brand, item.size ? `Size ${item.size}` : null, item.condition]
               .filter(Boolean).join(' · '),
-            images: item.images
-              ? [`${req.headers['x-forwarded-proto'] || 'https'}://${req.headers.host}/${item.images[0]}`]
-              : item.image
-              ? [`${req.headers['x-forwarded-proto'] || 'https'}://${req.headers.host}/${item.image}`]
-              : [],
           },
           unit_amount: Math.round(item.price * 100),
         },
