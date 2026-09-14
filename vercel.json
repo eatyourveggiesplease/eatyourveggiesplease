@@ -2,6 +2,7 @@
   "outputDirectory": ".",
   "rewrites": [
     { "source": "/drop/:id", "destination": "/drop.html" },
-    { "source": "/faqs", "destination": "/faqs.html" }
+    { "source": "/faqs", "destination": "/faqs.html" },
+    { "source": "/buy/:dropId/:itemIndex", "destination": "/api/buy.js" }
   ]
 }
