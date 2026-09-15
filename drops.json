@@ -395,7 +395,6 @@
         "brand": "Vintage (no label)",
         "size": "6-8Y",
         "price": 40,
-        "featured": true,
         "images": [
           "images/d3-5-1.jpg",
           "images/d3-5-2.jpg"
@@ -408,6 +407,7 @@
         "brand": "Oobi",
         "size": "5Y",
         "price": 25,
+        "featured": true,
         "images": [
           "images/d3-6-1.jpg",
           "images/d3-6-2.jpg"
@@ -453,15 +453,6 @@
         "image": "images/d3-10.jpg",
         "description": "Cute as a button denim overalls. Straight leg with subtle flare at the bottom. Side zipper and buttons on R-side. Bib and brace access with front pocket. Comes with a cute bell safety-pinned to the front — a unique treasure from a former owner!",
         "condition": "Played in lightly"
-      },
-      {
-        "name": "Cherry Print Flared Leggings",
-        "brand": "Cotton On",
-        "size": "4Y",
-        "price": 10,
-        "image": "images/d3-11.jpg",
-        "description": "Navy with cherry print, ruffle hem with overlocked edging.",
-        "condition": "Played in happily"
       },
       {
         "name": "Tartan Shirt",
