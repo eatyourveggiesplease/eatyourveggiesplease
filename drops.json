@@ -17,8 +17,8 @@
         "price": 20,
         "featured": true,
         "images": [
-          "images/D1 1.1",
-          "images/D1 1.2"
+          "images/d1-1-1.jpg",
+          "images/d1-1-2.jpg"
         ],
         "description": "Thick cotton tee. White colour-block top with striped sleeves.",
         "condition": "Played in happily"
@@ -38,9 +38,9 @@
         "size": "US 12",
         "price": 15,
         "images": [
-          "images/D1 3.1",
-          "images/D1 3.2",
-          "images/D1 3.3"
+          "images/d1-3-1.jpg",
+          "images/d1-3-2.jpg",
+          "images/d1-3-3.jpg"
         ],
         "description": "Such a fun colour! Visible wear/scuffing on toe caps, laces show general wear and one lace ring missing on the side.",
         "condition": "Played in happily"
@@ -51,8 +51,8 @@
         "size": "9-10Y",
         "price": 12,
         "images": [
-          "images/D1 4.1",
-          "images/D1 4.2"
+          "images/d1-4-1.jpg",
+          "images/d1-4-2.jpg"
         ],
         "description": "Thick cotton long-sleeve tee. Fun neon graphic. Round neck. Loose fit.",
         "condition": "As good as new"
@@ -162,8 +162,8 @@
         "size": "12Y",
         "price": 12,
         "images": [
-          "images/D1 16.1",
-          "images/D1 16.2"
+          "images/d1-16-1.jpg",
+          "images/d1-16-2.jpg"
         ],
         "description": "Soft cotton and polyester blend. Pocket at front to keep hands warm in winter. Cute tennis icon on front and back.",
         "condition": "Played in gently"
