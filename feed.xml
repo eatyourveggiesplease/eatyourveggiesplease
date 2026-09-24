@@ -1,8 +1,9 @@
-<?xml version="1.0" ?>
-<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0" xml:lang="en-AU">
   <channel>
     <title>Eat Your Veggies (please)</title>
     <link>https://eatyourveggiesplease.com</link>
+    <language>en-AU</language>
     <description>Fabulous pre-loved kids clothing</description>
     <item>
       <g:id>drop-001-0</g:id>
