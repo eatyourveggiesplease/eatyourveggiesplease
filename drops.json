@@ -28,7 +28,10 @@
         "brand": "Zara",
         "size": "3-4Y",
         "price": 12,
-        "image": "images/D1 2.JPG",
+        "images": [
+          "images/d1-2.jpg",
+          "images/d1-2-2.jpg"
+        ],
         "description": "Comfy soft cotton overalls. Easy lift over the shoulder, but button access as well. Drop crotch harem pant style for an urban relaxed style. Textured side pocket for treasures.",
         "condition": "Played in gently"
       },
@@ -39,8 +42,7 @@
         "price": 15,
         "images": [
           "images/d1-3-1.jpg",
-          "images/d1-3-2.jpg",
-          "images/d1-3-3.jpg"
+          "images/d1-3-2.jpg"
         ],
         "description": "Such a fun colour! Visible wear/scuffing on toe caps, laces show general wear and one lace ring missing on the side.",
         "condition": "Played in happily"
@@ -62,7 +64,7 @@
         "brand": "Bardot Junior",
         "size": "14Y",
         "price": 25,
-        "image": "images/D1 5.JPG",
+        "image": "images/d1-5.jpg",
         "description": "99% Cotton, 1% Elastine. Skinny jean with intentional distressed detailing. Adjustable elastic in waistband. 5 pockets. Button and zip fly at the front.",
         "condition": "Played in gently"
       },
@@ -71,7 +73,7 @@
         "brand": "Santa Cruz",
         "size": "12Y",
         "price": 18,
-        "image": "images/D1 6.JPG",
+        "image": "images/d1-6.jpg",
         "description": "100% Cotton with mesh pockets. Back pocket with velcro for safely storing treasures. Could be worn as boardshorts or casual shorts. Such a dreamy forest green colour.",
         "condition": "As good as new"
       },
@@ -80,7 +82,6 @@
         "brand": "Bonds",
         "size": "10Y",
         "price": 10,
-        "image": "images/D1 7.JPG",
         "description": "Cotton elastic shorts. Elastic waist. Back pocket. Name appears on tag.",
         "condition": "Played in happily"
       },
@@ -89,7 +90,10 @@
         "brand": "H&M",
         "size": "5-6Y",
         "price": 12,
-        "image": "images/D1 8.JPG",
+        "images": [
+          "images/d1-8-1.jpg",
+          "images/d1-8-2.jpg"
+        ],
         "description": "Polyester jumper. Cropped style with balloon shaped sleeves.",
         "condition": "Played in gently"
       },
@@ -98,8 +102,8 @@
         "brand": "Zara",
         "size": "11-12Y",
         "price": 12,
-        "image": "images/D1 9.JPG",
-        "description": "Cotton polyester blend. Elastic waist. Mock fly detail at the front. Cuffed bottom for extra style points. Two hidden side pockets and one sewn back pocket. Some slight pilling around the waistband \u2014 very subtle, particularly as the fabric is black!",
+        "image": "images/d1-9.jpg",
+        "description": "Cotton polyester blend. Elastic waist. Mock fly detail at the front. Cuffed bottom for extra style points. Two hidden side pockets and one sewn back pocket. Some slight pilling around the waistband — very subtle, particularly as the fabric is black!",
         "condition": "Played in happily"
       },
       {
@@ -107,7 +111,7 @@
         "brand": "Cotton On",
         "size": "9-10Y",
         "price": 10,
-        "image": "images/D1 10.JPG",
+        "image": "images/d1-10.jpg",
         "description": "Cotton utility shirt. Great on its own or styled unbuttoned over a t-shirt. Press studs down the front. Press studs on the wrists. Two pockets at the front.",
         "condition": "Played in gently"
       },
@@ -116,7 +120,7 @@
         "brand": "Minti",
         "size": "2Y",
         "price": 10,
-        "image": "images/D1 11.JPG",
+        "image": "images/d1-11.jpg",
         "description": "Very cute board shorts. Nice light fabric for hot days. Elastic waist. Drawstring. One rear pocket.",
         "condition": "Played in gently"
       },
@@ -125,7 +129,7 @@
         "brand": "Uniqlo",
         "size": "13Y",
         "price": 10,
-        "image": "images/D1 12.JPG",
+        "image": "images/d1-12.jpg",
         "description": "Cotton polyester blend. It's giving bowling alley, 70s chic.",
         "condition": "As good as new"
       },
@@ -134,7 +138,10 @@
         "brand": "Pumpkin Patch",
         "size": "2Y",
         "price": 8,
-        "image": "images/D1 13.JPG",
+        "images": [
+          "images/d1-13.jpg",
+          "images/d1-13-2.jpg"
+        ],
         "description": "Such a cool little long-sleeve top. Press stud at the back for ease (when chasing a toddler around the house). Cotton elastic shoulder detail. Small front pocket for a special little rock to live in.",
         "condition": "Played in happily"
       },
@@ -143,7 +150,7 @@
         "brand": "Target",
         "size": "12Y",
         "price": 8,
-        "image": "images/D1 14.JPG",
+        "image": "images/d1-14.jpg",
         "description": "Stand-out sage green colour. Loose fitted tank. Soft comfy cotton.",
         "condition": "As good as new"
       },
@@ -152,7 +159,10 @@
         "brand": "Anko",
         "size": "14Y",
         "price": 12,
-        "image": "images/D1 15.JPG",
+        "images": [
+          "images/d1-15.jpg",
+          "images/d1-15-2.jpg"
+        ],
         "description": "Corduroy button-up shirt. Button up the cuffs for dinners out, roll them up for hitting the skate park. Single front pocket. Such a great piece for your teen. Style it open over a t-shirt.",
         "condition": "Played in gently"
       },
@@ -173,7 +183,6 @@
         "brand": "Country Road",
         "size": "8Y",
         "price": 10,
-        "image": "images/D1 17.JPG",
         "description": "Lime green cotton tee with a small front pocket. Soft and light fabric for kids who don't like scratchy clothes.",
         "condition": "Played in happily"
       },
@@ -182,7 +191,7 @@
         "brand": "Target",
         "size": "9Y",
         "price": 10,
-        "image": "images/D1 18.JPG",
+        "image": "images/d1-18.jpg",
         "description": "Corduroy shorts with flat side pockets. Elastic waist. Drawstring. Single pocket at the back.",
         "condition": "Played in gently"
       },
@@ -191,7 +200,6 @@
         "brand": "Zara",
         "size": "6Y",
         "price": 18,
-        "image": "images/d1-19.jpg",
         "description": "Cotton cargo pants. Did someone say pockets? Side leg pockets. Diagonal hip pockets. Back pockets with buttons. Elastic adjustment in waistband. Black cord drawstring. Button and zip fly. Loose elastic ankle cuff.",
         "condition": "Played in gently"
       },
@@ -201,8 +209,8 @@
         "size": "2Y",
         "price": 28,
         "image": "images/d1-20.jpg",
-        "description": "Pure merino wool that can go in the washing machine? Yes please! Gorgeous tree and star print. Turned-up detail at shoulder and hoodie \u2014 because warm! Side pockets with soft wool inside for cosy hands.",
-        "condition": "Unworn \u2014 tags on"
+        "description": "Pure merino wool that can go in the washing machine? Yes please! Gorgeous tree and star print. Turned-up detail at shoulder and hoodie — because warm! Side pockets with soft wool inside for cosy hands.",
+        "condition": "Unworn — tags on"
       }
     ]
   },
@@ -255,7 +263,10 @@
         "brand": "Young Hearts / Collette Dinnigan",
         "size": "5Y",
         "price": 18,
-        "image": "images/d2-8.jpg",
+        "images": [
+          "images/d2-8.jpg",
+          "images/d2-8-2.jpg"
+        ],
         "description": "Ahoy! Cotton Blazer with lighthouse/nautical print cotton lining. Two buttons. Two pockets.",
         "condition": "As good as new"
       },
@@ -274,7 +285,10 @@
         "brand": "Collette Dinnigan x Cotton On",
         "size": "4Y",
         "price": 15,
-        "image": "images/d2-9.jpg",
+        "images": [
+          "images/d2-9.jpg",
+          "images/d2-9-2.jpg"
+        ],
         "description": "Linen/Cotton Blend for cosy, but fancy. Short sleeved. Collar. Front buttons. Wear open over a t-shirt or closed for important business.",
         "condition": "As good as new"
       },
@@ -301,7 +315,10 @@
         "brand": "Target",
         "size": "8Y",
         "price": 10,
-        "image": "images/d2-7.jpg",
+        "images": [
+          "images/d2-7.jpg",
+          "images/d2-7-2.jpg"
+        ],
         "description": "Cotton/Nylon. Regular Fit. Elastic waistband with soft bias band lining for ultimate comfort. Angled hip pockets. Back welt pockets. Drawstring. Mock fly front. Above the knee length.",
         "condition": "Played in happily"
       },
@@ -383,10 +400,7 @@
         "brand": "Joules",
         "size": "9Y",
         "price": 35,
-        "images": [
-          "images/d3-4-1.jpg",
-          "images/d3-4-2.jpg"
-        ],
+        "image": "images/d3-4-1.jpg",
         "description": "Navy puffa vest with red lining. Perfect for the in-between months. Red zip and lining. Two external pockets with zips. One internal pocket for secrets!",
         "condition": "As good as new"
       },
@@ -492,6 +506,165 @@
         "image": "images/d3-15.jpg",
         "description": "Red & white stripe, footed romper. Beautiful stitching detail on bias edging. Small cute pocket on the front. Press studs for ease. The sweetest addition to any newborn's wardrobe!",
         "condition": "Played in lightly"
+      },
+      {
+        "name": "Cherry Print Pants",
+        "brand": "TODO",
+        "size": "TODO",
+        "price": 0,
+        "image": "images/d3-16.jpg",
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "Elephant Print Romper",
+        "brand": "TODO",
+        "size": "TODO",
+        "price": 0,
+        "image": "images/d3-17.jpg",
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "Camo Cargo Pants",
+        "brand": "TODO",
+        "size": "TODO",
+        "price": 0,
+        "image": "images/d3-18.jpg",
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "Petit Bateau Sweatshirt",
+        "brand": "Petit Bateau",
+        "size": "TODO",
+        "price": 0,
+        "images": [
+          "images/d3-19.jpg",
+          "images/d3-19-2.jpg"
+        ],
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "Cable Knit Jumper",
+        "brand": "Polo Ralph Lauren",
+        "size": "TODO",
+        "price": 0,
+        "images": [
+          "images/d3-20.jpg",
+          "images/d3-20-2.jpg"
+        ],
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "LA/CA Long Sleeve Tee",
+        "brand": "TODO",
+        "size": "TODO",
+        "price": 0,
+        "images": [
+          "images/d3-21.jpg",
+          "images/d3-21-2.jpg"
+        ],
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "Rugby Shirt",
+        "brand": "Cyrillus",
+        "size": "TODO",
+        "price": 0,
+        "images": [
+          "images/d3-22.jpg",
+          "images/d3-22-2.jpg"
+        ],
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "Red Leggings",
+        "brand": "TODO",
+        "size": "TODO",
+        "price": 0,
+        "image": "images/d3-23.jpg",
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "Navy Cardigan",
+        "brand": "TODO",
+        "size": "TODO",
+        "price": 0,
+        "image": "images/d3-24.jpg",
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "Levi's Tee",
+        "brand": "Levi's",
+        "size": "TODO",
+        "price": 0,
+        "image": "images/d3-25.jpg",
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "Pink Button-Up Shirt",
+        "brand": "Abercrombie Kids",
+        "size": "TODO",
+        "price": 0,
+        "image": "images/d3-26.jpg",
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "Navy Shorts",
+        "brand": "TODO",
+        "size": "TODO",
+        "price": 0,
+        "image": "images/d3-27.jpg",
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "Red & Navy Pleated Skirt",
+        "brand": "TODO",
+        "size": "TODO",
+        "price": 0,
+        "image": "images/d3-28.jpg",
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "Tartan Shirt",
+        "brand": "Tommy Hilfiger",
+        "size": "TODO",
+        "price": 0,
+        "images": [
+          "images/d3-29.jpg",
+          "images/d3-29-2.jpg"
+        ],
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "Cable Knit Jumper",
+        "brand": "Polo Ralph Lauren",
+        "size": "TODO",
+        "price": 0,
+        "image": "images/d3-30.jpg",
+        "description": "TODO",
+        "condition": "TODO"
+      },
+      {
+        "name": "Blue Check Shirt",
+        "brand": "TODO",
+        "size": "TODO",
+        "price": 0,
+        "image": "images/d3-31.jpg",
+        "description": "TODO",
+        "condition": "TODO"
       }
     ]
   }
