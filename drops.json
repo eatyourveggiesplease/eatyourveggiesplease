@@ -82,6 +82,7 @@
         "brand": "Bonds",
         "size": "10Y",
         "price": 10,
+        "image": "images/d1-7.jpg",
         "description": "Cotton elastic shorts. Elastic waist. Back pocket. Name appears on tag.",
         "condition": "Played in happily"
       },
@@ -183,6 +184,7 @@
         "brand": "Country Road",
         "size": "8Y",
         "price": 10,
+        "image": "images/d1-17.jpg",
         "description": "Lime green cotton tee with a small front pocket. Soft and light fabric for kids who don't like scratchy clothes.",
         "condition": "Played in happily"
       },
@@ -200,6 +202,7 @@
         "brand": "Zara",
         "size": "6Y",
         "price": 18,
+        "image": "images/d1-19.jpg",
         "description": "Cotton cargo pants. Did someone say pockets? Side leg pockets. Diagonal hip pockets. Back pockets with buttons. Elastic adjustment in waistband. Black cord drawstring. Button and zip fly. Loose elastic ankle cuff.",
         "condition": "Played in gently"
       },
