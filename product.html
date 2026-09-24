@@ -205,9 +205,25 @@
     }
 
     .product-description {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .product-description li {
       font-size: 0.95rem;
-      color: var(--text-muted);
-      line-height: 1.7;
+      color: var(--green-dark);
+      font-weight: 600;
+      line-height: 1.5;
+      padding-left: 18px;
+      position: relative;
+    }
+    .product-description li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--green-dark);
     }
 
     /* BUY BUTTON */
@@ -308,7 +324,7 @@
 
     <div class="divider"></div>
 
-    <p class="product-description" id="product-description"></p>
+    <ul class="product-description" id="product-description"></ul>
 
     <div class="divider"></div>
 
@@ -370,7 +386,9 @@
   document.getElementById('product-name').textContent = item.name;
   document.getElementById('product-brand').textContent = item.brand || '';
   document.getElementById('product-price').textContent = item.price ? `$${item.price.toFixed(2)}` : '';
-  document.getElementById('product-description').textContent = item.description || '';
+  const descEl = document.getElementById('product-description');
+  const sentences = (item.description || '').split('.').map(s => s.trim()).filter(s => s.length > 0);
+  descEl.innerHTML = sentences.map(s => `<li>${s}</li>`).join('');
 
   // Badges
   const badgesEl = document.getElementById('badges');
