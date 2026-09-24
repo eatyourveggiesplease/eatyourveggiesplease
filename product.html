@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eat Your Veggies (please)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','1896205711790489');
+  fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1896205711790489&ev=PageView&noscript=1"/></noscript>
+  <!-- End Meta Pixel Code -->
+  <style>
+    :root {
+      --green:       #007a3f;
+      --green-dark:  #005a2e;
+      --green-light: #e8f5ee;
+      --blue-pastel: #7dc2df;
+      --cream:       #f9fafb;
+      --warm-white:  #ffffff;
+      --text:        #111827;
+      --text-muted:  #4b5563;
+      --border:      #e5e7eb;
+      --radius:      12px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Quicksand', sans-serif; background: var(--cream); color: var(--text); line-height: 1.6; min-height: 100vh; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; font-family: inherit; }
+
+    /* NAV */
+    nav {
+      background: var(--green-dark);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo img { height: 36px; width: auto; }
+    .back-link {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.85);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .back-link:hover { color: #ffffff; }
+    .back-link svg { width: 16px; height: 16px; }
+
+    /* LOADING / ERROR */
+    .state-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      gap: 16px;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+    .spinner {
+      width: 36px; height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: var(--green);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* PRODUCT LAYOUT */
+    .product-page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    /* IMAGE GALLERY */
+    .gallery { display: flex; flex-direction: column; gap: 12px; }
+    .gallery-main {
+      background: #ffffff;
+      border-radius: var(--radius);
+      overflow: hidden;
+      aspect-ratio: 1;
+      border: 1px solid var(--border);
+    }
+    .gallery-main img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 16px;
+    }
+    .gallery-thumbs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .thumb {
+      width: 64px;
+      height: 64px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 2px solid var(--border);
+      cursor: pointer;
+      background: #fff;
+      transition: border-color 0.15s;
+      flex-shrink: 0;
+    }
+    .thumb.active { border-color: var(--green); }
+    .thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 4px;
+    }
+
+    /* PRODUCT INFO */
+    .product-info { display: flex; flex-direction: column; gap: 20px; }
+
+    .drop-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green);
+    }
+
+    .product-name {
+      font-family: 'Shrikhand', cursive;
+      font-size: 1.7rem;
+      line-height: 1.2;
+      color: var(--text);
+    }
+
+    .product-brand {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .product-price {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--green-dark);
+    }
+
+    .badges {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .badge-size {
+      background: var(--blue-pastel);
+      color: #fff;
+    }
+    .badge-condition {
+      background: var(--green-light);
+      color: var(--green-dark);
+    }
+    .badge-harvest {
+      background: var(--green-dark);
+      color: #fff;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+    }
+
+    .product-description {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* BUY BUTTON */
+    .btn-buy {
+      display: block;
+      width: 100%;
+      padding: 16px 24px;
+      background: var(--green-dark);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-align: center;
+      border: none;
+      border-radius: var(--radius);
+      transition: background 0.15s, transform 0.1s;
+      text-transform: uppercase;
+    }
+    .btn-buy:hover { background: #003d1f; transform: translateY(-1px); }
+    .btn-buy:active { transform: translateY(0); }
+    .btn-buy:disabled {
+      background: var(--border);
+      color: var(--text-muted);
+      cursor: not-allowed;
+      transform: none;
+    }
+    .btn-buy.sold {
+      background: #9ca3af;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .secure-note {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .secure-note svg { width: 13px; height: 13px; flex-shrink: 0; }
+
+    /* MOBILE */
+    @media (max-width: 680px) {
+      .product-page {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 24px 16px 64px;
+      }
+      .product-name { font-size: 1.4rem; }
+      .product-price { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="back-link" id="back-link" href="/">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+      Back
+    </a>
+    <a class="logo" href="/"><img src="/logo.png" alt="Eat Your Veggies (please)" /></a>
+    <div style="width:60px"></div>
+  </div>
+</nav>
+
+<div id="loading" class="state-screen">
+  <div class="spinner"></div>
+  <span>Loading…</span>
+</div>
+
+<div id="error" class="state-screen" style="display:none">
+  <span style="font-size:2rem">🥦</span>
+  <span>Couldn't find this product.</span>
+  <a href="/" style="color:var(--green);font-weight:700;">Back to shop</a>
+</div>
+
+<div id="product" class="product-page" style="display:none">
+
+  <!-- IMAGE GALLERY -->
+  <div class="gallery">
+    <div class="gallery-main">
+      <img id="main-img" src="" alt="" />
+    </div>
+    <div class="gallery-thumbs" id="thumbs"></div>
+  </div>
+
+  <!-- PRODUCT INFO -->
+  <div class="product-info">
+    <div class="drop-label" id="drop-label"></div>
+    <h1 class="product-name" id="product-name"></h1>
+    <div class="product-brand" id="product-brand"></div>
+    <div class="product-price" id="product-price"></div>
+
+    <div class="badges" id="badges"></div>
+
+    <div class="divider"></div>
+
+    <p class="product-description" id="product-description"></p>
+
+    <div class="divider"></div>
+
+    <a id="buy-btn" class="btn-buy" href="#">Buy now</a>
+
+    <p class="secure-note">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg>
+      Secure checkout via Stripe · Australia Post shipping $9.95
+    </p>
+  </div>
+
+</div>
+
+<script>
+(async () => {
+  // Parse URL: /buy/:dropId/:itemIndex
+  const parts = window.location.pathname.split('/').filter(Boolean);
+  // parts = ['buy', '001', '0']
+  const dropId = parts[1];
+  const itemIndex = parseInt(parts[2], 10);
+
+  if (!dropId || isNaN(itemIndex)) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').style.display = 'flex';
+    return;
+  }
+
+  let drops;
+  try {
+    const res = await fetch('/drops.json');
+    drops = await res.json();
+  } catch (e) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').style.display = 'flex';
+    return;
+  }
+
+  const drop = drops.find(d => d.dropNumber === dropId || d.id === 'drop-' + dropId);
+  const item = drop && drop.items && drop.items[itemIndex];
+
+  if (!drop || !item) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').style.display = 'flex';
+    return;
+  }
+
+  // Gather images
+  const images = item.images || (item.image ? [item.image] : []);
+
+  // Populate
+  document.title = `${item.name} · Eat Your Veggies (please)`;
+
+  document.getElementById('drop-label').textContent = `Drop ${drop.dropLabel} — ${drop.dropName}`;
+
+  const backLink = document.getElementById('back-link');
+  backLink.href = `/drop/${drop.dropNumber}`;
+  backLink.innerHTML = `<svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>${drop.dropName}`;
+
+  document.getElementById('product-name').textContent = item.name;
+  document.getElementById('product-brand').textContent = item.brand || '';
+  document.getElementById('product-price').textContent = item.price ? `$${item.price.toFixed(2)}` : '';
+  document.getElementById('product-description').textContent = item.description || '';
+
+  // Badges
+  const badgesEl = document.getElementById('badges');
+  if (item.size) {
+    badgesEl.innerHTML += `<span class="badge badge-size">Size ${item.size}</span>`;
+  }
+  if (item.condition) {
+    badgesEl.innerHTML += `<span class="badge badge-condition">${item.condition}</span>`;
+  }
+  if (item.featured) {
+    badgesEl.innerHTML += `<span class="badge badge-harvest">⭐ Harvest Pick</span>`;
+  }
+
+  // Image gallery
+  const mainImg = document.getElementById('main-img');
+  const thumbsEl = document.getElementById('thumbs');
+
+  if (images.length > 0) {
+    mainImg.src = '/' + images[0];
+    mainImg.alt = item.name;
+
+    if (images.length > 1) {
+      images.forEach((src, i) => {
+        const thumb = document.createElement('div');
+        thumb.className = 'thumb' + (i === 0 ? ' active' : '');
+        thumb.innerHTML = `<img src="/${src}" alt="${item.name} ${i+1}" />`;
+        thumb.addEventListener('click', () => {
+          mainImg.src = '/' + src;
+          document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+          thumb.classList.add('active');
+        });
+        thumbsEl.appendChild(thumb);
+      });
+    }
+  }
+
+  // Buy button
+  const buyBtn = document.getElementById('buy-btn');
+  if (item.sold) {
+    buyBtn.textContent = 'Sold';
+    buyBtn.classList.add('sold');
+    buyBtn.removeAttribute('href');
+  } else {
+    buyBtn.href = `/checkout/${dropId}/${itemIndex}`;
+    buyBtn.textContent = 'Buy now';
+  }
+
+  // Fire Meta Pixel ViewContent
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'ViewContent', {
+      content_ids: [`drop-${dropId}-${itemIndex}`],
+      content_name: item.name,
+      content_type: 'product',
+      value: item.price || 0,
+      currency: 'AUD'
+    });
+  }
+
+  // Show product
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('product').style.display = 'grid';
+})();
+</script>
+
+</body>
+</html>
