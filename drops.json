@@ -104,7 +104,7 @@
         "size": "11-12Y",
         "price": 12,
         "image": "images/d1-9.jpg",
-        "description": "Cotton polyester blend. Elastic waist. Mock fly detail at the front. Cuffed bottom for extra style points. Two hidden side pockets and one sewn back pocket. Some slight pilling around the waistband — very subtle, particularly as the fabric is black!",
+        "description": "Cotton polyester blend. Elastic waist. Mock fly detail at the front. Cuffed bottom for extra style points. Two hidden side pockets and one sewn back pocket. Some slight pilling around the waistband \u2014 very subtle, particularly as the fabric is black!",
         "condition": "Played in happily"
       },
       {
@@ -212,8 +212,8 @@
         "size": "2Y",
         "price": 28,
         "image": "images/d1-20.jpg",
-        "description": "Pure merino wool that can go in the washing machine? Yes please! Gorgeous tree and star print. Turned-up detail at shoulder and hoodie — because warm! Side pockets with soft wool inside for cosy hands.",
-        "condition": "Unworn — tags on"
+        "description": "Pure merino wool that can go in the washing machine? Yes please! Gorgeous tree and star print. Turned-up detail at shoulder and hoodie \u2014 because warm! Side pockets with soft wool inside for cosy hands.",
+        "condition": "Unworn \u2014 tags on"
       }
     ]
   },
@@ -373,142 +373,154 @@
         "brand": "Jack & Milly",
         "size": "3Y",
         "price": 12,
+        "condition": "Played in happily",
+        "description": "Such a cute tee! Beautiful quality. Red & white stripe (raised), button neck.",
         "images": [
           "images/d3-1-1.jpg",
           "images/d3-1-2.jpg"
-        ],
-        "description": "Such a cute tee! Beautiful quality. Red & white stripe (raised), button neck.",
-        "condition": "Played in happily"
+        ]
       },
       {
         "name": "Short Dungarees",
         "brand": "Zara",
         "size": "3-4Y",
         "price": 20,
-        "image": "images/d3-2.jpg",
-        "description": "Navy blue overalls with soft cotton lining. Side pockets and buttons. With a clever pocket for storing treasures at the front.",
-        "condition": "Played in lightly"
+        "condition": "Played in lightly",
+        "description": "Navy blue overalls with soft cotton lining. Side pockets and buttons. Clever pocket for storing treasures at the front.",
+        "image": "images/d3-2.jpg"
       },
       {
         "name": "Polo Shirt",
         "brand": "Ralph Lauren",
         "size": "4Y",
         "price": 30,
-        "image": "images/d3-3.jpg",
-        "description": "Red polo with lime green horse. Tiny barely perceptible mark on the front near the bottom of the polo.",
-        "condition": "Played in lightly"
+        "condition": "Played in lightly",
+        "description": "Red polo with lime green horse. Tiny barely perceptible mark on the front near the bottom.",
+        "image": "images/d3-3.jpg"
       },
       {
         "name": "Puffer Vest",
         "brand": "Joules",
         "size": "9Y",
         "price": 35,
-        "image": "images/d3-4-1.jpg",
-        "description": "Navy puffa vest with red lining. Perfect for the in-between months. Red zip and lining. Two external pockets with zips. One internal pocket for secrets!",
-        "condition": "As good as new"
+        "condition": "Like new",
+        "description": "Navy puffer vest with red lining. Perfect for the in-between months. Red zip and lining. Two external pockets with zips. One internal pocket for secrets!",
+        "image": "images/d3-4-1.jpg"
       },
       {
         "name": "1987 Vintage Jeans",
-        "brand": "Vintage (no label)",
+        "brand": "Vintage",
         "size": "6-8Y",
         "price": 40,
+        "condition": "Played in lightly",
+        "description": "High waisted jeans with gorgeous detail at the front, including a cute star button and fancy zipper pull. Beautiful quality with detailed side pockets and belt loops. Pick of the harvest \u2014 hard to part with these.",
         "images": [
           "images/d3-5-1.jpg",
           "images/d3-5-2.jpg"
-        ],
-        "description": "High waisted jeans with gorgeous detail at the front. Cute star button and fancy zipper pull. Beautiful quality with detailed side pockets and belt loops. Hard to part with these — they are one in a million.",
-        "condition": "Played in lightly"
+        ]
       },
       {
+        "featured": true,
         "name": "Red Cable Knit Cardigan",
         "brand": "Oobi",
         "size": "5Y",
         "price": 25,
-        "featured": true,
+        "condition": "Played in lightly",
+        "description": "Red cable knit cardigan with liberty fabric buttons. 100% Cotton.",
         "images": [
           "images/d3-6-1.jpg",
           "images/d3-6-2.jpg"
-        ],
-        "description": "Red cable knit cardigan with liberty fabric buttons. 100% Cotton. Such a delight this piece.",
-        "condition": "Played in lightly"
+        ]
       },
       {
         "name": "Breton Stripe Tee",
         "brand": "Uniqlo",
         "size": "10Y",
         "price": 10,
-        "image": "images/d3-7.jpg",
-        "description": "White & navy stripe tee with a slight crop cut. Cotton and Polyester — Uniqlo's popular Airism fabric.",
-        "condition": "Played in lightly"
+        "condition": "Played in lightly",
+        "description": "White & navy stripe tee with a slight crop cut. Cotton and polyester \u2014 Uniqlo's popular AIRism fabric.",
+        "image": "images/d3-7.jpg"
       },
       {
         "name": "Corduroy Pinafore Dress",
         "brand": "Rock Your Kid",
         "size": "5Y",
         "price": 20,
+        "condition": "Like new",
+        "description": "Red corduroy pinafore with front pocket. Pleated skirt with diagonal pockets.",
         "images": [
           "images/d3-8-1.jpg",
           "images/d3-8-2.jpg"
-        ],
-        "description": "Red cord with front pocket. Pleated skirt with diagonal pockets.",
-        "condition": "As good as new"
+        ]
       },
       {
         "name": "Dark Denim Skinny Jeans",
         "brand": "Target",
         "size": "12Y",
         "price": 15,
-        "image": "images/d3-9.jpg",
+        "condition": "Like new",
         "description": "Dark navy, slim fit. Four pockets.",
-        "condition": "As good as new"
+        "image": "images/d3-9.jpg"
       },
       {
         "name": "Denim Overalls",
         "brand": "Zara",
         "size": "7Y",
         "price": 20,
-        "image": "images/d3-10.jpg",
-        "description": "Cute as a button denim overalls. Straight leg with subtle flare at the bottom. Side zipper and buttons on R-side. Bib and brace access with front pocket. Comes with a cute bell safety-pinned to the front — a unique treasure from a former owner!",
-        "condition": "Played in lightly"
+        "condition": "Played in lightly",
+        "description": "Cute as a button denim overalls. Straight leg with subtle flare at the bottom. Side zipper and buttons on right side. Bib and brace access with front pocket. Comes with a cute bell safety-pinned to the front \u2014 a unique treasure from a former owner!",
+        "image": "images/d3-10.jpg"
+      },
+      {
+        "name": "Cherry Print Flared Leggings",
+        "brand": "Cotton On",
+        "size": "4Y",
+        "price": 10,
+        "condition": "Played in happily",
+        "image": "images/d3-11.jpg",
+        "description": "Navy with cherry print. Ruffle hem with overlocked edging."
       },
       {
         "name": "Tartan Shirt",
         "brand": "Ralph Lauren",
-        "size": "M (10-12Y)",
+        "size": "M (10-12)",
         "price": 50,
-        "images": ["images/d3-12-1.jpg", "images/d3-12-2.jpg"],
+        "condition": "Like new",
         "description": "Cotton button-up shirt. Red, navy, blue and green check with blue pony logo.",
-        "condition": "As good as new"
+        "images": [
+          "images/d3-12-1.jpg",
+          "images/d3-12-2.jpg"
+        ]
       },
       {
         "name": "Oishi-M Leggings",
         "brand": "Oishi-M",
         "size": "4-5Y",
         "price": 15,
+        "condition": "Well played in",
+        "description": "IYKYK! Oishi-M \u2014 everyone's favourite label that is no more. Rare find. These leggings grow with your kids \u2014 foldable waistband and cuffs to adjust for height. Knee pads to make them last the distance!",
         "images": [
           "images/d3-13-1.jpg",
           "images/d3-13-2.jpg"
-        ],
-        "description": "IYKYK! Oishi-M — everyone's favourite label that is no more. Rare find. They grow with your kiddos. Foldable waistband and cuffs to adjust for height. Knee pads to make them last the distance!",
-        "condition": "Well played in — but lots of adventures left"
+        ]
       },
       {
         "name": "Denim Shorts",
         "brand": "Target",
         "size": "10Y",
         "price": 10,
-        "image": "images/d3-14.jpg",
-        "description": "Light denim wash, elastic high waisted shorts. Mock button and fly feature at front. Diagonal pockets at the front. Two pockets at the back.",
-        "condition": "As good as new"
+        "condition": "Like new",
+        "description": "Light denim wash, elastic high-waisted shorts. Mock button and fly feature at front. Diagonal pockets at the front. Two pockets at the back.",
+        "image": "images/d3-14.jpg"
       },
       {
         "name": "Striped Grosuit",
         "brand": "Marquise",
         "size": "Newborn",
         "price": 12,
-        "image": "images/d3-15.jpg",
-        "description": "Red & white stripe, footed romper. Beautiful stitching detail on bias edging. Small cute pocket on the front. Press studs for ease. The sweetest addition to any newborn's wardrobe!",
-        "condition": "Played in lightly"
+        "condition": "Played in lightly",
+        "description": "Red & white stripe footed romper. Beautiful stitching detail on bias edging. Small cute pocket on the front. Press studs for ease. The sweetest addition to any newborn's wardrobe!",
+        "image": "images/d3-15.jpg"
       },
       {
         "name": "Cherry Print Pants",
@@ -516,24 +528,6 @@
         "size": "TODO",
         "price": 0,
         "image": "images/d3-16.jpg",
-        "description": "TODO",
-        "condition": "TODO"
-      },
-      {
-        "name": "Elephant Print Romper",
-        "brand": "TODO",
-        "size": "TODO",
-        "price": 0,
-        "image": "images/d3-17.jpg",
-        "description": "TODO",
-        "condition": "TODO"
-      },
-      {
-        "name": "Camo Cargo Pants",
-        "brand": "TODO",
-        "size": "TODO",
-        "price": 0,
-        "image": "images/d3-18.jpg",
         "description": "TODO",
         "condition": "TODO"
       },
@@ -648,15 +642,6 @@
           "images/d3-29.jpg",
           "images/d3-29-2.jpg"
         ],
-        "description": "TODO",
-        "condition": "TODO"
-      },
-      {
-        "name": "Cable Knit Jumper",
-        "brand": "Polo Ralph Lauren",
-        "size": "TODO",
-        "price": 0,
-        "image": "images/d3-30.jpg",
         "description": "TODO",
         "condition": "TODO"
       },
