@@ -374,7 +374,7 @@
         "size": "3Y",
         "price": 12,
         "condition": "Played in happily",
-        "description": "Such a cute tee! Beautiful quality. Red & white stripe (raised), button neck.",
+        "description": "Such a cute tee! Beautiful quality. Red & white stripe (raised), button neck",
         "images": [
           "images/d3-1-1.jpg",
           "images/d3-1-2.jpg"
@@ -386,7 +386,7 @@
         "size": "3-4Y",
         "price": 20,
         "condition": "Played in lightly",
-        "description": "Navy blue overalls with soft cotton lining. Side pockets and buttons. Clever pocket for storing treasures at the front.",
+        "description": "Navy Blue overalls with soft cotton lining. Side pockets and buttons. With a clever pocket for storing treaseurs at the front.",
         "image": "images/d3-2.jpg"
       },
       {
@@ -395,7 +395,7 @@
         "size": "4Y",
         "price": 30,
         "condition": "Played in lightly",
-        "description": "Red polo with lime green horse. Tiny barely perceptible mark on the front near the bottom.",
+        "description": "Red Polo with lime green horse. Tiny barely perceptible mark on the front near the bottom of the polo.",
         "image": "images/d3-3.jpg"
       },
       {
@@ -404,20 +404,8 @@
         "size": "9Y",
         "price": 35,
         "condition": "Like new",
-        "description": "Navy puffer vest with red lining. Perfect for the in-between months. Red zip and lining. Two external pockets with zips. One internal pocket for secrets!",
+        "description": "Navy puffa vest with red lining. Perfect for the inbetween months. Red zip and lining. Two external pockets with zips. One internal pocket for secrets!",
         "image": "images/d3-4-1.jpg"
-      },
-      {
-        "name": "1987 Vintage Jeans",
-        "brand": "Vintage",
-        "size": "6-8Y",
-        "price": 40,
-        "condition": "Played in lightly",
-        "description": "High waisted jeans with gorgeous detail at the front, including a cute star button and fancy zipper pull. Beautiful quality with detailed side pockets and belt loops. Pick of the harvest \u2014 hard to part with these.",
-        "images": [
-          "images/d3-5-1.jpg",
-          "images/d3-5-2.jpg"
-        ]
       },
       {
         "featured": true,
@@ -426,7 +414,7 @@
         "size": "5Y",
         "price": 25,
         "condition": "Played in lightly",
-        "description": "Red cable knit cardigan with liberty fabric buttons. 100% Cotton.",
+        "description": "Red cable knit cardigan with liberty fabric buttons. 100% Cotton. Such a delight this piece.",
         "images": [
           "images/d3-6-1.jpg",
           "images/d3-6-2.jpg"
@@ -434,20 +422,20 @@
       },
       {
         "name": "Breton Stripe Tee",
-        "brand": "Uniqlo",
+        "brand": "uniqlo",
         "size": "10Y",
         "price": 10,
         "condition": "Played in lightly",
-        "description": "White & navy stripe tee with a slight crop cut. Cotton and polyester \u2014 Uniqlo's popular AIRism fabric.",
+        "description": "White & navy stripe tee with a slight crop cut. Cotton and Polyester - Uniqlo's popular airism fabric.",
         "image": "images/d3-7.jpg"
       },
       {
         "name": "Corduroy Pinafore Dress",
-        "brand": "Rock Your Kid",
+        "brand": "Rock your Kid",
         "size": "5Y",
         "price": 20,
         "condition": "Like new",
-        "description": "Red corduroy pinafore with front pocket. Pleated skirt with diagonal pockets.",
+        "description": "Red cord, with front pocket. Pleted skirt with diagonal pockets.",
         "images": [
           "images/d3-8-1.jpg",
           "images/d3-8-2.jpg"
@@ -468,17 +456,17 @@
         "size": "7Y",
         "price": 20,
         "condition": "Played in lightly",
-        "description": "Cute as a button denim overalls. Straight leg with subtle flare at the bottom. Side zipper and buttons on right side. Bib and brace access with front pocket. Comes with a cute bell safety-pinned to the front \u2014 a unique treasure from a former owner!",
+        "description": "Cute as a button denim overalls. Straight leg with subtle flare at the bottom. Side Zipper and buttons on R-side. Bib and Brace access with front pocket. (Come with a cute bell safety pinned to the front - a unique treasure from a former owner!)",
         "image": "images/d3-10.jpg"
       },
       {
         "name": "Cherry Print Flared Leggings",
-        "brand": "Cotton On",
+        "brand": "Cotton on",
         "size": "4Y",
         "price": 10,
         "condition": "Played in happily",
         "image": "images/d3-16.jpg",
-        "description": "Navy with cherry print. Ruffle hem with overlocked edging."
+        "description": "Navy with cherry print, ruffle hem with overlocked edging."
       },
       {
         "name": "Tartan Shirt",
@@ -493,12 +481,12 @@
         ]
       },
       {
-        "name": "Oishi-M Leggings",
+        "name": "Leggings",
         "brand": "Oishi-M",
         "size": "4-5Y",
         "price": 15,
-        "condition": "Well played in",
-        "description": "IYKYK! Oishi-M \u2014 everyone's favourite label that is no more. Rare find. These leggings grow with your kids \u2014 foldable waistband and cuffs to adjust for height. Knee pads to make them last the distance!",
+        "condition": "Well played in - but lots of adventures left.",
+        "description": "IYKYK! Oishi-M everyone's favourite label that is no more! Rare find these leggings. They grow with your kiddos. Foldable waistband and cuffs to adjust for height. Knee pads to make them last the distance!",
         "images": [
           "images/d3-13-1.jpg",
           "images/d3-13-2.jpg"
@@ -510,7 +498,7 @@
         "size": "10Y",
         "price": 10,
         "condition": "Like new",
-        "description": "Light denim wash, elastic high-waisted shorts. Mock button and fly feature at front. Diagonal pockets at the front. Two pockets at the back.",
+        "description": "Light Denim wash, elastic high waisted shorts. Mock button and fly feature at front. Diagonal pockets at the front. Two pockets at the back.",
         "image": "images/d3-14.jpg"
       },
       {
@@ -519,131 +507,132 @@
         "size": "Newborn",
         "price": 12,
         "condition": "Played in lightly",
-        "description": "Red & white stripe footed romper. Beautiful stitching detail on bias edging. Small cute pocket on the front. Press studs for ease. The sweetest addition to any newborn's wardrobe!",
+        "description": "Red & white stripe, footed romper. Beautiful stitching detail on bias edging. Small cute pocket on the front. Press studs for ease. The sweetest addition to any newborn's wardrobe!",
         "image": "images/d3-15.jpg"
       },
       {
         "name": "Petit Bateau Sweatshirt",
         "brand": "Petit Bateau",
-        "size": "TODO",
-        "price": 0,
+        "size": "6months-1",
+        "price": 10,
         "images": [
           "images/d3-19.jpg",
           "images/d3-19-2.jpg"
         ],
-        "description": "TODO",
-        "condition": "TODO"
+        "description": "Rounded neckline. Ribbing at the neck, on the bottoms of the sleeves and the bottom of the body. 100%Cotton Added fabric 95%Cotton 5%Elastane.",
+        "condition": "Lots of adventures, but still more to be had. (Lettering on front print shows some cracking from wash)"
       },
       {
-        "name": "Cable Knit Jumper",
+        "name": "Cable Knit Jumper (Red)",
         "brand": "Polo Ralph Lauren",
-        "size": "TODO",
-        "price": 0,
+        "size": "5Y",
+        "price": 48,
         "images": [
           "images/d3-20.jpg",
-          "images/d3-20-2.jpg"
+          "images/d3-20-2.jpg",
+          "images/d3-20-3.jpg"
         ],
-        "description": "TODO",
-        "condition": "TODO"
+        "description": "Cotton. Red long sleeve cable knit jumper. Navy embroided emblem.",
+        "condition": "Played in gently (minor fade from wash)"
       },
       {
         "name": "LA/CA Long Sleeve Tee",
-        "brand": "TODO",
-        "size": "TODO",
-        "price": 0,
+        "brand": "Target",
+        "size": "10Y",
+        "price": 8,
         "images": [
           "images/d3-21.jpg",
           "images/d3-21-2.jpg"
         ],
-        "description": "TODO",
-        "condition": "TODO"
+        "description": "Made from organic cotton, neck ribbing",
+        "condition": "Played in gently (minor fade from wash)"
       },
       {
-        "name": "Rugby Shirt",
-        "brand": "Cyrillus",
-        "size": "TODO",
-        "price": 0,
+        "name": "Red Rugby Shirt",
+        "brand": "Cyrillus Paris",
+        "size": "4Y",
+        "price": 32,
         "images": [
           "images/d3-22.jpg",
           "images/d3-22-2.jpg"
         ],
-        "description": "TODO",
-        "condition": "TODO"
+        "description": "Twill collar. Jersey knit body. Hidden button placket. Chenille embroided patch on the chest, coller and back. Ribbed cuffs. Split side seams at waist.",
+        "condition": "Like new"
       },
       {
         "name": "Red Leggings",
-        "brand": "TODO",
-        "size": "TODO",
-        "price": 0,
+        "brand": "Target",
+        "size": "4Y",
+        "price": 8,
         "image": "images/d3-23.jpg",
-        "description": "TODO",
-        "condition": "TODO"
+        "description": "95% Australian Cotton, 5% Elastine",
+        "condition": "Like new"
       },
       {
         "name": "Navy Cardigan",
-        "brand": "TODO",
-        "size": "TODO",
-        "price": 0,
+        "brand": "Zara",
+        "size": "4Y",
+        "price": 16,
         "image": "images/d3-24.jpg",
-        "description": "TODO",
-        "condition": "TODO"
+        "description": "Cotton. V-neck navy cardigan. Button through.",
+        "condition": "Played in gently (minor fade from wash)"
       },
       {
         "name": "Levi's Tee",
         "brand": "Levi's",
-        "size": "TODO",
-        "price": 0,
+        "size": "S (14-16)",
+        "price": 12,
         "image": "images/d3-25.jpg",
-        "description": "TODO",
-        "condition": "TODO"
+        "description": "100% cotton. Round neckline. Ribbing at neck. Levi's decal with cowboy on front.",
+        "condition": "Played in gently (minor fade from wash)"
       },
       {
-        "name": "Pink Button-Up Shirt",
+        "name": "Red Button-Up Shirt",
         "brand": "Abercrombie Kids",
-        "size": "TODO",
-        "price": 0,
+        "size": "7-8Y",
+        "price": 28,
         "image": "images/d3-26.jpg",
-        "description": "TODO",
-        "condition": "TODO"
+        "description": "Red, cozy long-sleeve button-up shirt. Ultra soft fabric. Features a left chest pocket and classic collar with button down option. 100% Cotton. Navy Moose emblem on pocket.",
+        "condition": "Like new"
       },
       {
         "name": "Navy Shorts",
-        "brand": "TODO",
-        "size": "TODO",
-        "price": 0,
+        "brand": "H&M",
+        "size": "2-3Y",
+        "price": 8,
         "image": "images/d3-27.jpg",
-        "description": "TODO",
-        "condition": "TODO"
+        "description": "Navy short. Classic cut above knee. Cotton. Drawstring at waistband.",
+        "condition": "Like new"
       },
       {
         "name": "Red & Navy Pleated Skirt",
-        "brand": "TODO",
-        "size": "TODO",
-        "price": 0,
+        "brand": "Jacardi Paris",
+        "size": "6Y",
+        "price": 38,
         "image": "images/d3-28.jpg",
-        "description": "TODO",
+        "description": "Red and navy mid-length skirt in 100% cotton. Cotton voile lining. Box pleats with bow detail at waist. Invisible side zip fastening. Adjustable elasticated waistband.",
         "condition": "TODO"
       },
       {
         "name": "Tartan Shirt",
-        "brand": "Tommy Hilfiger",
-        "size": "TODO",
-        "price": 0,
+        "brand": "Gin and Tonic",
+        "size": "European 24 - Australian 6-8",
+        "price": 21,
         "images": [
           "images/d3-29.jpg",
           "images/d3-29-2.jpg"
         ],
-        "description": "TODO",
-        "condition": "TODO"
+        "description": "Red tartan button up shirt. Cotton. Satin tri colour bias detail on button seam. Grandad collar.",
+        "condition": "Like new"
       },
       {
         "name": "Blue Check Shirt",
-        "brand": "TODO",
-        "size": "TODO",
-        "price": 0,
+        "brand": "Cotton on",
+        "size": "6Y",
+        "price": 12,
         "image": "images/d3-31.jpg",
-        "description": "TODO",
-        "condition": "TODO"
+        "description": "Blue and white micro check. Long-sleeve button-up shirt. Red embroidered details on top button, chest pocket, wrist cuffs and bottom of shirt seam.  Features a left chest pocket and classic collar. 100% Cotton. on pocket.",
+        "condition": "Played in gently"
       }
     ]
   }
