@@ -343,8 +343,12 @@
       transition: transform 0.3s;
     }
     .drop-item:hover .drop-item-img img { transform: scale(1.04); }
+    .drop-item-info:hover .drop-item-name { color: var(--green); }
     .drop-item-info {
       padding: 10px 12px;
+      display: block;
+      text-decoration: none;
+      color: inherit;
     }
     .drop-item-brand { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
     .drop-item-name { font-size: 0.9rem; font-weight: 600; margin: 2px 0; }
@@ -1204,11 +1208,11 @@
                   ${!item.sold && hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${imgs.length} photos</span>` : ''}
                   ${!item.sold && item.condition ? `<span style="position:absolute;bottom:8px;left:8px;background:rgba(0,100,50,0.82);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${item.condition}</span>` : ''}
                 </div>
-                <div class="drop-item-info">
+                <a class="drop-item-info" href="/buy/${drop.dropNumber}/${i}">
                   <div class="drop-item-brand">${item.brand}</div>
                   <div class="drop-item-name">${item.name}</div>
                   <div class="drop-item-size">Size ${item.size}</div>
-                </div>
+                </a>
                 ${!drop.sold && item.price ? `<button class="item-buy-btn" data-item-index="${i}">Buy this · $${item.price}</button>` : ''}
               </div>`;
             }).join('')}
@@ -1231,11 +1235,11 @@
                     ${!item.sold && hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${imgs.length} photos</span>` : ''}
                     ${!item.sold && item.condition ? `<span style="position:absolute;bottom:8px;left:8px;background:rgba(0,100,50,0.82);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;z-index:3">${item.condition}</span>` : ''}
                   </div>
-                  <div class="drop-item-info">
+                  <a class="drop-item-info" href="/buy/${drop.dropNumber}/${idx}">
                     <div class="drop-item-brand">${item.brand}</div>
                     <div class="drop-item-name">${item.name}</div>
                     <div class="drop-item-size">Size ${item.size}</div>
-                  </div>
+                  </a>
                   ${!drop.sold && item.price ? `<button class="item-buy-btn" data-item-index="${idx}">Buy this · $${item.price}</button>` : ''}
                 </div>`;
               }).join('')}
