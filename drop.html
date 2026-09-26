@@ -364,7 +364,7 @@
         const hasMultiple = imgs.length > 1;
         return `
         <div class="drop-item" data-index="${i}" data-size="${item.size || ''}">
-          <div class="drop-item-img" data-index="${i}">
+          <div class="drop-item-img" role="button" tabindex="0" data-index="${i}">
             <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" />
             ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px">${imgs.length} photos</span>` : ''}
           </div>

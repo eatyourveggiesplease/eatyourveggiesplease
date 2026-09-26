@@ -1201,7 +1201,7 @@
               const midClass = i >= 4 ? ' drop-item-mid' : '';
               return `
               <div class="drop-item${midClass}" data-drop="${drop.id}" data-index="${i}" data-size="${item.size || ''}">
-                <div class="drop-item-img" data-drop="${drop.id}" data-index="${i}" style="position:relative">
+                <div class="drop-item-img" role="button" tabindex="0" data-drop="${drop.id}" data-index="${i}" style="position:relative">
                   <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" ${item.sold ? 'class="is-sold"' : ''} />
                   ${item.featured && !item.sold ? pickOfHarvestOverlay() : ''}
                   ${item.sold ? '<div class="sold-overlay"><span class="sold-badge">Sold</span></div>' : ''}
@@ -1228,7 +1228,7 @@
                 const hasMultiple = imgs.length > 1;
                 return `
                 <div class="drop-item" data-drop="${drop.id}" data-index="${idx}" data-size="${item.size || ''}">
-                  <div class="drop-item-img" data-drop="${drop.id}" data-index="${idx}" style="position:relative">
+                  <div class="drop-item-img" role="button" tabindex="0" data-drop="${drop.id}" data-index="${idx}" style="position:relative">
                     <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" ${item.sold ? 'class="is-sold"' : ''} />
                     ${item.featured && !item.sold ? pickOfHarvestOverlay() : ''}
                     ${item.sold ? '<div class="sold-overlay"><span class="sold-badge">Sold</span></div>' : ''}
