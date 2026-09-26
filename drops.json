@@ -523,7 +523,7 @@
         "condition": "Played in lightly"
       },
       {
-        "name": "Cable Knit Jumper (Red)",
+        "name": "Cable Knit Jumper (Navy)",
         "brand": "Polo Ralph Lauren",
         "size": "5Y",
         "price": 48,
@@ -532,8 +532,8 @@
           "images/d3-20-2.jpg",
           "images/d3-20-3.jpg"
         ],
-        "description": "Cotton. Red long sleeve cable knit jumper. Navy embroided emblem. Played in gently (minor fade from wash).",
-        "condition": "Played in lightly"
+        "description": "Cotton. Navy long sleeve cable knit jumper. Red embroided emblem.",
+        "condition": "Played in gently (minor fade from wash)"
       },
       {
         "name": "LA/CA Long Sleeve Tee",
@@ -633,6 +633,15 @@
         "image": "images/d3-31.jpg",
         "description": "Blue and white micro check. Long-sleeve button-up shirt. Red embroidered details on top button, chest pocket, wrist cuffs and bottom of shirt seam.  Features a left chest pocket and classic collar. 100% Cotton. on pocket.",
         "condition": "Played in gently"
+      },
+      {
+        "name": "Cable Knit Jumper (Red)",
+        "brand": "Polo Ralph Lauren",
+        "size": "5Y",
+        "price": 48,
+        "image": "images/d3-32.jpg",
+        "description": "Cotton. Red long sleeve cable knit jumper. Navy embroided emblem.",
+        "condition": "Played in gently (minor fade from wash)"
       }
     ]
   }
