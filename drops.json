@@ -28,12 +28,9 @@
         "brand": "Zara",
         "size": "3-4Y",
         "price": 12,
-        "images": [
-          "images/d1-2.jpg",
-          "images/d1-2-2.jpg"
-        ],
         "description": "Comfy soft cotton overalls. Easy lift over the shoulder, but button access as well. Drop crotch harem pant style for an urban relaxed style. Textured side pocket for treasures.",
-        "condition": "Played in gently"
+        "condition": "Played in gently",
+        "image": "images/d1-2.jpg"
       },
       {
         "name": "Forest Green Converse",
@@ -91,12 +88,9 @@
         "brand": "H&M",
         "size": "5-6Y",
         "price": 12,
-        "images": [
-          "images/d1-8-1.jpg",
-          "images/d1-8-2.jpg"
-        ],
         "description": "Polyester jumper. Cropped style with balloon shaped sleeves.",
-        "condition": "Played in gently"
+        "condition": "Played in gently",
+        "image": "images/d1-8-1.jpg"
       },
       {
         "name": "Black Elastic-Waist Trousers",
@@ -139,12 +133,9 @@
         "brand": "Pumpkin Patch",
         "size": "2Y",
         "price": 8,
-        "images": [
-          "images/d1-13.jpg",
-          "images/d1-13-2.jpg"
-        ],
         "description": "Such a cool little long-sleeve top. Press stud at the back for ease (when chasing a toddler around the house). Cotton elastic shoulder detail. Small front pocket for a special little rock to live in.",
-        "condition": "Played in happily"
+        "condition": "Played in happily",
+        "image": "images/d1-13.jpg"
       },
       {
         "name": "Green Tank, 'Find Your Balance' Print",
@@ -233,12 +224,9 @@
         "brand": "Okaidi",
         "size": "7Y",
         "price": 21,
-        "images": [
-          "images/d2-1-1.jpg",
-          "images/d2-1-2.jpg"
-        ],
         "description": "Spring has sprung with these smart yet whimsical butterfly pants. Skinny cotton pants. Belt loops. Button and zip opening. Adjustable waistband. 4 pockets. Fancy piped pocket detail and ankle slits.",
-        "condition": "As good as new"
+        "condition": "As good as new",
+        "image": "images/d2-1-1.jpg"
       },
       {
         "name": "Purebaby Grosuit",
@@ -527,13 +515,9 @@
         "brand": "Polo Ralph Lauren",
         "size": "5Y",
         "price": 48,
-        "images": [
-          "images/d3-20.jpg",
-          "images/d3-20-2.jpg",
-          "images/d3-20-3.jpg"
-        ],
         "description": "Cotton. Navy long sleeve cable knit jumper. Red embroided emblem.",
-        "condition": "Played in lightly"
+        "condition": "Played in lightly",
+        "image": "images/d3-20.jpg"
       },
       {
         "name": "LA/CA Long Sleeve Tee",
