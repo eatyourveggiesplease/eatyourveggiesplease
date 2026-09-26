@@ -140,6 +140,7 @@
       aspect-ratio: 4/5;
       overflow: hidden;
       cursor: zoom-in;
+      touch-action: manipulation;
       position: relative;
     }
     .drop-item-img img {
@@ -378,10 +379,12 @@
 
       // Lightbox events
       grid.querySelectorAll('.drop-item-img').forEach(el => {
-        el.addEventListener('click', () => {
+        const openForEl = () => {
           const item = drop.items[parseInt(el.dataset.index)];
           openLightbox(getItemImages(item), 0);
-        });
+        };
+        el.addEventListener('click', openForEl);
+        el.addEventListener('touchend', e => { e.preventDefault(); openForEl(); });
       });
 
       // Buy button events
