@@ -148,7 +148,8 @@
       transition: transform 0.3s;
     }
     .drop-item:hover .drop-item-img img { transform: scale(1.04); }
-    .drop-item-info { padding: 10px 12px; }
+    .drop-item-info { padding: 10px 12px; display: block; text-decoration: none; color: inherit; }
+    .drop-item-info:hover .drop-item-name { color: var(--green); }
     .drop-item-brand { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
     .drop-item-name { font-size: 0.9rem; font-weight: 600; margin: 2px 0; }
     .drop-item-size { font-size: 0.8rem; color: var(--text-muted); }
@@ -366,11 +367,11 @@
             <img src="${firstImg.src}" alt="${firstImg.alt}" loading="lazy" />
             ${hasMultiple ? `<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.55);color:#fff;font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px">${imgs.length} photos</span>` : ''}
           </div>
-          <div class="drop-item-info">
+          <a class="drop-item-info" href="/buy/${drop.dropNumber}/${i}">
             <div class="drop-item-brand">${item.brand || ''}</div>
             <div class="drop-item-name">${item.name}</div>
             <div class="drop-item-size">${item.size ? 'Size ' + item.size : ''}</div>
-          </div>
+          </a>
           ${!drop.sold && !item.sold && item.price ? `<button class="item-buy-btn" data-item-index="${i}">Buy this · $${item.price}</button>` : (item.sold ? `<button class="item-buy-btn" disabled>Sold</button>` : '')}
         </div>`;
       }).join('');
