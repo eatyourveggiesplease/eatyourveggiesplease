@@ -4,7 +4,7 @@
     <title>Eat Your Veggies (please)</title>
     <link>https://eatyourveggiesplease.com</link>
     <description>Pre-loved kids clothing</description>
-    <lastBuildDate>Fri, 25 Sep 2026 03:43:59 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 00:31:54 +0000</lastBuildDate>
     <item>
       <g:id>d1-1</g:id>
       <g:title>White Colour-Block Top, Striped Sleeves (3Y)</g:title>
@@ -571,8 +571,8 @@
     </item>
     <item>
       <g:id>d3-20</g:id>
-      <g:title>Cable Knit Jumper (Red) (5Y)</g:title>
-      <g:description>Cotton. Red long sleeve cable knit jumper. Navy embroided emblem. Played in gently (minor fade from wash). Size: 5Y. Condition: Played in lightly.</g:description>
+      <g:title>Cable Knit Jumper (Navy) (5Y)</g:title>
+      <g:description>Cotton. Navy long sleeve cable knit jumper. Red embroided emblem. Size: 5Y. Condition: Played in lightly.</g:description>
       <g:link>https://eatyourveggiesplease.com/buy/003/15</g:link>
       <g:image_link>https://eatyourveggiesplease.com/images/d3-20.jpg</g:image_link>
       <g:price>48.00 AUD</g:price>
@@ -699,6 +699,18 @@
       <g:availability>in stock</g:availability>
       <g:condition>used</g:condition>
       <g:brand>Cotton on</g:brand>
+      <g:google_product_category>537</g:google_product_category>
+    </item>
+    <item>
+      <g:id>d3-32</g:id>
+      <g:title>Cable Knit Jumper (Red) (5Y)</g:title>
+      <g:description>Cotton. Red long sleeve cable knit jumper. Navy embroided emblem. Size: 5Y. Condition: Played in lightly.</g:description>
+      <g:link>https://eatyourveggiesplease.com/buy/003/26</g:link>
+      <g:image_link>https://eatyourveggiesplease.com/images/d3-32.jpg</g:image_link>
+      <g:price>48.00 AUD</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:brand>Polo Ralph Lauren</g:brand>
       <g:google_product_category>537</g:google_product_category>
     </item>
   </channel>
