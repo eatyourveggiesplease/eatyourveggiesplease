@@ -205,6 +205,51 @@
         "image": "images/d1-20.jpg",
         "description": "Pure merino wool that can go in the washing machine? Yes please! Gorgeous tree and star print. Turned-up detail at shoulder and hoodie \u2014 because warm! Side pockets with soft wool inside for cosy hands.",
         "condition": "Unworn \u2014 tags on"
+      },
+      {
+        "name": "Lion Graphic Long Sleeve Tee",
+        "brand": "Huxbaby",
+        "size": "",
+        "price": 0,
+        "image": "images/d1-21.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Silver Velour Jogger Pants",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "images": [
+          "images/d1-22-1.jpg",
+          "images/d1-22-2.jpg"
+        ],
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Wheeled Trainers",
+        "brand": "Sidewalk Sports",
+        "size": "",
+        "price": 0,
+        "images": [
+          "images/d1-23-1.jpg",
+          "images/d1-23-2.jpg"
+        ],
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Striped Knit Scarf",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "images": [
+          "images/d1-24-1.jpg",
+          "images/d1-24-2.jpg"
+        ],
+        "description": "",
+        "condition": ""
       }
     ]
   },
@@ -626,6 +671,28 @@
         "image": "images/d3-32.jpg",
         "description": "Cotton. Red long sleeve cable knit jumper. Navy embroided emblem.",
         "condition": "Played in lightly"
+      },
+      {
+        "name": "Arrow Print Anorak",
+        "brand": "Country Road",
+        "size": "",
+        "price": 0,
+        "images": [
+          "images/d3-33-1.jpg",
+          "images/d3-33-2.jpg",
+          "images/d3-33-3.jpg"
+        ],
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Colour-Block Tee",
+        "brand": "Tommy Hilfiger",
+        "size": "",
+        "price": 0,
+        "image": "images/d3-34.jpg",
+        "description": "",
+        "condition": ""
       }
     ]
   }
