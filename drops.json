@@ -695,5 +695,17 @@
         "condition": ""
       }
     ]
+  },
+  {
+    "id": "drop-004",
+    "dropNumber": "004",
+    "dropLabel": "Four",
+    "dropName": "Summer Tuckshop",
+    "dropSubtitle": "Long lines at the tuck shop, coins clutched in sandy hands. Bubble O' Bills melting faster than you can eat them, in the golden haze of an Australian summer.",
+    "veggie": "veggies/tomato.png",
+    "price": 0,
+    "sold": false,
+    "soldDate": null,
+    "items": []
   }
 ]
