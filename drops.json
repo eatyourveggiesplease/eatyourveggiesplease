@@ -98,7 +98,7 @@
         "size": "11-12Y",
         "price": 12,
         "image": "images/d1-9.jpg",
-        "description": "Cotton polyester blend. Elastic waist. Mock fly detail at the front. Cuffed bottom for extra style points. Two hidden side pockets and one sewn back pocket. Some slight pilling around the waistband \u2014 very subtle, particularly as the fabric is black!",
+        "description": "Cotton polyester blend. Elastic waist. Mock fly detail at the front. Cuffed bottom for extra style points. Two hidden side pockets and one sewn back pocket. Some slight pilling around the waistband — very subtle, particularly as the fabric is black!",
         "condition": "Played in happily"
       },
       {
@@ -203,8 +203,8 @@
         "size": "2Y",
         "price": 28,
         "image": "images/d1-20.jpg",
-        "description": "Pure merino wool that can go in the washing machine? Yes please! Gorgeous tree and star print. Turned-up detail at shoulder and hoodie \u2014 because warm! Side pockets with soft wool inside for cosy hands.",
-        "condition": "Unworn \u2014 tags on"
+        "description": "Pure merino wool that can go in the washing machine? Yes please! Gorgeous tree and star print. Turned-up detail at shoulder and hoodie — because warm! Side pockets with soft wool inside for cosy hands.",
+        "condition": "Unworn — tags on"
       },
       {
         "name": "Lion Graphic Long Sleeve Tee",
@@ -706,6 +706,373 @@
     "price": 0,
     "sold": false,
     "soldDate": null,
-    "items": []
+    "items": [
+      {
+        "name": "Leopard Print Velcro Trainers",
+        "brand": "Vans",
+        "size": "US 12",
+        "price": 20,
+        "description": "Padded collars for extra comfort and a streamlined heel fit. Self-fastening straps. Breathable and flexible lining. Durable rubber outsoles.",
+        "condition": "Like new",
+        "image": "images/d4-1.jpg"
+      },
+      {
+        "name": "Heart Beats Long Cardigan",
+        "brand": "Huxtakid",
+        "size": "5",
+        "price": 16,
+        "description": "Light-weight knit organic cotton cardigan. Heart Beats pattern. Extra long cardigan. Soft jacquard knit.",
+        "condition": "Played in happily",
+        "ageRange": "4-6",
+        "image": "images/d4-2.jpg"
+      },
+      {
+        "name": "Double Ruffle Denim Skirt",
+        "brand": "Seed",
+        "size": "7",
+        "price": 16,
+        "description": "Powder Blue Wash Denim Skirt. Zip front and button. 4 pockets. Double ruffle. Belt loops.",
+        "condition": "Played in gently",
+        "ageRange": "6-8",
+        "image": "images/d4-3.jpg"
+      },
+      {
+        "name": "Peace Tank",
+        "brand": "Munster",
+        "size": "7",
+        "price": 16,
+        "description": "100% Cotton Jersey Tank.",
+        "condition": "Played in gently",
+        "ageRange": "6-8",
+        "image": "images/d4-4.jpg"
+      },
+      {
+        "name": "Denim Overalls",
+        "brand": "Ghanda",
+        "size": "7-8",
+        "price": 20,
+        "description": "Blue Denim overalls. Side pocket. Side tab detail with tartan lining. Brown Ghanda logo on front pocket. Two side buttons for easy fit. Adjustable straps.",
+        "condition": "Played in gently",
+        "ageRange": "7-9",
+        "images": [
+          "images/d4-5-1.jpg",
+          "images/d4-5-2.jpg",
+          "images/d4-5-3.jpg"
+        ]
+      },
+      {
+        "name": "Bright Green Tee",
+        "brand": "The Animals Observatory",
+        "size": "8",
+        "price": 22,
+        "description": "Made from organic cotton. Soft and durable. Round neckline. Relaxed fit. Smiley face characters with words \"Istituto Allegro\" meaning Arts Institution. Note: two threads missing from the front bottom seam.",
+        "condition": "Played in gently",
+        "ageRange": "8-10",
+        "image": "images/d4-6.jpg"
+      },
+      {
+        "name": "Summer Pants",
+        "brand": "The Animals Observatory",
+        "size": "10",
+        "price": 45,
+        "description": "Light weight cotton summer pant. Soft fabric and elasticated waist. Two back pockets. The Animals Observatory logo on the front left leg.",
+        "condition": "Played in gently",
+        "ageRange": "8-10",
+        "image": "images/d4-7.jpg"
+      },
+      {
+        "name": "Rainbow Tee",
+        "brand": "Little Auguste",
+        "size": "7-8",
+        "price": 20,
+        "description": "Organic cotton hemp blend. Dusty pink tee with rainbow and sun graphic. Words \"well, hi.\"",
+        "condition": "Played in gently",
+        "ageRange": "7-8",
+        "image": "images/d4-8.jpg"
+      },
+      {
+        "name": "Navy Grapefruit Tee",
+        "brand": "COVERNAT x BOMARKET",
+        "size": "12",
+        "price": 18,
+        "description": "Le Marché navy T-shirt. Graphic print of grapefruit on front and back. Round neckline. Relaxed silhouette.",
+        "condition": "Played in gently",
+        "ageRange": "11-12",
+        "images": [
+          "images/d4-9-1.jpg",
+          "images/d4-9-2.jpg",
+          "images/d4-9-3.jpg"
+        ]
+      },
+      {
+        "name": "Sacred Summer Tee",
+        "brand": "Cape",
+        "size": "14",
+        "price": 18,
+        "description": "Good earth cotton (climate positive) apricot tee. Graphic print on front. Round neckline. Relaxed fit.",
+        "condition": "Played in gently",
+        "image": "images/d4-10.jpg"
+      },
+      {
+        "name": "Pale Lilac Sweater",
+        "brand": "Main Story",
+        "size": "8",
+        "price": 40,
+        "description": "Bubble Sweatshirt in Pale Lilac. Soft organic cotton jersey fabric. Relaxed fit. Main Story printed logo on the chest. Embroidered logo on arm. 100% Organic Cotton. Responsibly made in Portugal.",
+        "condition": "Played in gently",
+        "ageRange": "8-10",
+        "image": "images/d4-11.jpg"
+      },
+      {
+        "name": "Lemon Playsuit",
+        "brand": "Zara",
+        "size": "11-12",
+        "price": 10,
+        "description": "Lime terry towelling playsuit. Full elasticated detail at waist. White edging. Note: some slight staining on the white edging from suncream.",
+        "condition": "Played in happily",
+        "ageRange": "11-12",
+        "image": "images/d4-12.jpg"
+      },
+      {
+        "name": "Denim Shorts",
+        "brand": "Zara",
+        "size": "9-10",
+        "price": 12,
+        "description": "Denim shorts. Elasticated waist. Denim drawstring.",
+        "condition": "Played in gently",
+        "ageRange": "9-10",
+        "image": "images/d4-13.jpg"
+      },
+      {
+        "name": "Cons Hearts",
+        "brand": "Converse",
+        "size": "US 11",
+        "price": 15,
+        "description": "Converse kids. Pale blue with bright hearts. Elastic laces/velcro. Unique love heart Converse badge on inner ankle. Note: some light staining of the canvas.",
+        "condition": "Played in happily",
+        "images": [
+          "images/d4-14-1.jpg",
+          "images/d4-14-2.jpg"
+        ]
+      },
+      {
+        "name": "Olive & Silver Velour Track Pants",
+        "brand": "Decjuba",
+        "size": "L",
+        "price": 18,
+        "description": "Track pant in Olive/Silver velour. So soft and cosy. Mid rise waist. Elasticated waistband with draw cord. Side seam pockets. Cuffed.",
+        "condition": "Played in gently",
+        "ageRange": "14-16"
+      },
+      {
+        "name": "Wheelie Shoes",
+        "brand": "Sidewalk Sports",
+        "size": "3",
+        "price": 20,
+        "description": "Black suede wheelie shoes. Chunky sole. Removable innersole.",
+        "condition": "Played in gently"
+      },
+      {
+        "name": "Shark Loafers",
+        "brand": "Limitless",
+        "size": "24/25",
+        "price": 10,
+        "description": "The cutest shark loafers for toddler beach days. Rubber. Pale blue/aqua colour.",
+        "condition": "As good as new",
+        "images": [
+          "images/d4-15-1.jpg",
+          "images/d4-15-2.jpg",
+          "images/d4-15-3.jpg"
+        ]
+      },
+      {
+        "name": "Cloud Loafers",
+        "brand": "Limitless",
+        "size": "26/27",
+        "price": 10,
+        "description": "Adorable cloud loafers for toddler beach days. Rubber with cute cloud face and scalloped edging. Pink.",
+        "condition": "As good as new",
+        "images": [
+          "images/d4-16-1.jpg",
+          "images/d4-16-2.jpg",
+          "images/d4-15-3.jpg"
+        ]
+      },
+      {
+        "name": "Navy Basic Crew Tee",
+        "brand": "Academy",
+        "size": "6",
+        "price": 12,
+        "description": "Navy basic crew tee. Rib neck crew. Extra soft fabric. Signature flag label on sleeve. Premium cotton blend.",
+        "condition": "Played in happily",
+        "ageRange": "5-7",
+        "image": "images/d4-17.jpg"
+      },
+      {
+        "name": "Bright Blue Cord Shorts",
+        "brand": "Olive and the Captain",
+        "size": "10",
+        "price": 16,
+        "description": "Bright blue 100% cotton. Mid length. Elasticated waistband. Functional yellow draw cord secured at the back. Melbourne designed.",
+        "condition": "Played in gently",
+        "ageRange": "10-12",
+        "image": "images/d4-18.jpg"
+      },
+      {
+        "name": "Denim Toddler Shorts",
+        "brand": "Country Road",
+        "size": "2",
+        "price": 8,
+        "description": "Denim shorts. Elasticated waist. Cotton drawstring. Diagonal pockets at the front.",
+        "condition": "Played in happily",
+        "image": "images/d4-19.jpg"
+      },
+      {
+        "name": "Cactus Boardies",
+        "brand": "Tom & Teddy",
+        "size": "3-4",
+        "price": 20,
+        "description": "Deep rose cactus boardies. Made with fibres from recycled plastic bottles. Super-soft, quick-dry microfibre outer and soft mesh lining. Mid-thigh cut. UPF50+ protection. Saltwater and chlorine resistant. Two side pockets and one back pocket with Velcro fastening. Elasticated waistband. Braided drawcord.",
+        "condition": "Played in gently",
+        "ageRange": "3-4",
+        "image": "images/d4-20.jpg"
+      },
+      {
+        "name": "Bright Blue Striped Boardies",
+        "brand": "Quiksilver",
+        "size": "12",
+        "price": 16,
+        "description": "Straight leg fit. Performance fly. Semi-elasticated waistband. Drawcord with hook and loop closure.",
+        "condition": "Played in gently",
+        "ageRange": "10-12",
+        "image": "images/d4-21.jpg"
+      },
+      {
+        "name": "Blue Fish Tank",
+        "brand": "Cotton On",
+        "size": "4",
+        "price": 12,
+        "description": "Blue summer tank. Low cut under the arm. Ribbed neck and sleeve. Deep end printed fish decal front and back.",
+        "condition": "Played in gently",
+        "ageRange": "4-5",
+        "image": "images/d4-22.jpg"
+      },
+      {
+        "name": "Baby Floral Tutu Swimsuit",
+        "brand": "Rock Your Baby",
+        "size": "6-12 months",
+        "price": 15,
+        "description": "Polyester elastane swim knit. Polyester knit lining. Gathered tulle skirt. One piece pull-on style. Machine washable. Designed in Australia.",
+        "condition": "Like new",
+        "ageRange": "0-1",
+        "image": "images/d4-23.jpg"
+      },
+      {
+        "name": "Charcoal Boardies",
+        "brand": "Ripcurl",
+        "size": "12",
+        "price": 14,
+        "description": "Straight leg fit. Performance fly. Semi-elasticated waistband. Drawcord with hook and loop closure.",
+        "condition": "Played in happily",
+        "ageRange": "10-12",
+        "image": "images/d4-24.jpg"
+      },
+      {
+        "name": "White Waves Tank",
+        "brand": "Cotton On",
+        "size": "9-10",
+        "price": 14,
+        "description": "White summer tank. Low cut under the arm. Ribbed neck and sleeve. Chasing waves print on front.",
+        "condition": "Played in gently",
+        "ageRange": "9-10"
+      },
+      {
+        "name": "Faded Denim Overalls",
+        "brand": "Children of the Tribe",
+        "size": "3-4",
+        "price": 16,
+        "description": "Favourite Byron boho kids label. Thick shoulder straps. Two side pockets. Gathered detail under arm. Perfect for summer. Note: very faint stain on front.",
+        "condition": "Played in happily",
+        "ageRange": "3-4",
+        "image": "images/d4-26.jpg"
+      },
+      {
+        "name": "Denim Toddler Overalls",
+        "brand": "Zara",
+        "size": "2-3",
+        "price": 20,
+        "description": "Denim overalls. Press studs for easy nappy change. Side buttons for ease of fit. Front central pocket. Diagonal pockets.",
+        "condition": "Played in gently",
+        "ageRange": "2-3",
+        "image": "images/d4-27.jpg"
+      },
+      {
+        "name": "Peach Rad Rides Tee",
+        "brand": "Zara",
+        "size": "13-14",
+        "price": 14,
+        "description": "Peach crew tee. Rib neck crew. Extra soft fabric. Rad Rides decal.",
+        "condition": "Played in gently",
+        "ageRange": "12-14",
+        "image": "images/d4-28.jpg"
+      },
+      {
+        "name": "Charcoal Bucket Hat",
+        "brand": "Ripcurl",
+        "size": "L (fits toddler)",
+        "price": 8,
+        "description": "Charcoal bucket hat. Azure-coloured blue embroidery stitching of RIPCURL.",
+        "condition": "Played in gently",
+        "ageRange": "2-5",
+        "image": "images/d4-29.jpg"
+      },
+      {
+        "name": "Hot Pink Sandals",
+        "brand": "Birkenstock",
+        "size": "26",
+        "price": 20,
+        "description": "RIO kids EVA in Beetroot. Anatomically shaped footbed made from waterproof EVA. Moulded single piece of EVA. Vegan. Made in Germany.",
+        "condition": "Played in gently",
+        "images": [
+          "images/d4-30-1.jpg",
+          "images/d4-30-2.jpg"
+        ]
+      },
+      {
+        "name": "Bright Blue Sandals",
+        "brand": "Birkenstock",
+        "size": "27",
+        "price": 20,
+        "description": "MILANO kids EVA in Bright Blue. Anatomically shaped footbed made from waterproof EVA. Moulded single piece of EVA. Vegan. Made in Germany.",
+        "condition": "Played in gently",
+        "images": [
+          "images/d4-31-1.jpg",
+          "images/d4-31-2.jpg"
+        ]
+      },
+      {
+        "name": "Blue Jeans",
+        "brand": "Abercrombie",
+        "size": "11/12",
+        "price": 30,
+        "description": "Skinny Jean. Slim Fit. Button and fly waist. 5 pockets. Great cut for wearing with a tee in Summer.",
+        "condition": "Played in gently",
+        "ageRange": "11-12",
+        "image": "images/d4-32.jpg"
+      },
+      {
+        "name": "Apple Green Polo Tee",
+        "brand": "Ralph Lauren",
+        "size": "4",
+        "price": 20,
+        "description": "Apple Green Polo with Blue horse. Note: child's initial written on the collar.",
+        "condition": "Played in happily",
+        "ageRange": "3-5",
+        "images": [
+          "images/d4-33-1.jpg",
+          "images/d4-33-2.jpg"
+        ]
+      }
+    ]
   }
 ]
