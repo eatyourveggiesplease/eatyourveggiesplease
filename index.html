@@ -1156,6 +1156,7 @@
 
   <!-- CURRENT DROPS -->
   <main class="drop-section" id="shop">
+    <div class="age-filter" id="dropFilter" style="display:none;"></div>
     <div class="age-filter" id="ageFilter" style="display:none;">
       <button class="age-pill active" data-range="all">All ages</button>
       <button class="age-pill" data-range="0-2">0–2</button>
@@ -1328,6 +1329,27 @@
       const container = document.getElementById('dropsContainer');
       container.innerHTML = '';
 
+      // ── Drop filter pills ──
+      const dropFilter = document.getElementById('dropFilter');
+      if (activeDrops.length > 1) {
+        dropFilter.style.display = '';
+        dropFilter.innerHTML = `<button class="age-pill active" data-drop="all">All drops</button>` +
+          activeDrops.map(d => `<button class="age-pill" data-drop="${d.id}">Drop ${parseInt(d.dropNumber, 10)}</button>`).join('');
+
+        dropFilter.querySelectorAll('.age-pill').forEach(pill => {
+          pill.addEventListener('click', () => {
+            dropFilter.querySelectorAll('.age-pill').forEach(p => p.classList.remove('active'));
+            pill.classList.add('active');
+            const target = pill.dataset.drop;
+            container.querySelectorAll('.drop-block').forEach(block => {
+              block.style.display = (target === 'all' || block.dataset.dropId === target) ? '' : 'none';
+            });
+          });
+        });
+      } else {
+        dropFilter.style.display = 'none';
+      }
+
       // Show age filter
       const filterBar = document.getElementById('ageFilter');
       filterBar.style.display = '';
@@ -1337,6 +1359,7 @@
       activeDrops.forEach((drop, dropIdx) => {
         const block = document.createElement('div');
         block.className = 'drop-block';
+        block.dataset.dropId = drop.id;
 
         block.innerHTML = `
           ${dropIdx > 0 ? '<hr class="drop-divider">' : ''}
