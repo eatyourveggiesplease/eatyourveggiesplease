@@ -961,15 +961,6 @@
         "image": "images/d4-24.jpg"
       },
       {
-        "name": "White Waves Tank",
-        "brand": "Cotton On",
-        "size": "9-10",
-        "price": 14,
-        "description": "White summer tank. Low cut under the arm. Ribbed neck and sleeve. Chasing waves print on front.",
-        "condition": "Played in gently",
-        "ageRange": "9-10"
-      },
-      {
         "name": "Faded Denim Overalls",
         "brand": "Children of the Tribe",
         "size": "3-4",
@@ -1057,6 +1048,6 @@
         ]
       }
     ],
-    "draft": true
+    "draft": false
   }
 ]
