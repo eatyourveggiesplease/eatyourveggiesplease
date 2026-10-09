@@ -788,7 +788,8 @@
         "description": "Organic cotton hemp blend. Dusty pink tee with rainbow and sun graphic. Words \"well, hi.\"",
         "condition": "Played in gently",
         "ageRange": "7-8",
-        "image": "images/d4-8.jpg"
+        "image": "images/d4-8.jpg",
+        "featured": true
       },
       {
         "name": "Navy Grapefruit Tee",
