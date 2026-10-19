@@ -37,7 +37,7 @@ module.exports = async function handler(req, res) {
         {
           shipping_rate_data: {
             type: 'fixed_amount',
-            fixed_amount: { amount: 995, currency: 'aud' },
+            fixed_amount: { amount: 499, currency: 'aud' },
             display_name: 'Standard Shipping',
           },
         },

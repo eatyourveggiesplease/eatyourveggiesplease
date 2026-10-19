@@ -31,6 +31,13 @@ module.exports = async function handler(req, res) {
     return res.status(400).send('This item has no price set.');
   }
 
+  // Build a valid image URL (encode each path segment to handle spaces)
+  const rawImgPath = (item.images && item.images[0]) || item.image || null;
+  const hasValidExt = rawImgPath && /\.(jpg|jpeg|png|webp|gif)$/i.test(rawImgPath);
+  const imageUrl = hasValidExt
+    ? 'https://www.eatyourveggiesplease.com/' + rawImgPath.split('/').map(encodeURIComponent).join('/')
+    : null;
+
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
@@ -41,19 +48,20 @@ module.exports = async function handler(req, res) {
             name: item.name,
             description: [item.brand, item.size ? `Size ${item.size}` : null, item.condition]
               .filter(Boolean).join(' · '),
+            ...(imageUrl ? { images: [imageUrl] } : {}),
           },
           unit_amount: Math.round(item.price * 100),
         },
         quantity: 1,
       }],
       mode: 'payment',
-      success_url: `${req.headers['x-forwarded-proto'] || 'https'}://${req.headers.host}/success.html?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${req.headers['x-forwarded-proto'] || 'https'}://${req.headers.host}/`,
+      success_url: `https://www.eatyourveggiesplease.com/success.html?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `https://www.eatyourveggiesplease.com/`,
       shipping_address_collection: { allowed_countries: ['AU'] },
       shipping_options: [{
         shipping_rate_data: {
           type: 'fixed_amount',
-          fixed_amount: { amount: 995, currency: 'aud' },
+          fixed_amount: { amount: 499, currency: 'aud' },
           display_name: 'Standard Shipping',
         },
       }],
