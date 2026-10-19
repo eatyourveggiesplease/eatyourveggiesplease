@@ -951,7 +951,7 @@
       <g:price>20.00 AUD</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>used</g:condition>
-      <g:brand>Tom & Teddy</g:brand>
+      <g:brand>Tom &amp; Teddy</g:brand>
       <g:google_product_category>537</g:google_product_category>
     </item>
     <item>
