@@ -30,9 +30,6 @@ module.exports = async function handler(req, res) {
       mode: 'payment',
       success_url: `${req.headers.origin}/success.html?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${req.headers.origin}/cancel.html`,
-      shipping_address_collection: {
-        allowed_countries: ['AU'],
-      },
       shipping_options: [
         {
           shipping_rate_data: {
