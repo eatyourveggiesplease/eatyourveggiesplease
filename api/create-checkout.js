@@ -12,17 +12,26 @@ module.exports = async function handler(req, res) {
       return res.status(400).json({ error: 'No items in cart' });
     }
 
-    const lineItems = items.map(item => ({
+    const lineItems = items.map(item => {
+      const rawImg = (item.images && item.images[0]) || item.image || null;
+      const hasValidExt = rawImg && /\.(jpg|jpeg|png|webp|gif)$/i.test(rawImg);
+      const imageUrl = hasValidExt
+        ? 'https://www.eatyourveggiesplease.com/' + rawImg.split('/').map(encodeURIComponent).join('/')
+        : null;
+
+      return {
       price_data: {
         currency: 'aud',
         product_data: {
           name: item.name,
-          description: `${item.brand} · Size ${item.size} · ${item.condition}`,
+          description: [item.brand, item.size ? `Size ${item.size}` : null, item.condition].filter(Boolean).join(' · ') || undefined,
+          ...(imageUrl ? { images: [imageUrl] } : {}),
         },
         unit_amount: Math.round(item.price * 100),
       },
       quantity: 1,
-    }));
+    };
+    });
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
@@ -30,9 +39,15 @@ module.exports = async function handler(req, res) {
       mode: 'payment',
       success_url: `${req.headers.origin}/success.html?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${req.headers.origin}/cancel.html`,
-      shipping_address_collection: {
-        allowed_countries: ['AU'],
-      },
+      shipping_options: [
+        {
+          shipping_rate_data: {
+            type: 'fixed_amount',
+            fixed_amount: { amount: 499, currency: 'aud' },
+            display_name: 'Standard Shipping',
+          },
+        },
+      ],
       metadata: {
         item_ids: items.map(i => i.id).join(','),
       },
