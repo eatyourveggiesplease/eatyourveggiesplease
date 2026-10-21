@@ -12,17 +12,26 @@ module.exports = async function handler(req, res) {
       return res.status(400).json({ error: 'No items in cart' });
     }
 
-    const lineItems = items.map(item => ({
+    const lineItems = items.map(item => {
+      const rawImg = (item.images && item.images[0]) || item.image || null;
+      const hasValidExt = rawImg && /\.(jpg|jpeg|png|webp|gif)$/i.test(rawImg);
+      const imageUrl = hasValidExt
+        ? 'https://www.eatyourveggiesplease.com/' + rawImg.split('/').map(encodeURIComponent).join('/')
+        : null;
+
+      return {
       price_data: {
         currency: 'aud',
         product_data: {
           name: item.name,
-          description: `${item.brand} · Size ${item.size} · ${item.condition}`,
+          description: [item.brand, item.size ? `Size ${item.size}` : null, item.condition].filter(Boolean).join(' · ') || undefined,
+          ...(imageUrl ? { images: [imageUrl] } : {}),
         },
         unit_amount: Math.round(item.price * 100),
       },
       quantity: 1,
-    }));
+    };
+    });
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
