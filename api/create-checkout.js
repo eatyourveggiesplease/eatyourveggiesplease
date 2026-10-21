@@ -19,6 +19,8 @@ module.exports = async function handler(req, res) {
         ? 'https://www.eatyourveggiesplease.com/' + rawImg.split('/').map(encodeURIComponent).join('/')
         : null;
 
+      console.error('[checkout] item:', item.name, 'rawImg:', rawImg, 'imageUrl:', imageUrl);
+
       return {
       price_data: {
         currency: 'aud',
@@ -50,6 +52,7 @@ module.exports = async function handler(req, res) {
       ],
       metadata: {
         item_ids: items.map(i => i.id).join(','),
+        debug_image: lineItems[0]?.price_data?.product_data?.images?.[0] || 'none',
       },
     });
 
