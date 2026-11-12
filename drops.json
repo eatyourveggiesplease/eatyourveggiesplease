@@ -1265,7 +1265,7 @@
     "price": 0,
     "sold": false,
     "soldDate": null,
-    "draft": false,
+    "draft": true,
     "items": [
       {
         "name": "",
