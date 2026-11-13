@@ -1075,7 +1075,7 @@
     "dropNumber": "005",
     "dropLabel": "Five",
     "dropName": "The Afternoon Run",
-    "dropSubtitle": "A little bit sporty, a little bit comfy Ã¢ÂÂ welcome to the afterschool run. Made for bike rides, pocketfuls of snacks, grass stains and, of course, just five more minutes of play!",
+    "dropSubtitle": "A little bit sporty, a little bit comfy — welcome to the afterschool run. Made for bike rides, pocketfuls of snacks, grass stains and, of course, just five more minutes of play!",
     "veggie": "veggies/cucumber.png",
     "price": 0,
     "sold": false,
@@ -1094,7 +1094,7 @@
       {
         "name": "Grey Sweater",
         "brand": "Nike",
-        "size": "",
+        "size": "S (8-10)",
         "price": 22,
         "image": "images/d5-2.jpg",
         "description": "Grey cotton sweater. Relaxed fit. Logo front left.",
@@ -1103,7 +1103,7 @@
       {
         "name": "Grape Sports Top",
         "brand": "Nike",
-        "size": "",
+        "size": "XS (6-7)",
         "price": 14,
         "image": "images/d5-3.jpg",
         "description": "Grape-coloured racer back design. Polyester/elastane. Flat and smooth seams.",
@@ -1112,7 +1112,7 @@
       {
         "name": "Speckled Pastel Sports Top",
         "brand": "Ell + Voo",
-        "size": "",
+        "size": "7",
         "price": 14,
         "image": "images/d5-4.jpg",
         "description": "Speckled pastel sports top. Cross back. Elastic shoulder straps.",
@@ -1121,7 +1121,7 @@
       {
         "name": "Swirly Sports Top",
         "brand": "Ell + Voo",
-        "size": "",
+        "size": "7",
         "price": 14,
         "image": "images/d5-5.jpg",
         "description": "Teal, hot pink and olive sports top. Racer back design.",
@@ -1130,7 +1130,7 @@
       {
         "name": "Black Sports Top",
         "brand": "Ell + Voo",
-        "size": "",
+        "size": "7",
         "price": 14,
         "image": "images/d5-6.jpg",
         "description": "Black sports top. Racer back design.",
@@ -1149,7 +1149,7 @@
         "condition": "Played in gently"
       },
       {
-        "name": "Speckled Green Tee",
+        "name": "Nike Speckled Green Tee",
         "brand": "Nike",
         "size": "L",
         "price": 14,
@@ -1158,100 +1158,100 @@
         "condition": "Played in gently"
       },
       {
-        "name": "Black Sweater",
+        "name": "Puma Black Sweater",
         "brand": "Puma",
         "size": "9-10",
-        "price": 20,
+        "price": 18,
         "image": "images/d5-9.jpg",
         "description": "Crew neck black jumper. Printed logo across front (slightly raised lettering). Tiny black speck on one of the letters of the logo.",
         "condition": "Played in happily"
       },
       {
-        "name": "Yellow Sweater",
+        "name": "Nike Yellow Sweater",
         "brand": "Nike",
-        "size": "",
-        "price": 0,
+        "size": "LG (12-14)",
+        "price": 18,
         "images": [
           "images/d5-10-1.jpg",
           "images/d5-10-2.jpg"
         ],
-        "description": "",
-        "condition": ""
+        "description": "Crew neck yellow jumper. Nike tick pattern. Embroidered logo.",
+        "condition": "Played in happily"
       },
       {
         "name": "Pink Trackies",
-        "brand": "",
-        "size": "",
-        "price": 0,
+        "brand": "Zara",
+        "size": "9",
+        "price": 18,
         "images": [
           "images/d5-11-1.jpg",
           "images/d5-11-2.jpg"
         ],
-        "description": "",
-        "condition": ""
+        "description": "3/4 length pink tracksuit pants. Wide leg. Elastic waistband. New York print logo on front.",
+        "condition": "Played in gently"
       },
       {
         "name": "Black Nike Air Tee",
         "brand": "Nike",
         "size": "",
-        "price": 0,
+        "price": 14,
         "image": "images/d5-12.jpg",
         "description": "",
         "condition": ""
       },
       {
-        "name": "Multicoloured Tee",
+        "name": "Adidas Multicoloured Dress",
         "brand": "Adidas",
-        "size": "",
-        "price": 0,
+        "size": "100 (3-4Y)",
+        "price": 20,
         "images": [
           "images/d5-13-1.jpg",
           "images/d5-13-2.jpg"
         ],
-        "description": "",
-        "condition": ""
+        "description": "Brightly patterned Adidas t-shirt dress. Crew neck. Embroidered Adidas stripes on shoulders. Print logo on front.",
+        "condition": "Played in happily"
       },
       {
-        "name": "Black Tee",
+        "name": "Adidas Black Tee",
         "brand": "Adidas",
-        "size": "",
-        "price": 0,
+        "size": "9-10",
+        "price": 14,
         "image": "images/d5-14.jpg",
-        "description": "",
-        "condition": ""
+        "description": "Black tee with printed large Adidas logo.",
+        "condition": "Played in gently"
       },
       {
-        "name": "Pink Tee",
+        "name": "Adidas Pink Tee",
         "brand": "Adidas",
-        "size": "",
-        "price": 0,
+        "size": "5-6",
+        "price": 14,
         "image": "images/d5-15.jpg",
-        "description": "",
-        "condition": ""
+        "description": "Pink tee with printed large Adidas logo.",
+        "condition": "Played in gently"
       },
       {
-        "name": "Zip Up Jacket",
-        "brand": "Prince",
-        "size": "",
-        "price": 0,
+        "name": "Prince Zip Up Jacket",
+        "brand": "Prince x Zara (2019)",
+        "size": "S (12-14)",
+        "price": 25,
         "images": [
           "images/d5-16-1.jpg",
           "images/d5-16-2.jpg"
         ],
-        "description": "",
-        "condition": ""
+        "description": "Cream, green and navy zip-up sports jacket with a high neck. Embroidered Prince logo on the front. Large Prince logo across the back.",
+        "condition": "As good as new"
       },
       {
-        "name": "Blue Shorts",
-        "brand": "",
-        "size": "",
-        "price": 0,
+        "name": "Lacoste Blue Shorts",
+        "brand": "Lacoste (Vintage)",
+        "size": "12-14 (80cm waist)",
+        "price": 30,
         "images": [
           "images/d5-17-1.jpg",
           "images/d5-17-2.jpg"
         ],
-        "description": "",
-        "condition": ""
+        "description": "Navy blue mid-length chino. Four pin tucks across the front. Diagonal hip pockets. Waistband with fly and button. Back openable pocket with button.",
+        "condition": "Played in happily"
       }
     ]
   },
@@ -1260,7 +1260,7 @@
     "dropNumber": "006",
     "dropLabel": "Six",
     "dropName": "The Herb Garden",
-    "dropSubtitle": "A little wild, a little whimsical, welcome to the Herb Garden. Think nanaâs garden in full bloom, sun-warmed afternoons, linen and faded florals. A little bit old-fashioned, a little bit magic, and made for the sweetest adventures.",
+    "dropSubtitle": "A little wild, a little whimsical, welcome to the Herb Garden. Think nana’s garden in full bloom, sun-warmed afternoons, linen and faded florals. A little bit old-fashioned, a little bit magic, and made for the sweetest adventures.",
     "veggie": "veggies/onion.png",
     "price": 0,
     "sold": false,
