@@ -1455,7 +1455,7 @@
     "price": 0,
     "sold": false,
     "soldDate": null,
-    "draft": true,
+    "draft": false,
     "items": [
       {
         "name": "LS White Frill Top",
