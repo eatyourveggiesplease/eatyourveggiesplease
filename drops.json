@@ -1078,6 +1078,168 @@
           "images/d4-33-1.jpg",
           "images/d4-33-2.jpg"
         ]
+      },
+      {
+        "name": "Yellow Sandals",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-34.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Red Shorts",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-35.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Green Leaf Shirt",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-36.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Bonds Babysuit",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-37.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Cockatoo Shirt",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-38.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Speedo Flippers",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-39.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Heart Jumper",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-40.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Ripcurl Rashie",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-41.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Orange Tee",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-42.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Blue Shorts",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-43.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Florida Tee",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-44.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Map Tee & Shorts",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-45.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Ripcurl Rashie Deep Blue",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-46.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Green Polo",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-47.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Flowers Dress",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-48.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "To Be Yourself Tee",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-49.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Blue Dress",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-50.jpg",
+        "description": "",
+        "condition": ""
+      },
+      {
+        "name": "Pink Shorts",
+        "brand": "",
+        "size": "",
+        "price": 0,
+        "image": "images/d4-51.jpg",
+        "description": "",
+        "condition": ""
       }
     ],
     "draft": false
