@@ -46,7 +46,7 @@ module.exports = async function handler(req, res) {
           product_data: {
             name: item.name,
             description: [item.brand, item.size ? `Size ${item.size}` : null, item.condition]
-              .filter(Boolean).join(' Â· '),
+              .filter(Boolean).join(' ÃÂ· '),
             ...(imageUrl ? { images: [imageUrl] } : {}),
           },
           unit_amount: Math.round(item.price * 100),
@@ -60,8 +60,8 @@ module.exports = async function handler(req, res) {
       shipping_options: [{
         shipping_rate_data: {
           type: 'fixed_amount',
-          fixed_amount: { amount: 499, currency: 'aud' },
-          display_name: 'Standard Shipping',
+          fixed_amount: { amount: item.price >= 100 ? 0 : 499, currency: 'aud' },
+          display_name: item.price >= 100 ? 'Free Shipping' : 'Standard Shipping',
         },
       }],
       metadata: {
