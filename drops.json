@@ -1084,162 +1084,178 @@
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-34.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "images": [
+          "images/d4-34.jpg",
+          "images/d4-34-1.jpg",
+          "images/d4-34-2.jpg"
+        ]
       },
       {
         "name": "Red Shorts",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-35.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "image": "images/d4-35.jpg"
       },
       {
         "name": "Green Leaf Shirt",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-36.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "image": "images/d4-36.jpg"
       },
       {
         "name": "Bonds Babysuit",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-37.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "image": "images/d4-37.jpg"
       },
       {
         "name": "Cockatoo Shirt",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-38.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "image": "images/d4-38.jpg"
       },
       {
         "name": "Speedo Flippers",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-39.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "image": "images/d4-39.jpg"
       },
       {
         "name": "Heart Jumper",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-40.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "images": [
+          "images/d4-40.jpg",
+          "images/d4-40-2.jpg"
+        ]
       },
       {
         "name": "Ripcurl Rashie",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-41.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "image": "images/d4-41.jpg"
       },
       {
         "name": "Orange Tee",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-42.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "image": "images/d4-42.jpg"
       },
       {
         "name": "Blue Shorts",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-43.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "image": "images/d4-43.jpg"
       },
       {
         "name": "Florida Tee",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-44.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "image": "images/d4-44.jpg"
       },
       {
         "name": "Map Tee & Shorts",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-45.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "image": "images/d4-45.jpg"
       },
       {
         "name": "Ripcurl Rashie Deep Blue",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-46.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "image": "images/d4-46.jpg"
       },
       {
         "name": "Green Polo",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-47.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "image": "images/d4-47.jpg"
       },
       {
         "name": "Flowers Dress",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-48.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "image": "images/d4-48.jpg"
       },
       {
         "name": "To Be Yourself Tee",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-49.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "images": [
+          "images/d4-49-1.jpg",
+          "images/d4-49-2.jpg"
+        ]
       },
       {
         "name": "Blue Dress",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-50.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "images": [
+          "images/d4-50-1.jpg",
+          "images/d4-50-2.jpg"
+        ]
       },
       {
         "name": "Pink Shorts",
         "brand": "",
         "size": "",
         "price": 0,
-        "image": "images/d4-51.jpg",
         "description": "",
-        "condition": ""
+        "condition": "",
+        "images": [
+          "images/d4-51-1.jpg",
+          "images/d4-51-2.jpg"
+        ]
       }
     ],
     "draft": false
