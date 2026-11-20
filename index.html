@@ -385,6 +385,7 @@
     .drop-item-brand { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
     .drop-item-name { font-size: 0.9rem; font-weight: 600; margin: 2px 0; }
     .drop-item-size { font-size: 0.8rem; color: var(--text-muted); }
+    .drop-item-price { font-size: 0.85rem; font-weight: 700; color: var(--green); margin-top: 2px; }
     .item-buy-btn {
       display: block;
       width: calc(100% - 24px);
@@ -1472,6 +1473,7 @@
                   <div class="drop-item-brand">${item.brand}</div>
                   <div class="drop-item-name">${item.name}</div>
                   <div class="drop-item-size">Size ${item.size}</div>
+                  ${item.price ? `<div class="drop-item-price">$${item.price}</div>` : ''}
                 </a>
                 ${!drop.sold && item.price ? `<button class="item-buy-btn" data-item-index="${i}">Add to cart</button>` : ''}
               </div>`;
@@ -1499,6 +1501,7 @@
                     <div class="drop-item-brand">${item.brand}</div>
                     <div class="drop-item-name">${item.name}</div>
                     <div class="drop-item-size">Size ${item.size}</div>
+                    ${item.price ? `<div class="drop-item-price">$${item.price}</div>` : ''}
                   </a>
                   ${!drop.sold && item.price ? `<button class="item-buy-btn" data-item-index="${idx}">Add to cart</button>` : ''}
                 </div>`;
