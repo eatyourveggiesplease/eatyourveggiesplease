@@ -490,6 +490,9 @@
     .lb-item-name { font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 0.95rem; color: #fff; margin-bottom: 3px; }
     .lb-item-meta { font-size: 0.75rem; color: rgba(255,255,255,0.55); margin-bottom: 8px; letter-spacing: 0.04em; }
     .lb-item-desc { font-size: 0.82rem; color: rgba(255,255,255,0.82); line-height: 1.6; margin-bottom: 6px; }
+    .lb-cart-btn { display:block; width:100%; margin-top:12px; padding:10px 14px; background:#2d6a2d; color:#fff; border:none; border-radius:8px; font-size:0.88rem; font-weight:600; cursor:pointer; font-family:inherit; letter-spacing:0.03em; }
+    .lb-cart-btn:hover:not(:disabled){background:#245824;}
+    .lb-cart-btn:disabled{background:#888;cursor:default;}
     .lb-item-condition { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.7); padding: 3px 10px; border-radius: 50px; }
     .drop-item { cursor: default; }
     .drop-item-img { cursor: zoom-in; touch-action: manipulation; }
@@ -1349,6 +1352,7 @@
       <div class="lb-item-meta" id="lbMeta"></div>
       <div class="lb-item-desc" id="lbDesc"></div>
       <div class="lb-item-condition" id="lbCondition"></div>
+      <button class="lb-cart-btn" id="lbCartBtn" onclick="addLbItemToCart()">Add to cart</button>
     </div>
   </div>
 
@@ -1509,8 +1513,10 @@
         // Lightbox
         block.querySelectorAll('.drop-item-img').forEach(el => {
           const openForEl = () => {
-            const item = drop.items[parseInt(el.dataset.index)];
-            openLightbox(getItemImages(item), 0, item);
+            const _idx=parseInt(el.dataset.index);
+            const item=drop.items[_idx];
+            const _lbData=Object.assign({},item,{_dropNumber:drop.dropNumber,_itemIndex:_idx});
+            openLightbox(getItemImages(item), 0, _lbData);
           };
           el.addEventListener('click', openForEl);
           el.addEventListener('touchend', e => { e.preventDefault(); openForEl(); });
@@ -1597,10 +1603,25 @@
         document.getElementById('lbDesc').textContent = lbItem.description;
         document.getElementById('lbCondition').textContent = lbItem.condition || '';
         document.getElementById('lbCondition').style.display = lbItem.condition ? '' : 'none';
+        var lbCB=document.getElementById('lbCartBtn');
+        if(lbCB){if(lbItem.sold){lbCB.textContent='Sold';lbCB.disabled=true;}else{lbCB.textContent='Add to cart';lbCB.disabled=false;}}
         infoEl.style.display = '';
       } else {
         infoEl.style.display = 'none';
       }
+    }
+
+    function addLbItemToCart(){
+      if(!lbItem||lbItem.sold)return;
+      var cart=window._cart?window._cart.getCart():[];
+      var dn=lbItem._dropNumber,ii=lbItem._itemIndex;
+      if(cart.some(function(c){return c.dropNumber===dn&&c.itemIndex===ii;})){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow='';if(typeof openCart==='function')openCart();return;}
+      var images=lbItem.images||(lbItem.image?[lbItem.image]:[]);
+      cart.push({dropNumber:dn,itemIndex:ii,name:lbItem.name,brand:lbItem.brand||'',size:lbItem.size||'',price:lbItem.price||0,image:images.length?images[0]:''});
+      if(window._cart)window._cart.saveCart(cart);
+      if(typeof updateCartCount==='function')updateCartCount();
+      document.getElementById('lightbox').classList.remove('open');document.body.style.overflow='';
+      if(typeof openCart==='function')openCart();
     }
 
     document.getElementById('lbClose').addEventListener('click', closeLightbox);
