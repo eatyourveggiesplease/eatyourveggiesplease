@@ -1486,7 +1486,7 @@
         "name": "Striped Linen Lounge Shorts",
         "brand": "Nude Lucy",
         "size": "S (Teen)",
-        "price": 16,
+        "price": 18,
         "images": [
           "images/d6-3-1.jpg",
           "images/d6-3-2.jpg"
@@ -1506,7 +1506,7 @@
       {
         "name": "Floral Grey Playsuit",
         "brand": "Toshi",
-        "size": "0",
+        "size": "00",
         "price": 14,
         "images": [
           "images/d6-5-1.jpg",
@@ -1562,7 +1562,7 @@
         "name": "Check LS Top with Bow",
         "brand": "Petit Bateau",
         "size": "24 months",
-        "price": 0,
+        "price": 14,
         "images": [
           "images/d6-10-1.jpg",
           "images/d6-10-2.jpg"
@@ -1574,7 +1574,7 @@
         "name": "Railroad Stripe Jeans",
         "brand": "Gap",
         "size": "3",
-        "price": 0,
+        "price": 14,
         "image": "images/d6-11.jpg",
         "description": "Light wash denim with fine vertical stripes. Button and fly waist with adjustable waistband. Diagonal pockets.",
         "condition": "Played in happily"
@@ -1582,7 +1582,7 @@
       {
         "name": "Pink Short Sleeve Bodysuit",
         "brand": "Pure Baby",
-        "size": "5",
+        "size": "12-18 months",
         "price": 14,
         "image": "images/d6-12.jpg",
         "description": "Pink short sleeved bodysuit. 100% organic cotton. Ribbed. Shoulder and nappy press studs for ease of dressing.",
@@ -1628,15 +1628,15 @@
           "images/d6-16-2.jpg"
         ],
         "description": "1970s vintage floral dress. Bohemian-inspired maxi dress. Cotton. White cotton-lace trim around collar (hand overlocked) with flutter sleeves. A relaxed A-line cut with ruffled hem.",
-        "condition": ""
+        "condition": "Vintage"
       },
       {
         "name": "Floral Pink Playsuit",
         "brand": "Toshi",
         "size": "0",
-        "price": 0,
+        "price": 14,
         "description": "Sweet pink floral pattern. 100% cotton. Shoulder ties for adjustable sizing. Elasticised waistband for a flexible snug fit.",
-        "condition": "",
+        "condition": "Played in lightly",
         "images": [
           "images/d6-17-1.jpeg",
           "images/d6-17-2.jpeg"
