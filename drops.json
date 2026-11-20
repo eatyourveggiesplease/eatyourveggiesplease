@@ -1635,9 +1635,12 @@
         "brand": "Toshi",
         "size": "0",
         "price": 0,
-        "image": "images/d6-17.jpg",
         "description": "Sweet pink floral pattern. 100% cotton. Shoulder ties for adjustable sizing. Elasticised waistband for a flexible snug fit.",
-        "condition": ""
+        "condition": "",
+        "images": [
+          "images/d6-17-1.jpeg",
+          "images/d6-17-2.jpeg"
+        ]
       }
     ]
   }
