@@ -50,7 +50,7 @@
       padding: 0 48px;
     }
     .shipping-banner-track span::after {
-      content: 'Â·';
+      content: '·';
       margin-left: 48px;
     }
     @keyframes ticker {
@@ -226,9 +226,6 @@
     .lightbox-prev { left: 16px; }
     .lightbox-next { right: 16px; }
     .lightbox-counter { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.6); font-size: 0.85rem; }
-    .lightbox-buy-btn { position: fixed; bottom: 52px; left: 50%; transform: translateX(-50%); background: var(--green); color: white; border: none; border-radius: 24px; padding: 10px 28px; font-size: 0.95rem; font-weight: 700; cursor: pointer; white-space: nowrap; display: none; }
-    .lightbox-buy-btn:hover { opacity: 0.88; }
-    .lightbox-buy-btn.visible { display: block; }
 
     /* NOT FOUND */
     .not-found { text-align: center; padding: 80px 24px; color: var(--text-muted); }
@@ -265,7 +262,7 @@
     }
     footer strong { color: white; }
 
-    /* âââ SEARCH âââ */
+    /* ─── SEARCH ─── */
     .search-btn {
       background: none;
       border: none;
@@ -399,9 +396,8 @@
 #cart-drawer{position:fixed;top:0;right:0;height:100%;width:380px;max-width:95vw;background:#fff;z-index:999;transform:translateX(100%);transition:transform 0.3s ease;display:flex;flex-direction:column;box-shadow:-4px 0 24px rgba(0,0,0,0.13);}
 #cart-drawer.open{transform:translateX(0);}
 .cart-header{display:flex;justify-content:space-between;align-items:center;padding:20px 20px 16px;border-bottom:1px solid #eee;}
-.cart-title{font-size:1.1rem;font-weight:700;letter-spacing:0.01em;}
+.cart-title{font-size:1.1rem;font-weight:700;}
 .cart-close-btn{background:none;border:none;font-size:1.3rem;cursor:pointer;padding:2px 8px;color:#888;line-height:1;}
-.cart-close-btn:hover{color:#333;}
 .cart-items-list{flex:1;overflow-y:auto;padding:12px 16px;}
 .cart-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #f2f2f2;align-items:flex-start;}
 .cart-item:last-child{border-bottom:none;}
@@ -418,7 +414,7 @@
 .cart-total-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
 .cart-total-label{font-weight:600;font-size:1rem;}
 .cart-total-amount{font-weight:700;font-size:1.1rem;}
-.btn-cart-checkout{width:100%;padding:15px;background:#2d6a2d;color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer;letter-spacing:0.01em;transition:background 0.2s;}
+.btn-cart-checkout{width:100%;padding:15px;background:#2d6a2d;color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer;transition:background 0.2s;}
 .btn-cart-checkout:hover:not(:disabled){background:#245824;}
 .btn-cart-checkout:disabled{opacity:0.5;cursor:default;}
 .cart-secure{text-align:center;font-size:0.72rem;color:#bbb;margin-top:10px;}
@@ -442,7 +438,7 @@
       <a href="/" class="logo">
         <img src="/veggies-nav.png" alt="Eat Your Veggies (please)" />
       </a>
-      <a class="back-link" href="/">â All drops</a>
+      <a class="back-link" href="/">← All drops</a>
       <a class="ig-nav-btn" href="https://www.instagram.com/eatyourveggies_please" target="_blank" rel="noopener">Follow us</a>
       <button class="search-btn" id="searchBtn" aria-label="Search">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -455,7 +451,7 @@
   <div class="search-overlay" id="searchOverlay" role="dialog" aria-label="Search">
     <div class="search-overlay-header">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input class="search-input" id="searchInput" type="search" placeholder="Search by name, brand, sizeâ¦" autocomplete="off" autocorrect="off" spellcheck="false" />
+      <input class="search-input" id="searchInput" type="search" placeholder="Search by name, brand, size…" autocomplete="off" autocorrect="off" spellcheck="false" />
       <button class="search-close" id="searchClose" aria-label="Close search">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
@@ -465,19 +461,19 @@
     </div>
   </div>
 
-  <!-- DROP HERO â rendered by JS -->
+  <!-- DROP HERO — rendered by JS -->
   <div id="dropHero"></div>
 
   <!-- ITEMS -->
   <main class="drop-section" id="shop">
     <div class="age-filter" id="ageFilter" style="display:none;">
       <button class="age-pill active" data-range="all">All ages</button>
-      <button class="age-pill" data-range="0-2">0â2</button>
-      <button class="age-pill" data-range="3-5">3â5</button>
-      <button class="age-pill" data-range="6-8">6â8</button>
-      <button class="age-pill" data-range="9-11">9â11</button>
-      <button class="age-pill" data-range="12-14">12â14</button>
-      <button class="age-pill" data-range="14-16">14â16</button>
+      <button class="age-pill" data-range="0-2">0–2</button>
+      <button class="age-pill" data-range="3-5">3–5</button>
+      <button class="age-pill" data-range="6-8">6–8</button>
+      <button class="age-pill" data-range="9-11">9–11</button>
+      <button class="age-pill" data-range="12-14">12–14</button>
+      <button class="age-pill" data-range="14-16">14–16</button>
     </div>
     <div class="drop-grid" id="dropGrid"></div>
   </main>
@@ -491,22 +487,21 @@
 
   <!-- FOOTER -->
   <footer>
-    <p><strong>Eat Your Veggies (please)</strong> Â· Melbourne, Australia</p>
-    <p style="margin-top:6px">Â© 2026 Eat Your Veggies (please) Â· All items sold as described</p>
+    <p><strong>Eat Your Veggies (please)</strong> · Melbourne, Australia</p>
+    <p style="margin-top:6px">© 2026 Eat Your Veggies (please) · All items sold as described</p>
   </footer>
 
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
-    <button class="lightbox-close" id="lbClose">â</button>
-    <button class="lightbox-nav lightbox-prev" id="lbPrev">â¹</button>
+    <button class="lightbox-close" id="lbClose">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lbPrev">‹</button>
     <img class="lightbox-img" id="lbImg" src="" alt="" />
-    <button class="lightbox-nav lightbox-next" id="lbNext">âº</button>
+    <button class="lightbox-nav lightbox-next" id="lbNext">›</button>
     <div class="lightbox-counter" id="lbCounter"></div>
-    <button class="lightbox-buy-btn" id="lbBuyBtn"></button>
   </div>
 
   <script>
-    // Get drop ID from URL path: /drop/002 â "002"
+    // Get drop ID from URL path: /drop/002 → "002"
     const pathParts = window.location.pathname.split('/').filter(Boolean);
     const dropId = pathParts[pathParts.length - 1];
 
@@ -537,13 +532,13 @@
         document.getElementById('dropHero').innerHTML = `
           <div class="not-found">
             <h2>Drop not found</h2>
-            <p>That drop doesn't exist yet â check back soon, or <a href="/" style="color:var(--green);font-weight:600;">see all current drops</a>.</p>
+            <p>That drop doesn't exist yet — check back soon, or <a href="/" style="color:var(--green);font-weight:600;">see all current drops</a>.</p>
           </div>`;
         return;
       }
 
       // Update page title
-      document.title = `Drop ${drop.dropLabel} â ${drop.dropName} Â· Eat Your Veggies (please)`;
+      document.title = `Drop ${drop.dropLabel} — ${drop.dropName} · Eat Your Veggies (please)`;
 
       // Render hero
       document.getElementById('dropHero').innerHTML = `
@@ -576,7 +571,7 @@
             <div class="drop-item-name">${item.name}</div>
             <div class="drop-item-size">${item.size ? 'Size ' + item.size : ''}</div>
           </a>
-          ${!drop.sold && !item.sold && item.price ? `<button class="item-buy-btn" data-item-index="${i}">Buy this Â· $${item.price}</button>` : (item.sold ? `<button class="item-buy-btn" disabled>Sold</button>` : '')}
+          ${!drop.sold && !item.sold && item.price ? `<button class="item-buy-btn" data-item-index="${i}">Buy this · $${item.price}</button>` : (item.sold ? `<button class="item-buy-btn" disabled>Sold</button>` : '')}
         </div>`;
       }).join('');
 
@@ -584,7 +579,7 @@
       grid.querySelectorAll('.drop-item-img').forEach(el => {
         const openForEl = () => {
           const item = drop.items[parseInt(el.dataset.index)];
-          openLightbox(getItemImages(item), 0, drop, item);
+          openLightbox(getItemImages(item), 0);
         };
         el.addEventListener('click', openForEl);
         el.addEventListener('touchend', e => { e.preventDefault(); openForEl(); });
@@ -600,21 +595,12 @@
       });
     }
 
-    // âââ LIGHTBOX âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // ─── LIGHTBOX ─────────────────────────────────────────────────────────────
     let lbImages = [], lbIndex = 0;
 
-    let lbDrop = null, lbItem = null;
-    function openLightbox(images, index, drop, item) {
+    function openLightbox(images, index) {
       lbImages = images; lbIndex = index;
-      lbDrop = drop || null; lbItem = item || null;
       showLbImage();
-      const buyBtn = document.getElementById('lbBuyBtn');
-      if (lbItem && !lbItem.sold && lbItem.price) {
-        buyBtn.textContent = `Buy this Â· $${lbItem.price}`;
-        buyBtn.classList.add('visible');
-      } else {
-        buyBtn.classList.remove('visible');
-      }
       document.getElementById('lightbox').classList.add('open');
       document.body.style.overflow = 'hidden';
     }
@@ -629,10 +615,6 @@
       document.getElementById('lbPrev').style.display = lbImages.length > 1 ? '' : 'none';
       document.getElementById('lbNext').style.display = lbImages.length > 1 ? '' : 'none';
     }
-    document.getElementById('lbBuyBtn').addEventListener('click', e => {
-      e.stopPropagation();
-      if (lbDrop && lbItem) buyItem(document.getElementById('lbBuyBtn'), lbDrop, lbItem);
-    });
     document.getElementById('lbClose').addEventListener('click', closeLightbox);
     document.getElementById('lightbox').addEventListener('click', e => { if (e.target === e.currentTarget) closeLightbox(); });
     document.getElementById('lbPrev').addEventListener('click', () => { lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length; showLbImage(); });
@@ -644,7 +626,7 @@
       if (e.key === 'ArrowRight') { lbIndex = (lbIndex + 1) % lbImages.length; showLbImage(); }
     });
 
-    // âââ AGE FILTER âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // ─── AGE FILTER ───────────────────────────────────────────────────────────
     document.getElementById('ageFilter').addEventListener('click', e => {
       const pill = e.target.closest('.age-pill');
       if (!pill) return;
@@ -659,10 +641,10 @@
       });
     });
 
-    // âââ BUY ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // ─── BUY ──────────────────────────────────────────────────────────────────
     async function buyItem(btn, drop, item) {
       const original = btn.textContent;
-      btn.textContent = 'Redirectingâ¦';
+      btn.textContent = 'Redirecting…';
       btn.disabled = true;
       try {
         const res = await fetch('/api/create-checkout', {
@@ -671,13 +653,9 @@
           body: JSON.stringify({
             items: [{
               id: `${drop.id}-${item.name.toLowerCase().replace(/\s+/g, '-')}`,
-              name: `${item.name} (${item.brand}, Size ${item.size}) â Drop ${drop.dropLabel}`,
+              name: `${item.name} (${item.brand}, Size ${item.size}) — Drop ${drop.dropLabel}`,
               price: item.price,
-              quantity: 1,
-              brand: item.brand,
-              size: item.size,
-              condition: item.condition,
-              images: item.images || (item.image ? [item.image] : [])
+              quantity: 1
             }]
           }),
         });
@@ -694,7 +672,7 @@
 
     init();
 
-    // âââ SEARCH ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // ─── SEARCH ──────────────────────────────────────────────────────────────
     const searchBtn     = document.getElementById('searchBtn');
     const searchOverlay = document.getElementById('searchOverlay');
     const searchInput   = document.getElementById('searchInput');
@@ -756,7 +734,7 @@
         const sold = item.sold ? ' search-card-sold' : '';
         const soldBadge = item.sold ? '<span class="search-sold-badge">Sold</span>' : '';
         const price = item.price > 0 ? `$${item.price}` : 'Price TBC';
-        const meta = [item.size, item.condition].filter(Boolean).join(' Â· ');
+        const meta = [item.size, item.condition].filter(Boolean).join(' · ');
         return `<a class="search-card${sold}" href="/buy/${drop.dropNumber}/${idx}">
           ${imgHtml}
           <div class="search-card-body">
@@ -775,116 +753,57 @@
   </script>
 
 <div id="cart-overlay" onclick="closeCart()"></div>
-<div id="cart-drawer" role="dialog" aria-label="Shopping cart">
-  <div class="cart-header">
-    <span class="cart-title">Your cart</span>
-    <button class="cart-close-btn" onclick="closeCart()" aria-label="Close">&times;</button>
-  </div>
+<div id="cart-drawer">
+  <div class="cart-header"><span class="cart-title">Your cart</span><button class="cart-close-btn" onclick="closeCart()">&times;</button></div>
   <div id="cart-items-list" class="cart-items-list"></div>
   <div class="cart-footer" id="cart-footer">
     <div id="cart-shipping-msg" class="cart-shipping-msg"></div>
-    <div class="cart-total-row">
-      <span class="cart-total-label">Total</span>
-      <span class="cart-total-amount" id="cart-total-display"></span>
-    </div>
+    <div class="cart-total-row"><span class="cart-total-label">Total</span><span class="cart-total-amount" id="cart-total-display"></span></div>
     <button id="cart-checkout-btn" class="btn-cart-checkout" onclick="cartCheckout()">Checkout</button>
     <p class="cart-secure">Secure checkout via Stripe</p>
   </div>
 </div>
-
 <script>
-(function() {
-  var CART_KEY = 'eyv_cart_v1';
-  function getCart() { try { return JSON.parse(localStorage.getItem(CART_KEY) || '[]'); } catch(e) { return []; } }
-  function saveCart(c) { try { localStorage.setItem(CART_KEY, JSON.stringify(c)); } catch(e) {} }
-  function getTotal(cart) { return cart.reduce(function(s, i) { return s + (i.price || 0); }, 0); }
-  window._cart = { getCart: getCart, saveCart: saveCart };
-
-  window.openCart = function() {
-    document.getElementById('cart-drawer').classList.add('open');
-    document.getElementById('cart-overlay').classList.add('open');
-    document.body.style.overflow = 'hidden';
-    renderCart();
-  };
-  window.closeCart = function() {
-    document.getElementById('cart-drawer').classList.remove('open');
-    document.getElementById('cart-overlay').classList.remove('open');
-    document.body.style.overflow = '';
-  };
-  window.removeFromCart = function(idx) {
-    var c = getCart(); c.splice(idx, 1); saveCart(c);
-    updateCartCount(); renderCart();
-  };
-
-  function renderCart() {
-    var listEl = document.getElementById('cart-items-list');
-    var footerEl = document.getElementById('cart-footer');
-    if (!listEl) return;
-    var cart = getCart();
-    var total = getTotal(cart);
-    if (cart.length === 0) {
-      listEl.innerHTML = '<div class="cart-empty">Your cart is empty</div>';
-      if (footerEl) footerEl.style.display = 'none';
-    } else {
-      if (footerEl) footerEl.style.display = '';
-      listEl.innerHTML = cart.map(function(item, idx) {
-        var imgSrc = item.image ? '/' + item.image : '';
-        var meta = [item.brand, item.size ? 'Size ' + item.size : ''].filter(Boolean).join(' \u00b7 ');
-        return '<div class="cart-item">' +
-          (imgSrc ? '<img class="cart-item-img" src="' + imgSrc + '" alt="">' : '<div class="cart-item-img"></div>') +
-          '<div class="cart-item-info">' +
-            '<div class="cart-item-name">' + (item.name || '') + '</div>' +
-            (meta ? '<div class="cart-item-meta">' + meta + '</div>' : '') +
-            '<div class="cart-item-price">
-</html>
- + (item.price || 0).toFixed(2) + '</div>' +
-          '</div>' +
-          '<button class="cart-item-remove" onclick="removeFromCart(' + idx + ')" aria-label="Remove">\u00d7</button>' +
-        '</div>';
+(function(){
+  var K='eyv_cart_v1';
+  function gc(){try{return JSON.parse(localStorage.getItem(K)||'[]');}catch(e){return[];}}
+  function sc(c){try{localStorage.setItem(K,JSON.stringify(c));}catch(e){}}
+  function gt(c){return c.reduce(function(s,i){return s+(i.price||0);},0);}
+  window._cart={getCart:gc,saveCart:sc};
+  window.openCart=function(){document.getElementById('cart-drawer').classList.add('open');document.getElementById('cart-overlay').classList.add('open');document.body.style.overflow='hidden';render();}
+  window.closeCart=function(){document.getElementById('cart-drawer').classList.remove('open');document.getElementById('cart-overlay').classList.remove('open');document.body.style.overflow='';}
+  window.removeFromCart=function(i){var c=gc();c.splice(i,1);sc(c);ucc();render();}
+  function render(){
+    var l=document.getElementById('cart-items-list'),f=document.getElementById('cart-footer');
+    if(!l)return;var cart=gc(),tot=gt(cart);
+    if(cart.length===0){l.innerHTML='<div class="cart-empty">Your cart is empty</div>';if(f)f.style.display='none';}
+    else{if(f)f.style.display='';
+      l.innerHTML=cart.map(function(item,i){
+        var img=item.image?'/'+item.image:'';
+        var meta=[item.brand,item.size?'Size '+item.size:''].filter(Boolean).join(' · ');
+        var row='<div class="cart-item">';
+        row+=(img?'<img class="cart-item-img" src="'+img+'" alt="">':'<div class="cart-item-img"></div>');
+        row+='<div class="cart-item-info"><div class="cart-item-name">'+(item.name||'')+'</div>';
+        if(meta)row+='<div class="cart-item-meta">'+meta+'</div>';
+        row+='<div class="cart-item-price">'+(item.price||0).toFixed(2)+'</div></div>';
+        row+='<button class="cart-item-remove" onclick="removeFromCart('+i+')" aria-label="Remove">×</button></div>';
+        return row;
       }).join('');
-      var totalEl = document.getElementById('cart-total-display');
-      if (totalEl) totalEl.textContent = '
-</html>
- + total.toFixed(2);
-      var msgEl = document.getElementById('cart-shipping-msg');
-      if (msgEl) {
-        if (total >= 100) { msgEl.textContent = 'Free shipping on your order!'; }
-        else { msgEl.textContent = 'Add 
-</html>
- + (100 - total).toFixed(2) + ' more for free shipping'; }
-      }
+      var te=document.getElementById('cart-total-display');if(te)te.textContent=tot.toFixed(2);
+      var me=document.getElementById('cart-shipping-msg');
+      if(me){if(tot>=100)me.textContent='Free shipping on your order!';else me.textContent='Add '+(100-tot).toFixed(2)+' more for free shipping';}
     }
   }
-
-  window.updateCartCount = function() {
-    var c = getCart();
-    var el = document.getElementById('cart-count');
-    if (el) { el.textContent = c.length; el.classList.toggle('has-items', c.length > 0); }
-    if (document.getElementById('cart-items-list')) renderCart();
+  window.updateCartCount=function ucc(){var c=gc(),el=document.getElementById('cart-count');if(el){el.textContent=c.length;el.classList.toggle('has-items',c.length>0);}if(document.getElementById('cart-items-list'))render();}
+  window.cartCheckout=async function(){
+    var cart=gc();if(!cart.length)return;
+    var btn=document.getElementById('cart-checkout-btn');btn.textContent='Loading...';btn.disabled=true;
+    try{
+      var r=await fetch('/api/cart-checkout',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({items:cart.map(function(i){return{dropNumber:i.dropNumber,itemIndex:i.itemIndex};})})});
+      var d=await r.json();if(d.url)window.location.href=d.url;else throw new Error();
+    }catch(e){btn.textContent='Checkout';btn.disabled=false;alert('Something went wrong. Please try again.');}
   };
-
-  window.cartCheckout = async function() {
-    var cart = getCart();
-    if (!cart.length) return;
-    var btn = document.getElementById('cart-checkout-btn');
-    btn.textContent = 'Loading...'; btn.disabled = true;
-    try {
-      var res = await fetch('/api/cart-checkout', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ items: cart.map(function(i) { return { dropNumber: i.dropNumber, itemIndex: i.itemIndex }; }) })
-      });
-      var data = await res.json();
-      if (data.url) window.location.href = data.url;
-      else throw new Error('No URL');
-    } catch(e) {
-      btn.textContent = 'Checkout'; btn.disabled = false;
-      alert('Something went wrong. Please try again.');
-    }
-  };
-
-  document.addEventListener('DOMContentLoaded', updateCartCount);
-  if (document.readyState !== 'loading') updateCartCount();
+  document.addEventListener('DOMContentLoaded',updateCartCount);if(document.readyState!=='loading')updateCartCount();
 })();
 </script>
 </body>
