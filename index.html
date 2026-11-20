@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    /* âââ TOKENS âââ */
+    /* ─── TOKENS ─── */
     :root {
       --green:       #007a3f;
       --green-dark:  #005a2e;
@@ -25,7 +25,7 @@
       --shadow:      0 2px 16px rgba(0,0,0,0.07);
     }
 
-    /* âââ RESET âââ */
+    /* ─── RESET ─── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Quicksand', sans-serif;
@@ -37,7 +37,7 @@
     a { color: inherit; text-decoration: none; }
     button { cursor: pointer; font-family: inherit; }
 
-    /* âââ SHIPPING BANNER âââ */
+    /* ─── SHIPPING BANNER ─── */
     .shipping-banner {
       background: #cc2200;
       color: #fff;
@@ -61,7 +61,7 @@
       padding: 0 48px;
     }
     .shipping-banner-track span::after {
-      content: 'Â·';
+      content: '·';
       margin-left: 48px;
     }
     @keyframes ticker {
@@ -69,7 +69,7 @@
       100% { transform: translateX(-50%); }
     }
 
-    /* âââ NAV âââ */
+    /* ─── NAV ─── */
     nav {
       background: var(--green-dark);
       border-bottom: none;
@@ -178,7 +178,7 @@
       font-weight: 700;
     }
 
-    /* âââ HERO âââ */
+    /* ─── HERO ─── */
     .hero {
       background: #7dc2df;
       border-bottom: none;
@@ -207,7 +207,7 @@
       margin-bottom: 20px;
     }
 
-    /* âââ TAGLINE BAND âââ */
+    /* ─── TAGLINE BAND ─── */
     .tagline-band {
       background: var(--green-dark);
       border-bottom: 1px solid var(--border);
@@ -229,7 +229,7 @@
       margin: 0;
     }
 
-    /* âââ FILTER BAR âââ */
+    /* ─── FILTER BAR ─── */
     .filter-bar {
       background: var(--warm-white);
       border-bottom: 1px solid var(--border);
@@ -266,7 +266,7 @@
       color: white;
     }
 
-    /* âââ CURRENT DROPS âââ */
+    /* ─── CURRENT DROPS ─── */
     .drop-divider {
       border: none;
       border-top: 2px solid var(--border);
@@ -435,7 +435,7 @@
     .buy-btn:disabled { background: #9ca3af; cursor: not-allowed; transform: none; }
     .stripe-note { font-size: 0.78rem; color: var(--text-muted); margin-top: 14px; }
 
-    /* âââ LIGHTBOX âââ */
+    /* ─── LIGHTBOX ─── */
     .lightbox {
       display: none;
       position: fixed;
@@ -491,18 +491,15 @@
     .lb-item-meta { font-size: 0.75rem; color: rgba(255,255,255,0.55); margin-bottom: 8px; letter-spacing: 0.04em; }
     .lb-item-desc { font-size: 0.82rem; color: rgba(255,255,255,0.82); line-height: 1.6; margin-bottom: 6px; }
     .lb-item-condition { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.7); padding: 3px 10px; border-radius: 50px; }
-    .lb-item-buy-btn { display: block; width: 100%; margin-top: 12px; padding: 10px; background: var(--green); color: white; border: none; border-radius: 8px; font-family: inherit; font-size: 0.9rem; font-weight: 700; cursor: pointer; }
-    .lb-item-buy-btn:hover { opacity: 0.88; }
-    .lb-item-buy-btn:disabled { opacity: 0.6; cursor: not-allowed; }
     .drop-item { cursor: default; }
     .drop-item-img { cursor: zoom-in; touch-action: manipulation; }
 
-    /* âââ SOLD OVERLAY âââ */
+    /* ─── SOLD OVERLAY ─── */
     .sold-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.45); z-index: 4; display: flex; align-items: center; justify-content: center; pointer-events: none; }
     .sold-badge { background: var(--green); color: #fff; font-family: 'Quicksand', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 20px; border-radius: 4px; }
     .drop-item-img img.is-sold { filter: grayscale(0.4); }
 
-    /* âââ PICK OF THE HARVEST âââ */
+    /* ─── PICK OF THE HARVEST ─── */
     .pick-overlay { position: absolute; inset: 0; pointer-events: none; z-index: 2; overflow: hidden; }
     .pick-harvest-stripe {
       position: absolute; top: 25px; left: -50px; width: 160px; height: 26px;
@@ -529,7 +526,7 @@
       margin-bottom: 16px;
     }
 
-    /* âââ ARCHIVE âââ */
+    /* ─── ARCHIVE ─── */
     .archive-section {
       background: #f3f4f6;
       border-top: 1px solid var(--border);
@@ -595,7 +592,7 @@
     .add-btn:active { transform: scale(0.97); }
     .add-btn:disabled { background: var(--border); color: var(--text-muted); cursor: not-allowed; }
 
-    /* âââ EMPTY STATE âââ */
+    /* ─── EMPTY STATE ─── */
     .empty {
       text-align: center;
       padding: 80px 24px;
@@ -604,7 +601,7 @@
     }
     .empty-icon { font-size: 3rem; margin-bottom: 16px; }
 
-    /* âââ ABOUT STRIP âââ */
+    /* ─── ABOUT STRIP ─── */
     .about {
       background: var(--green);
       padding: 64px 24px;
@@ -642,7 +639,7 @@
     .value-desc { font-size: 0.85rem; color: rgba(255,255,255,0.75); line-height: 1.6; }
     @media (max-width: 640px) { .values { grid-template-columns: 1fr; } }
 
-    /* âââ PERSONAL SHOPPER âââ */
+    /* ─── PERSONAL SHOPPER ─── */
     .shopper-section {
       padding: 48px 24px;
       background: var(--cream);
@@ -782,7 +779,7 @@
     .shopper-submit:hover { background: var(--green-dark); }
     .form-success { display: none; text-align: center; padding: 24px; color: var(--green); font-weight: 600; }
 
-    /* âââ INSTAGRAM âââ */
+    /* ─── INSTAGRAM ─── */
     .instagram-section {
       background: var(--cream);
       padding: 56px 24px;
@@ -806,7 +803,7 @@
     }
     .ig-btn-outline:hover { background: var(--green); color: white; }
 
-    /* âââ ACKNOWLEDGEMENT OF COUNTRY âââ */
+    /* ─── ACKNOWLEDGEMENT OF COUNTRY ─── */
     .aoc {
       background: var(--cream);
       border-top: 1px solid var(--border);
@@ -829,7 +826,7 @@
       font-style: italic;
     }
 
-    /* âââ FOOTER âââ */
+    /* ─── FOOTER ─── */
     footer {
       background: var(--text);
       color: rgba(255,255,255,0.6);
@@ -839,7 +836,7 @@
     }
     footer strong { color: white; }
 
-    /* âââ CART DRAWER âââ */
+    /* ─── CART DRAWER ─── */
     .overlay {
       position: fixed;
       inset: 0;
@@ -948,7 +945,7 @@
       margin-top: 10px;
     }
 
-    /* âââ TOAST âââ */
+    /* ─── TOAST ─── */
     .toast {
       position: fixed;
       bottom: 24px;
@@ -966,7 +963,7 @@
     }
     .toast.show { transform: translateX(-50%) translateY(0); }
 
-    /* âââ SEARCH âââ */
+    /* ─── SEARCH ─── */
     .search-btn {
       background: none;
       border: none;
@@ -1103,7 +1100,7 @@
       margin-left: 6px;
     }
 
-    /* âââ RESPONSIVE âââ */
+    /* ─── RESPONSIVE ─── */
     @media (max-width: 600px) {
       .hero { padding: 28px 20px 24px; }
       .nav-link { display: none; }
@@ -1140,9 +1137,8 @@
 #cart-drawer{position:fixed;top:0;right:0;height:100%;width:380px;max-width:95vw;background:#fff;z-index:999;transform:translateX(100%);transition:transform 0.3s ease;display:flex;flex-direction:column;box-shadow:-4px 0 24px rgba(0,0,0,0.13);}
 #cart-drawer.open{transform:translateX(0);}
 .cart-header{display:flex;justify-content:space-between;align-items:center;padding:20px 20px 16px;border-bottom:1px solid #eee;}
-.cart-title{font-size:1.1rem;font-weight:700;letter-spacing:0.01em;}
+.cart-title{font-size:1.1rem;font-weight:700;}
 .cart-close-btn{background:none;border:none;font-size:1.3rem;cursor:pointer;padding:2px 8px;color:#888;line-height:1;}
-.cart-close-btn:hover{color:#333;}
 .cart-items-list{flex:1;overflow-y:auto;padding:12px 16px;}
 .cart-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #f2f2f2;align-items:flex-start;}
 .cart-item:last-child{border-bottom:none;}
@@ -1159,7 +1155,7 @@
 .cart-total-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
 .cart-total-label{font-weight:600;font-size:1rem;}
 .cart-total-amount{font-weight:700;font-size:1.1rem;}
-.btn-cart-checkout{width:100%;padding:15px;background:#2d6a2d;color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer;letter-spacing:0.01em;transition:background 0.2s;}
+.btn-cart-checkout{width:100%;padding:15px;background:#2d6a2d;color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer;transition:background 0.2s;}
 .btn-cart-checkout:hover:not(:disabled){background:#245824;}
 .btn-cart-checkout:disabled{opacity:0.5;cursor:default;}
 .cart-secure{text-align:center;font-size:0.72rem;color:#bbb;margin-top:10px;}
@@ -1209,7 +1205,7 @@
   <div class="search-overlay" id="searchOverlay" role="dialog" aria-label="Search">
     <div class="search-overlay-header">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input class="search-input" id="searchInput" type="search" placeholder="Search by name, brand, sizeâ¦" autocomplete="off" autocorrect="off" spellcheck="false" />
+      <input class="search-input" id="searchInput" type="search" placeholder="Search by name, brand, size…" autocomplete="off" autocorrect="off" spellcheck="false" />
       <button class="search-close" id="searchClose" aria-label="Close search">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
@@ -1229,7 +1225,7 @@
   <!-- TAGLINE BAND -->
   <section class="tagline-band">
     <div class="tagline-band-inner">
-      <p>ð¥ Fabulous preloved kids clothes to help save the planet ð in style ð«¶</p>
+      <p>🥕 Fabulous preloved kids clothes to help save the planet 🌍 in style 🫶</p>
     </div>
   </section>
 
@@ -1239,12 +1235,12 @@
     <div class="age-filter" id="dropFilter" style="display:none;"></div>
     <div class="age-filter" id="ageFilter" style="display:none;">
       <button class="age-pill active" data-range="all">All ages</button>
-      <button class="age-pill" data-range="0-2">0â2</button>
-      <button class="age-pill" data-range="3-5">3â5</button>
-      <button class="age-pill" data-range="6-8">6â8</button>
-      <button class="age-pill" data-range="9-11">9â11</button>
-      <button class="age-pill" data-range="12-14">12â14</button>
-      <button class="age-pill" data-range="14-16">14â16</button>
+      <button class="age-pill" data-range="0-2">0–2</button>
+      <button class="age-pill" data-range="3-5">3–5</button>
+      <button class="age-pill" data-range="6-8">6–8</button>
+      <button class="age-pill" data-range="9-11">9–11</button>
+      <button class="age-pill" data-range="12-14">12–14</button>
+      <button class="age-pill" data-range="14-16">14–16</button>
     </div>
     <div id="dropsContainer"></div>
   </main>
@@ -1253,7 +1249,7 @@
   <section class="archive-section" id="archiveSection" style="display:none">
     <div class="archive-inner">
       <h2>Previous drops</h2>
-      <p>Sold out â follow us on Instagram so you never miss the next one.</p>
+      <p>Sold out — follow us on Instagram so you never miss the next one.</p>
       <div class="archive-grid" id="archiveGrid"></div>
     </div>
   </section>
@@ -1266,26 +1262,26 @@
         <h2>Personal shopper</h2>
         <p>Pick your kid's style, enter their age, and we'll set up a DM so you can get in touch in seconds.</p>
         <div class="shopper-styles" id="styleOptions">
-          <button class="style-pill" data-style="The Skate Park â concrete cool, relaxed fits, graphic tees"><img src="veggies/turnip.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">The Skate Park</button>
-          <button class="style-pill" data-style="The Lemonade Stand â bright, bold, full of colour"><img src="veggies/carrot.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">The Lemonade Stand</button>
-          <button class="style-pill" data-style="The Mud Kitchen â crisp checks, classic denim, easy layers"><img src="veggies/eggplant.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">The Mud Kitchen</button>
-          <button class="style-pill" data-style="ð Beach Shack â relaxed, coastal, easy layers"><img src="veggies/cucumber.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">Beach Shack</button>
-          <button class="style-pill" data-style="ð¸ Garden Party â soft prints, sweet and playful"><img src="veggies/tomato.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">Garden Party</button>
-          <button class="style-pill" data-style="ð½ï¸ Sunday Lunch â smart casuals, occasion ready"><img src="veggies/onion.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">Sunday Lunch</button>
+          <button class="style-pill" data-style="The Skate Park — concrete cool, relaxed fits, graphic tees"><img src="veggies/turnip.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">The Skate Park</button>
+          <button class="style-pill" data-style="The Lemonade Stand — bright, bold, full of colour"><img src="veggies/carrot.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">The Lemonade Stand</button>
+          <button class="style-pill" data-style="The Mud Kitchen — crisp checks, classic denim, easy layers"><img src="veggies/eggplant.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">The Mud Kitchen</button>
+          <button class="style-pill" data-style="🌊 Beach Shack — relaxed, coastal, easy layers"><img src="veggies/cucumber.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">Beach Shack</button>
+          <button class="style-pill" data-style="🌸 Garden Party — soft prints, sweet and playful"><img src="veggies/tomato.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">Garden Party</button>
+          <button class="style-pill" data-style="🍽️ Sunday Lunch — smart casuals, occasion ready"><img src="veggies/onion.png" style="height:18px;vertical-align:middle;margin-right:8px;display:inline">Sunday Lunch</button>
         </div>
       </div>
       <div class="shopper-steps">
         <div style="display:flex;flex-direction:column;gap:16px;">
           <div>
             <label style="font-size:0.78rem;font-weight:600;color:var(--text);display:block;margin-bottom:6px;">Kid's age</label>
-            <input id="shopperAge" type="text" placeholder="e.g. 5, or 4â6" style="width:100%;padding:9px 12px;border:1.5px solid var(--border);border-radius:8px;font-family:inherit;font-size:0.88rem;box-sizing:border-box;" />
+            <input id="shopperAge" type="text" placeholder="e.g. 5, or 4–6" style="width:100%;padding:9px 12px;border:1.5px solid var(--border);border-radius:8px;font-family:inherit;font-size:0.88rem;box-sizing:border-box;" />
           </div>
           <div>
             <label style="font-size:0.78rem;font-weight:600;color:var(--text);display:block;margin-bottom:6px;">Anything else? (optional)</label>
-            <textarea id="shopperNotes" placeholder="Budget, specific items needed, colours they love or hateâ¦" style="width:100%;padding:9px 12px;border:1.5px solid var(--border);border-radius:8px;font-family:inherit;font-size:0.88rem;min-height:72px;resize:vertical;box-sizing:border-box;"></textarea>
+            <textarea id="shopperNotes" placeholder="Budget, specific items needed, colours they love or hate…" style="width:100%;padding:9px 12px;border:1.5px solid var(--border);border-radius:8px;font-family:inherit;font-size:0.88rem;min-height:72px;resize:vertical;box-sizing:border-box;"></textarea>
           </div>
-          <p style="font-size:0.78rem;color:var(--text-muted);margin:0 0 10px;">Your message will be copied to your clipboard â just paste it into the DM and hit send! ð¥</p>
-          <button class="shopper-submit" id="shopperDmBtn">ð© Open Instagram DM</button>
+          <p style="font-size:0.78rem;color:var(--text-muted);margin:0 0 10px;">Your message will be copied to your clipboard — just paste it into the DM and hit send! 🥕</p>
+          <button class="shopper-submit" id="shopperDmBtn">📩 Open Instagram DM</button>
         </div>
       </div>
     </div>
@@ -1295,7 +1291,7 @@
   <section class="instagram-section">
     <div class="instagram-inner">
       <h2>Find us on Instagram</h2>
-      <p>Drops land on Instagram first â follow along so you're first to shop.</p>
+      <p>Drops land on Instagram first — follow along so you're first to shop.</p>
       <a class="ig-btn ig-btn-outline" href="https://www.instagram.com/eatyourveggies_please" target="_blank" rel="noopener">Follow us on Instagram</a>
     </div>
   </section>
@@ -1304,7 +1300,7 @@
   <section class="about" id="about">
     <div class="about-inner">
       <h2>Why Eat Your Veggies?</h2>
-      <p>Kids grow fast. Clothes barely get worn. We source and curate pre-loved kids' clothing that's still got plenty of life in it â so you can dress them well without the guilt (or the bill).</p>
+      <p>Kids grow fast. Clothes barely get worn. We source and curate pre-loved kids' clothing that's still got plenty of life in it — so you can dress them well without the guilt (or the bill).</p>
       <p>Every item is personally checked and described honestly. Clothes for every kid, every style. What you see is what you get.</p>
       <div class="values">
         <div class="value">
@@ -1336,24 +1332,23 @@
 
   <!-- FOOTER -->
   <footer>
-    <p><strong>Eat Your Veggies (please) Pty Ltd</strong> Â· Melbourne, Australia Â· ABN 99 160 668 791</p>
-    <p style="margin-top:8px">Â© 2026 Eat Your Veggies (please) Â· All items sold as described</p>
+    <p><strong>Eat Your Veggies (please) Pty Ltd</strong> · Melbourne, Australia · ABN 99 160 668 791</p>
+    <p style="margin-top:8px">© 2026 Eat Your Veggies (please) · All items sold as described</p>
   </footer>
 
 
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
-    <button class="lightbox-close" id="lbClose">â</button>
-    <button class="lightbox-nav lightbox-prev" id="lbPrev">â¹</button>
+    <button class="lightbox-close" id="lbClose">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lbPrev">‹</button>
     <img class="lightbox-img" id="lbImg" src="" alt="" />
-    <button class="lightbox-nav lightbox-next" id="lbNext">âº</button>
+    <button class="lightbox-nav lightbox-next" id="lbNext">›</button>
     <div class="lightbox-counter" id="lbCounter"></div>
     <div class="lightbox-info" id="lbInfo" style="display:none">
       <div class="lb-item-name" id="lbName"></div>
       <div class="lb-item-meta" id="lbMeta"></div>
       <div class="lb-item-desc" id="lbDesc"></div>
       <div class="lb-item-condition" id="lbCondition"></div>
-      <button class="lb-item-buy-btn" id="lbBuyBtn" style="display:none"></button>
     </div>
   </div>
 
@@ -1368,8 +1363,8 @@
         const drops = await res.json();
         allDrops = drops;
 
-        // Sort by drop number ascending â oldest first
-        drops.sort((a, b) => b.dropNumber.localeCompare(a.dropNumber));
+        // Sort by drop number ascending — oldest first
+        drops.sort((a, b) => a.dropNumber.localeCompare(b.dropNumber));
 
         const live = drops.filter(d => !d.draft);
         const activeDrops = live.filter(d => !d.sold);
@@ -1378,7 +1373,7 @@
         currentDrop = activeDrops[0] || null;
 
         if (activeDrops.length) renderCurrentDrops(activeDrops);
-        // Archive hidden for launch â uncomment when drops sell: if (archived.length) renderArchive(archived);
+        // Archive hidden for launch — uncomment when drops sell: if (archived.length) renderArchive(archived);
 
       } catch (e) {
         console.error('Could not load drops.json', e);
@@ -1410,7 +1405,7 @@
       const container = document.getElementById('dropsContainer');
       container.innerHTML = '';
 
-      // ââ Drop filter pills ââ
+      // ── Drop filter pills ──
       const dropFilter = document.getElementById('dropFilter');
       if (activeDrops.length > 1) {
         dropFilter.style.display = '';
@@ -1474,13 +1469,13 @@
                   <div class="drop-item-name">${item.name}</div>
                   <div class="drop-item-size">Size ${item.size}</div>
                 </a>
-                ${!drop.sold && item.price ? `<button class="item-buy-btn" data-item-index="${i}">Buy this Â· $${item.price}</button>` : ''}
+                ${!drop.sold && item.price ? `<button class="item-buy-btn" data-item-index="${i}">Buy this · $${item.price}</button>` : ''}
               </div>`;
             }).join('')}
           </div>
           ${drop.items.length > 8 ? `
           <div class="drop-more-section">
-            <button class="drop-more-btn" data-drop-id="${drop.id}">Shop more of this drop â</button>
+            <button class="drop-more-btn" data-drop-id="${drop.id}">Shop more of this drop ↓</button>
             <div class="drop-more-grid" id="more-${drop.id}" style="display:none">
               ${drop.items.slice(8).map((item, i) => {
                 const idx = i + 8;
@@ -1501,7 +1496,7 @@
                     <div class="drop-item-name">${item.name}</div>
                     <div class="drop-item-size">Size ${item.size}</div>
                   </a>
-                  ${!drop.sold && item.price ? `<button class="item-buy-btn" data-item-index="${idx}">Buy this Â· $${item.price}</button>` : ''}
+                  ${!drop.sold && item.price ? `<button class="item-buy-btn" data-item-index="${idx}">Buy this · $${item.price}</button>` : ''}
                 </div>`;
               }).join('')}
             </div>
@@ -1515,7 +1510,7 @@
         block.querySelectorAll('.drop-item-img').forEach(el => {
           const openForEl = () => {
             const item = drop.items[parseInt(el.dataset.index)];
-            openLightbox(getItemImages(item), 0, item, drop);
+            openLightbox(getItemImages(item), 0, item);
           };
           el.addEventListener('click', openForEl);
           el.addEventListener('touchend', e => { e.preventDefault(); openForEl(); });
@@ -1539,11 +1534,11 @@
             const isOpen = moreGrid.style.display !== 'none';
             moreGrid.style.display = isOpen ? 'none' : 'grid';
             midItems.forEach(el => el.style.display = isOpen ? '' : 'block');
-            moreBtn.textContent = isOpen ? 'Shop more of this drop â' : 'Show less â';
+            moreBtn.textContent = isOpen ? 'Shop more of this drop ↓' : 'Show less ↑';
           });
         }
 
-        // Full drop buy button â currently hidden
+        // Full drop buy button — currently hidden
       });
     }
 
@@ -1570,17 +1565,15 @@
         </div>`).join('');
     }
 
-    // âââ LIGHTBOX ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // ─── LIGHTBOX ────────────────────────────────────────────────────────────
     let lbImages = [];
     let lbIndex = 0;
     let lbItem = null;
-    let lbDrop = null;
 
-    function openLightbox(images, index, item, drop) {
+    function openLightbox(images, index, item) {
       lbImages = images;
       lbIndex = index;
       lbItem = item || null;
-      lbDrop = drop || null;
       showLbImage();
       document.getElementById('lightbox').classList.add('open');
       document.body.style.overflow = 'hidden';
@@ -1600,18 +1593,10 @@
       const infoEl = document.getElementById('lbInfo');
       if (lbItem && lbItem.description) {
         document.getElementById('lbName').textContent = lbItem.name;
-        document.getElementById('lbMeta').textContent = `${lbItem.brand} Â· Size ${lbItem.size} Â· $${lbItem.price}`;
+        document.getElementById('lbMeta').textContent = `${lbItem.brand} · Size ${lbItem.size} · $${lbItem.price}`;
         document.getElementById('lbDesc').textContent = lbItem.description;
         document.getElementById('lbCondition').textContent = lbItem.condition || '';
         document.getElementById('lbCondition').style.display = lbItem.condition ? '' : 'none';
-        const buyBtn = document.getElementById('lbBuyBtn');
-        if (!lbItem.sold && lbItem.price && lbDrop && !lbDrop.sold) {
-          buyBtn.textContent = `Buy this Â· $${lbItem.price}`;
-          buyBtn.disabled = false;
-          buyBtn.style.display = '';
-        } else {
-          buyBtn.style.display = 'none';
-        }
         infoEl.style.display = '';
       } else {
         infoEl.style.display = 'none';
@@ -1620,10 +1605,6 @@
 
     document.getElementById('lbClose').addEventListener('click', closeLightbox);
     document.getElementById('lightbox').addEventListener('click', e => { if (e.target === e.currentTarget) closeLightbox(); });
-    document.getElementById('lbBuyBtn').addEventListener('click', e => {
-      e.stopPropagation();
-      if (lbDrop && lbItem) buyItem(document.getElementById('lbBuyBtn'), lbDrop, lbItem);
-    });
     document.getElementById('lbPrev').addEventListener('click', () => { lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length; showLbImage(); });
     document.getElementById('lbNext').addEventListener('click', () => { lbIndex = (lbIndex + 1) % lbImages.length; showLbImage(); });
     document.addEventListener('keydown', e => {
@@ -1633,9 +1614,9 @@
       if (e.key === 'ArrowRight') { lbIndex = (lbIndex + 1) % lbImages.length; showLbImage(); }
     });
 
-    // âââ BUY BUTTON â now handled per-drop in renderCurrentDrops ââââââââââââ
+    // ─── BUY BUTTON — now handled per-drop in renderCurrentDrops ────────────
 
-    // âââ AGE FILTER ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // ─── AGE FILTER ──────────────────────────────────────────────────────────
     function parseAgeRange(sizeStr) {
       const nums = (sizeStr || '').match(/\d+/g);
       if (!nums) return [0, 20];
@@ -1661,10 +1642,10 @@
       });
     });
 
-    // âââ INDIVIDUAL ITEM BUY âââââââââââââââââââââââââââââââââââââââââââââââââ
+    // ─── INDIVIDUAL ITEM BUY ─────────────────────────────────────────────────
     async function buyItem(btn, drop, item) {
       const original = btn.textContent;
-      btn.textContent = 'Redirectingâ¦';
+      btn.textContent = 'Redirecting…';
       btn.disabled = true;
       try {
         const res = await fetch('/api/create-checkout', {
@@ -1673,7 +1654,7 @@
           body: JSON.stringify({
             items: [{
               id: `${drop.id}-${item.name.toLowerCase().replace(/\s+/g, '-')}`,
-              name: `${item.name} (${item.brand}, Size ${item.size}) â Drop ${drop.dropLabel}`,
+              name: `${item.name} (${item.brand}, Size ${item.size}) — Drop ${drop.dropLabel}`,
               price: item.price,
               quantity: 1
             }]
@@ -1695,7 +1676,7 @@
 
     init();
 
-    // âââ SEARCH ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // ─── SEARCH ──────────────────────────────────────────────────────────────
     const searchBtn     = document.getElementById('searchBtn');
     const searchOverlay = document.getElementById('searchOverlay');
     const searchInput   = document.getElementById('searchInput');
@@ -1759,7 +1740,7 @@
         const sold = item.sold ? ' search-card-sold' : '';
         const soldBadge = item.sold ? '<span class="search-sold-badge">Sold</span>' : '';
         const price = item.price > 0 ? `$${item.price}` : 'Price TBC';
-        const meta = [item.size, item.condition].filter(Boolean).join(' Â· ');
+        const meta = [item.size, item.condition].filter(Boolean).join(' · ');
         const url = `/buy/${drop.dropNumber}/${idx}`;
         return `<a class="search-card${sold}" href="${url}">
           ${imgHtml}
@@ -1777,7 +1758,7 @@
 
     searchInput.addEventListener('input', e => runSearch(e.target.value));
 
-    // âââ HAMBURGER âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // ─── HAMBURGER ───────────────────────────────────────────────────────────
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
     hamburger.addEventListener('click', () => {
@@ -1792,7 +1773,7 @@
       });
     });
 
-    // âââ PERSONAL SHOPPER ââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // ─── PERSONAL SHOPPER ────────────────────────────────────────────────────
     let selectedStyle = '';
 
     document.querySelectorAll('.style-pill').forEach(pill => {
@@ -1807,7 +1788,7 @@
       const age = document.getElementById('shopperAge').value.trim();
       const notes = document.getElementById('shopperNotes').value.trim();
 
-      let msg = `Hi! I'd love a personal shopper capsule ð¥\n`;
+      let msg = `Hi! I'd love a personal shopper capsule 🥕\n`;
       if (selectedStyle) msg += `Style type: ${selectedStyle}\n`;
       if (age) msg += `Age: ${age}\n`;
       if (notes) msg += `Notes: ${notes}`;
@@ -1819,116 +1800,57 @@
 
 
 <div id="cart-overlay" onclick="closeCart()"></div>
-<div id="cart-drawer" role="dialog" aria-label="Shopping cart">
-  <div class="cart-header">
-    <span class="cart-title">Your cart</span>
-    <button class="cart-close-btn" onclick="closeCart()" aria-label="Close">&times;</button>
-  </div>
+<div id="cart-drawer">
+  <div class="cart-header"><span class="cart-title">Your cart</span><button class="cart-close-btn" onclick="closeCart()">&times;</button></div>
   <div id="cart-items-list" class="cart-items-list"></div>
   <div class="cart-footer" id="cart-footer">
     <div id="cart-shipping-msg" class="cart-shipping-msg"></div>
-    <div class="cart-total-row">
-      <span class="cart-total-label">Total</span>
-      <span class="cart-total-amount" id="cart-total-display"></span>
-    </div>
+    <div class="cart-total-row"><span class="cart-total-label">Total</span><span class="cart-total-amount" id="cart-total-display"></span></div>
     <button id="cart-checkout-btn" class="btn-cart-checkout" onclick="cartCheckout()">Checkout</button>
     <p class="cart-secure">Secure checkout via Stripe</p>
   </div>
 </div>
-
 <script>
-(function() {
-  var CART_KEY = 'eyv_cart_v1';
-  function getCart() { try { return JSON.parse(localStorage.getItem(CART_KEY) || '[]'); } catch(e) { return []; } }
-  function saveCart(c) { try { localStorage.setItem(CART_KEY, JSON.stringify(c)); } catch(e) {} }
-  function getTotal(cart) { return cart.reduce(function(s, i) { return s + (i.price || 0); }, 0); }
-  window._cart = { getCart: getCart, saveCart: saveCart };
-
-  window.openCart = function() {
-    document.getElementById('cart-drawer').classList.add('open');
-    document.getElementById('cart-overlay').classList.add('open');
-    document.body.style.overflow = 'hidden';
-    renderCart();
-  };
-  window.closeCart = function() {
-    document.getElementById('cart-drawer').classList.remove('open');
-    document.getElementById('cart-overlay').classList.remove('open');
-    document.body.style.overflow = '';
-  };
-  window.removeFromCart = function(idx) {
-    var c = getCart(); c.splice(idx, 1); saveCart(c);
-    updateCartCount(); renderCart();
-  };
-
-  function renderCart() {
-    var listEl = document.getElementById('cart-items-list');
-    var footerEl = document.getElementById('cart-footer');
-    if (!listEl) return;
-    var cart = getCart();
-    var total = getTotal(cart);
-    if (cart.length === 0) {
-      listEl.innerHTML = '<div class="cart-empty">Your cart is empty</div>';
-      if (footerEl) footerEl.style.display = 'none';
-    } else {
-      if (footerEl) footerEl.style.display = '';
-      listEl.innerHTML = cart.map(function(item, idx) {
-        var imgSrc = item.image ? '/' + item.image : '';
-        var meta = [item.brand, item.size ? 'Size ' + item.size : ''].filter(Boolean).join(' \u00b7 ');
-        return '<div class="cart-item">' +
-          (imgSrc ? '<img class="cart-item-img" src="' + imgSrc + '" alt="">' : '<div class="cart-item-img"></div>') +
-          '<div class="cart-item-info">' +
-            '<div class="cart-item-name">' + (item.name || '') + '</div>' +
-            (meta ? '<div class="cart-item-meta">' + meta + '</div>' : '') +
-            '<div class="cart-item-price">
-</html>
- + (item.price || 0).toFixed(2) + '</div>' +
-          '</div>' +
-          '<button class="cart-item-remove" onclick="removeFromCart(' + idx + ')" aria-label="Remove">\u00d7</button>' +
-        '</div>';
+(function(){
+  var K='eyv_cart_v1';
+  function gc(){try{return JSON.parse(localStorage.getItem(K)||'[]');}catch(e){return[];}}
+  function sc(c){try{localStorage.setItem(K,JSON.stringify(c));}catch(e){}}
+  function gt(c){return c.reduce(function(s,i){return s+(i.price||0);},0);}
+  window._cart={getCart:gc,saveCart:sc};
+  window.openCart=function(){document.getElementById('cart-drawer').classList.add('open');document.getElementById('cart-overlay').classList.add('open');document.body.style.overflow='hidden';render();}
+  window.closeCart=function(){document.getElementById('cart-drawer').classList.remove('open');document.getElementById('cart-overlay').classList.remove('open');document.body.style.overflow='';}
+  window.removeFromCart=function(i){var c=gc();c.splice(i,1);sc(c);ucc();render();}
+  function render(){
+    var l=document.getElementById('cart-items-list'),f=document.getElementById('cart-footer');
+    if(!l)return;var cart=gc(),tot=gt(cart);
+    if(cart.length===0){l.innerHTML='<div class="cart-empty">Your cart is empty</div>';if(f)f.style.display='none';}
+    else{if(f)f.style.display='';
+      l.innerHTML=cart.map(function(item,i){
+        var img=item.image?'/'+item.image:'';
+        var meta=[item.brand,item.size?'Size '+item.size:''].filter(Boolean).join(' · ');
+        var row='<div class="cart-item">';
+        row+=(img?'<img class="cart-item-img" src="'+img+'" alt="">':'<div class="cart-item-img"></div>');
+        row+='<div class="cart-item-info"><div class="cart-item-name">'+(item.name||'')+'</div>';
+        if(meta)row+='<div class="cart-item-meta">'+meta+'</div>';
+        row+='<div class="cart-item-price">'+(item.price||0).toFixed(2)+'</div></div>';
+        row+='<button class="cart-item-remove" onclick="removeFromCart('+i+')" aria-label="Remove">×</button></div>';
+        return row;
       }).join('');
-      var totalEl = document.getElementById('cart-total-display');
-      if (totalEl) totalEl.textContent = '
-</html>
- + total.toFixed(2);
-      var msgEl = document.getElementById('cart-shipping-msg');
-      if (msgEl) {
-        if (total >= 100) { msgEl.textContent = 'Free shipping on your order!'; }
-        else { msgEl.textContent = 'Add 
-</html>
- + (100 - total).toFixed(2) + ' more for free shipping'; }
-      }
+      var te=document.getElementById('cart-total-display');if(te)te.textContent=tot.toFixed(2);
+      var me=document.getElementById('cart-shipping-msg');
+      if(me){if(tot>=100)me.textContent='Free shipping on your order!';else me.textContent='Add '+(100-tot).toFixed(2)+' more for free shipping';}
     }
   }
-
-  window.updateCartCount = function() {
-    var c = getCart();
-    var el = document.getElementById('cart-count');
-    if (el) { el.textContent = c.length; el.classList.toggle('has-items', c.length > 0); }
-    if (document.getElementById('cart-items-list')) renderCart();
+  window.updateCartCount=function ucc(){var c=gc(),el=document.getElementById('cart-count');if(el){el.textContent=c.length;el.classList.toggle('has-items',c.length>0);}if(document.getElementById('cart-items-list'))render();}
+  window.cartCheckout=async function(){
+    var cart=gc();if(!cart.length)return;
+    var btn=document.getElementById('cart-checkout-btn');btn.textContent='Loading...';btn.disabled=true;
+    try{
+      var r=await fetch('/api/cart-checkout',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({items:cart.map(function(i){return{dropNumber:i.dropNumber,itemIndex:i.itemIndex};})})});
+      var d=await r.json();if(d.url)window.location.href=d.url;else throw new Error();
+    }catch(e){btn.textContent='Checkout';btn.disabled=false;alert('Something went wrong. Please try again.');}
   };
-
-  window.cartCheckout = async function() {
-    var cart = getCart();
-    if (!cart.length) return;
-    var btn = document.getElementById('cart-checkout-btn');
-    btn.textContent = 'Loading...'; btn.disabled = true;
-    try {
-      var res = await fetch('/api/cart-checkout', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ items: cart.map(function(i) { return { dropNumber: i.dropNumber, itemIndex: i.itemIndex }; }) })
-      });
-      var data = await res.json();
-      if (data.url) window.location.href = data.url;
-      else throw new Error('No URL');
-    } catch(e) {
-      btn.textContent = 'Checkout'; btn.disabled = false;
-      alert('Something went wrong. Please try again.');
-    }
-  };
-
-  document.addEventListener('DOMContentLoaded', updateCartCount);
-  if (document.readyState !== 'loading') updateCartCount();
+  document.addEventListener('DOMContentLoaded',updateCartCount);if(document.readyState!=='loading')updateCartCount();
 })();
 </script>
 </body>
